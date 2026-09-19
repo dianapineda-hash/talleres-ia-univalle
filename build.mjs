@@ -1,0 +1,1 @@
+import {mkdir,copyFile,readdir} from 'node:fs/promises'; await mkdir('dist',{recursive:true}); for(const f of await readdir('.')) if(/\.(html|css|js)$/.test(f)&&f!=='core.test.js') await copyFile(f,'dist/'+f);

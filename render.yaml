@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: talleres-ia-univalle
+    runtime: static
+    buildCommand: npm run build
+    staticPublishPath: dist
