@@ -1,0 +1,46 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:05.400
+Antes de dar por terminado el proyecto, prueba situaciones incómodas. En el observatorio puedes importar
+
+00:00:05.400 --> 00:00:10.800
+una fila con una fuente que no existe y comprobar que la rechace. También puedes intentar importar un
+
+00:00:10.800 --> 00:00:16.200
+estado de verificación y observar que la afirmación quede pendiente. Haz estas pruebas con datos
+
+00:00:16.200 --> 00:00:21.600
+ficticios.
+
+00:00:21.600 --> 00:00:28.472
+El observatorio completo tiene importación y revisión. El HTML que descargaste es una base más pequeña
+
+00:00:28.472 --> 00:00:35.344
+para aprender a construir. No esperes que haga lo que todavía no has programado. En tu versión comprueba
+
+00:00:35.344 --> 00:00:42.216
+que cambie la instrucción, que acepte una evidencia y que permita descargar los resultados.
+
+00:00:42.216 --> 00:00:48.216
+Escribe una nota de uso para alguien que no estuvo contigo. Explica cómo abrir la aplicación y qué
+
+00:00:48.216 --> 00:00:54.216
+información necesita. Incluye una limitación concreta, como la ausencia de conexión automática a Acrobat.
+
+00:00:54.216 --> 00:01:00.216
+Si publicas tu variante, comparte el código y ejemplos ficticios, no archivos privados del proyecto de
+
+00:01:00.216 --> 00:01:06.216
+investigación.
+
+00:01:06.216 --> 00:01:11.712
+Conserva el HTML personalizado y los resultados de las pruebas. Añade el respaldo del observatorio si
+
+00:01:11.712 --> 00:01:17.208
+forma parte de tu trabajo. Al descargar el cuaderno tendrás reunidas tus decisiones durante el taller. La
+
+00:01:17.208 --> 00:01:22.704
+entrega está completa cuando puedes explicar qué hace la aplicación y mostrar una prueba de ese
+
+00:01:22.704 --> 00:01:28.200
+comportamiento.

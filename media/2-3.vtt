@@ -1,0 +1,43 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:06.472
+Abre la afirmación que registraste y compárala con el pasaje original. Presta atención al alcance: una
+
+00:00:06.472 --> 00:00:12.944
+frase sobre una muestra concreta no puede convertirse sin más en una conclusión sobre todas las personas.
+
+00:00:12.944 --> 00:00:19.416
+Tampoco basta con que el texto contenga palabras parecidas a las de la respuesta.
+
+00:00:19.416 --> 00:00:26.240
+Selecciona el estado de revisión y escribe una nota. Evita comentarios como revisado o correcto sin
+
+00:00:26.240 --> 00:00:33.064
+explicación. Indica qué parte del pasaje sostiene la afirmación y qué matiz falta, si lo hay. Puedes usar
+
+00:00:33.064 --> 00:00:39.888
+un código como nombre de revisor si no deseas guardar tu nombre en el proyecto.
+
+00:00:39.888 --> 00:00:45.564
+Exporta un respaldo JSON del observatorio. Ese archivo conserva la configuración y los datos del
+
+00:00:45.564 --> 00:00:51.240
+proyecto. También puedes exportar una matriz CSV para abrirla en una hoja de cálculo. Son productos
+
+00:00:51.240 --> 00:00:56.916
+distintos: la matriz ayuda a leer las filas, mientras el respaldo permite volver a cargarlas en la
+
+00:00:56.916 --> 00:01:02.592
+aplicación.
+
+00:01:02.592 --> 00:01:08.358
+Cuando recuperes un respaldo, la aplicación solicitará confirmación antes de sustituir el proyecto. Las
+
+00:01:08.358 --> 00:01:14.124
+afirmaciones recuperadas quedarán pendientes para no dar por válidas revisiones de un archivo externo.
+
+00:01:14.124 --> 00:01:19.890
+Conserva el respaldo original si necesitas consultar las notas previas. No reemplaces tu trabajo sin
+
+00:01:19.890 --> 00:01:25.656
+haberlo exportado.

@@ -1,27 +1,40 @@
-# IA para investigadores · Universidad del Valle
+# Talleres autogestionables de IA para investigadores
 
-Dos páginas de formación de cuatro horas cada una, biblioteca científica y Observatorio de evidencia. Material educativo preparado a solicitud de la facilitadora; no implica aval institucional.
+Sitio: https://talleres-ia-univalle.onrender.com/
 
-## Páginas
-- `taller-1.html`: conceptos, casos, lectura crítica en Acrobat y PDF Spaces.
-- `taller-2.html`: construcción, personalización y pruebas de una aplicación.
-- `biblioteca.html`: seis artículos con DOI y consultas WoS, dos libros complementarios.
-- `observatorio.html`: configuración, fuentes, generador de instrucciones, importación JSON, revisión humana, exportación CSV/JSON y aplicación HTML descargable.
+Cada taller tiene cinco unidades de aprendizaje y una pausa. Las duraciones de trabajo suman 240 minutos por taller, pero el participante puede detenerse y continuar otro día.
 
-## Ejecución
-Node 18 o superior, sin paquetes externos. `npm test`, `npm run build`. Servir `dist` mediante cualquier servidor estático. Los módulos requieren HTTP, no abrir las páginas del sitio con file://. El HTML autónomo descargado sí funciona directamente.
+## Experiencia del participante
 
-Render: nuevo Static Site, repositorio actual, build `npm run build`, publish directory `dist`. También se incluye `render.yaml`.
+- Diez videos MP4 originales con láminas explicativas y narración sintética en español de Colombia. Cada video dura aproximadamente un minuto y medio.
+- Diez audios MP3 con la misma explicación: son formatos alternativos, no contenidos que deban consumirse dos veces.
+- Subtítulos WebVTT y transcripción completa.
+- Lecturas científicas enlazadas por DOI, prácticas individuales y ejemplos orientadores.
+- Cuaderno con guardado local, exportación Markdown y autoevaluación con retroalimentación por opción.
+- Navegación anterior/siguiente y recuperación del avance. No se certifica aprendizaje ni se evalúa automáticamente la calidad de respuestas abiertas.
 
-## Alcance y datos
-No hay backend, API de IA, analítica ni integración automática con Adobe. La transferencia Acrobat → aplicación es manual. Los datos del observatorio permanecen en localStorage; exportar respaldo antes de cambiar de equipo. La recuperación de respaldos restablece estados a pendiente para evitar confiar en verificaciones de origen desconocido. El CSV neutraliza prefijos de fórmula. Datos introducidos se presentan como texto.
+La guía de la versión presencial se conserva en facilitador-1.html y facilitador-2.html, fuera del recorrido principal.
 
-Los artículos están identificados mediante DOI y fuentes editoriales. No se afirma verificación individual autenticada en WoS; el material incluye protocolo y registro de consulta para completar UT, colección, fecha y revisor. Libros y documentación de producto se distinguen del corpus científico. No se redistribuyen PDF editoriales.
+## Archivos principales
 
-Identidad: Arial, fondo blanco, rojo institucional reservado al título principal y logo sin alterar servido desde https://www.univalle.edu.co/images/logo.jpg. Referencias: manual oficial y normas de diseño web enlazados en el pie del sitio. El logosímbolo conserva los derechos de la Universidad del Valle.
+`taller-1.html` y `taller-2.html` abren `learn.js`. El contenido pedagógico está en `lessons.json`. Los recursos multimedia están en `media/`. Los guiones son textos originales del taller, no lecturas integrales de los artículos. Los videos no son grabaciones de la interfaz de Acrobat.
 
-## Facilitación
-20–24 personas, parejas con roles alternos. Comprobar acceso individual a Acrobat AI y WoS antes de impartir. Acrobat institucional no es gratuito universal. Alternativa documental gratuita: Gemini Notebook Standard (antes NotebookLM), sujeto a cuotas. Si no hay servicio de IA, usar lectura manual y demostración sintética.
+`observatorio.html` conserva la aplicación con fuentes, instrucciones para Acrobat, revisión humana y exportación CSV/JSON. No hay API de IA ni conexión automática con Adobe. El HTML que descarga es un prototipo reducido para aprender a modificar código; no replica todas las funciones del observatorio.
 
-## Validación
-`npm test`: duración de sesiones, rechazo de fuente desconocida, revisión importada no confiable, texto hostil, respaldo, CSV y escape de configuración HTML. Comprobar además flujos en navegador y enlaces desplegados.
+## Fuentes y acceso
+
+Los artículos tienen DOI y consultas preparadas para Web of Science. Los registros individuales en WoS requieren comprobación con acceso institucional; no se han atribuido números UT no verificados. Los libros son complementarios y no se afirma su indexación en BKCI. No se redistribuyen PDF editoriales.
+
+Acrobat AI requiere acceso habilitado en la cuenta. La alternativa documental gratuita se documenta en la biblioteca, sujeta a límites del proveedor. Los ejercicios de lectura pueden continuar manualmente si no hay acceso a IA.
+
+## Privacidad y almacenamiento
+
+Las respuestas se guardan en localStorage de cada navegador. No hay analítica ni backend de participantes. Descargar el cuaderno antes de cambiar de equipo. El observatorio permite respaldos separados. Al recuperar datos externos, sus afirmaciones vuelven a pendiente de revisión.
+
+## Desarrollo y publicación
+
+Node 18 o superior. Sin dependencias de ejecución: `npm test` y `npm run build`. Servir `dist` mediante HTTP. Render ejecuta las pruebas y construye el sitio desde `main`.
+
+Diez pruebas comprueban estructura, duración de recorridos, medios presentes, importaciones y manejo seguro de datos. La navegación y reproducción se comprueban adicionalmente en navegador.
+
+Material para investigadores de la Universidad del Valle. No implica aval institucional. El logosímbolo se sirve sin modificación desde el portal oficial; conserva sus derechos institucionales. Se mantiene Arial y el rojo institucional en títulos principales.

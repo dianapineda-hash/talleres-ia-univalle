@@ -1,0 +1,37 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:07.536
+En el observatorio registra el artículo que vas a utilizar. Dale un identificador breve, como ese uno, y
+
+00:00:07.536 --> 00:00:15.072
+copia el título exacto. Añade el DOI cuando exista. El identificador debe corresponder al mismo archivo
+
+00:00:15.072 --> 00:00:22.608
+en Acrobat; de lo contrario, una fila aparentemente completa puede conducir al documento equivocado.
+
+00:00:22.608 --> 00:00:29.928
+Configura la pregunta y los criterios de extracción. Guarda los cambios y pulsa Generar instrucción.
+
+00:00:29.928 --> 00:00:37.248
+Copia el texto en Acrobat, con el documento abierto. La instrucción pide filas con campos definidos para
+
+00:00:37.248 --> 00:00:44.568
+facilitar la transferencia. El formato ordenado no significa que la respuesta sea correcta.
+
+00:00:44.568 --> 00:00:51.920
+Si recibes una lista JSON válida, pégala en el cuadro de importación. Si la respuesta contiene texto
+
+00:00:51.920 --> 00:00:59.272
+adicional o el formato falla, usa la entrada manual. En ambos casos debes conservar la afirmación y el
+
+00:00:59.272 --> 00:01:06.624
+pasaje con su localización. No necesitas aprender a programar para registrar esta primera evidencia.
+
+00:01:06.624 --> 00:01:13.584
+Después de importar, comprueba que la fila aparezca como pendiente. Regresa a Acrobat y abre su cita
+
+00:01:13.584 --> 00:01:20.544
+nativa. Solo cuando hayas leído el pasaje y su contexto podrás registrar una decisión. Esta separación
+
+00:01:20.544 --> 00:01:27.504
+evita que la seguridad con la que responde el modelo se confunda con una revisión realizada.
