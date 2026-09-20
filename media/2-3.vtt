@@ -1,43 +1,37 @@
 WEBVTT
 
-00:00:00.000 --> 00:00:06.472
-Abre la afirmación que registraste y compárala con el pasaje original. Presta atención al alcance: una
+00:00:00.000 --> 00:00:06.320
+Registre cada respuesta completa antes de clasificarla. Una corrección humana posterior puede producir un
 
-00:00:06.472 --> 00:00:12.944
-frase sobre una muestra concreta no puede convertirse sin más en una conclusión sobre todas las personas.
+00:00:06.320 --> 00:00:12.640
+buen resultado final, pero no representa el desempeño original del sistema. Si no ejecutó un caso,
 
-00:00:12.944 --> 00:00:19.416
-Tampoco basta con que el texto contenga palabras parecidas a las de la respuesta.
+00:00:12.640 --> 00:00:18.960
+conserve el estado pendiente en lugar de tratarlo como abstención.
 
-00:00:19.416 --> 00:00:26.240
-Selecciona el estado de revisión y escribe una nota. Evita comentarios como revisado o correcto sin
+00:00:18.960 --> 00:00:25.576
+La exactitud compara etiquetas con la referencia. La cobertura indica qué proporción recibió una
 
-00:00:26.240 --> 00:00:33.064
-explicación. Indica qué parte del pasaje sostiene la afirmación y qué matiz falta, si lo hay. Puedes usar
+00:00:25.576 --> 00:00:32.192
+respuesta distinta de abstención. El riesgo selectivo usa solamente esas respuestas. Si el sistema no
 
-00:00:33.064 --> 00:00:39.888
-un código como nombre de revisor si no deseas guardar tu nombre en el proyecto.
+00:00:32.192 --> 00:00:38.808
+respondió ninguna, el riesgo no es cero: no puede estimarse.
 
-00:00:39.888 --> 00:00:45.564
-Exporta un respaldo JSON del observatorio. Ese archivo conserva la configuración y los datos del
+00:00:38.808 --> 00:00:45.232
+Examine el pasaje que recibió el sistema. Si faltaba el documento pertinente, mejorar la redacción de la
 
-00:00:45.564 --> 00:00:51.240
-proyecto. También puedes exportar una matriz CSV para abrirla en una hoja de cálculo. Son productos
+00:00:45.232 --> 00:00:51.656
+respuesta no resuelve la recuperación. Si el pasaje estaba disponible y fue sobreinterpretado, la
 
-00:00:51.240 --> 00:00:56.916
-distintos: la matriz ayuda a leer las filas, mientras el respaldo permite volver a cargarlas en la
+00:00:51.656 --> 00:00:58.080
+revisión debe centrarse en la inferencia y en las condiciones de abstención.
 
-00:00:56.916 --> 00:01:02.592
-aplicación.
+00:00:58.080 --> 00:01:03.800
+Compare las condiciones caso por caso antes de interpretar los promedios. No declare superioridad
 
-00:01:02.592 --> 00:01:08.358
-Cuando recuperes un respaldo, la aplicación solicitará confirmación antes de sustituir el proyecto. Las
+00:01:03.800 --> 00:01:09.520
+estadística con este pequeño banco seleccionado. Una mejora aparente puede depender de los ejemplos
 
-00:01:08.358 --> 00:01:14.124
-afirmaciones recuperadas quedarán pendientes para no dar por válidas revisiones de un archivo externo.
-
-00:01:14.124 --> 00:01:19.890
-Conserva el respaldo original si necesitas consultar las notas previas. No reemplaces tu trabajo sin
-
-00:01:19.890 --> 00:01:25.656
-haberlo exportado.
+00:01:09.520 --> 00:01:15.240
+elegidos y desaparecer al cambiar de población o de tarea.

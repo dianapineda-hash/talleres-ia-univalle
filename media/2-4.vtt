@@ -1,40 +1,37 @@
 WEBVTT
 
-00:00:00.000 --> 00:00:05.946
-En el observatorio pulsa Descargar mi aplicación HTML. Recibirás un prototipo reducido para el ejercicio
+00:00:00.000 --> 00:00:05.736
+El archivo descargable contiene los casos y la política de evaluación. Funciona localmente sin una clave
 
-00:00:05.946 --> 00:00:11.892
-de construcción. No es una copia de todas las funciones del observatorio. Contiene una instrucción
+00:00:05.736 --> 00:00:11.472
+de programación ni una conexión al modelo. Las respuestas se obtienen fuera de la aplicación y se
 
-00:00:11.892 --> 00:00:17.838
-configurable y un formulario para añadir evidencia. Así puedes estudiar su funcionamiento sin instalar
+00:00:11.472 --> 00:00:17.208
+registran después de adjudicarlas con los documentos.
 
-00:00:17.838 --> 00:00:23.784
-herramientas de desarrollo.
+00:00:17.208 --> 00:00:23.536
+Localice la función que decide si se cumplen los criterios. En la versión inicial se comprueba primero si
 
-00:00:23.784 --> 00:00:30.856
-Abre el archivo con un editor de texto, como el Bloc de notas. Busca const CONFIG. Allí puedes cambiar el
+00:00:23.536 --> 00:00:29.864
+hay evidencia suficiente. Su ejercicio consiste en dar prioridad a un error crítico. Ese cambio altera la
 
-00:00:30.856 --> 00:00:37.928
-título, la pregunta y el criterio de extracción. Conserva las comillas y las comas del código. Guarda una
+00:00:29.864 --> 00:00:36.192
+decisión, no solamente la apariencia de la página.
 
-00:00:37.928 --> 00:00:45.000
-copia antes de modificarlo para poder volver a una versión que funcione.
+00:00:36.192 --> 00:00:42.376
+Construya un caso que distinga las dos versiones. Use pocos casos y un error crítico, observe la decisión
 
-00:00:45.000 --> 00:00:52.016
-Busca después la variable REGLA. Añade una condición útil para tu investigación. Por ejemplo, pide que no
+00:00:42.376 --> 00:00:48.560
+y elimine después el error. Compruebe también qué ocurre cuando todas las respuestas son abstenciones.
 
-00:00:52.016 --> 00:00:59.032
-se atribuya causalidad a una asociación si el diseño no la justifica. Esta instrucción orienta la
+00:00:48.560 --> 00:00:54.744
+Conserve lo esperado y lo observado en cada prueba.
 
-00:00:59.032 --> 00:01:06.048
-respuesta de la herramienta externa; no garantiza por sí sola que el modelo respete el límite.
+00:00:54.744 --> 00:01:01.824
+La aplicación hace explícita una política y calcula métricas, pero no determina si sus etiquetas están
 
-00:01:06.048 --> 00:01:12.880
-Guarda el archivo con extensión punto HTML y ábrelo en el navegador. Genera la instrucción y verifica que
+00:01:01.824 --> 00:01:08.904
+científicamente justificadas. El informe debe conservar esa separación. Antes de compartir el HTML,
 
-00:01:12.880 --> 00:01:19.712
-aparezcan tus cambios. Registra una evidencia de prueba y descarga los resultados. Si algo deja de
-
-00:01:19.712 --> 00:01:26.544
-funcionar, vuelve a la copia anterior y modifica una sola cosa cada vez.
+00:01:08.904 --> 00:01:15.984
+revise los casos incluidos: el archivo exportado contiene los datos de su banco.

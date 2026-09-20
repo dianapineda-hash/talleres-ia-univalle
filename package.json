@@ -1,1 +1,1 @@
-{"name":"talleres-ia-univalle","private":true,"type":"module","scripts":{"test":"node --test core.test.js learning.test.js","build":"node build.mjs"}}
+{"name":"talleres-ia-univalle","private":true,"type":"module","scripts":{"test":"node --test core.test.js learning.test.js bench.test.js","build":"node build.mjs"}}

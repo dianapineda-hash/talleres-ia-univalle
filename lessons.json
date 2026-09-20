@@ -1,180 +1,605 @@
 {
   "1": {
-    "title": "Investigar con IA, con criterio",
-    "intro": "Aprende a usar la IA para leer literatura científica sin delegar tu juicio. Al terminar tendrás una ficha de lectura que permita comprobar de dónde sale cada conclusión.",
-    "product": "Una ficha crítica de un artículo y una comparación documentada con otra fuente.",
+    "title": "IA y juicio científico: evaluación de evidencia",
+    "intro": "Un laboratorio de lectura crítica para profesores con trayectoria investigadora. El recorrido examina cómo cambia una inferencia cuando interviene un sistema de IA y qué evidencia permite sostenerla. Se presupone experiencia metodológica; no se exige experiencia previa con Acrobat.",
+    "product": "Un dictamen sobre una contribución de su área, acompañado de una comparación de consultas y una búsqueda de antecedentes documentada.",
     "lessons": [
       {
-        "id": "1-1", "title": "Qué puedes pedirle a una IA", "minutes": 25, "refs": ["R2", "R3"],
-        "objective": "Elegir una tarea concreta de tu investigación y reconocer qué parte exige revisión humana.",
+        "id": "1-1",
+        "title": "Juicio experto ante una síntesis plausible",
+        "minutes": 30,
+        "refs": [
+          "R2",
+          "R7"
+        ],
+        "objective": "Examinar cuándo una afirmación defendible en apariencia excede la evidencia disponible.",
+        "reading": "En R2, examine la distinción entre producción de información y comprensión. En R7, localice cómo se operacionaliza la fiabilidad y a qué modelos se restringen los resultados. No extrapole sus tasas a Acrobat.",
+        "steps": [
+          "Abra el Laboratorio de contraste y resuelva los seis expedientes ficticios. Asigne una probabilidad al respaldo de cada afirmación completa antes de revelar las claves.",
+          "Escriba la premisa indispensable de cada conclusión. Distinga una premisa ausente de una premisa refutada.",
+          "Revele las claves. Examine el caso en el que su confianza fue mayor y la evidencia menos suficiente; el promedio de seis casos no diagnostica su calibración.",
+          "Formule una versión defendible de dos afirmaciones y precise qué nueva observación permitiría recuperar la versión fuerte."
+        ],
+        "prompt": "Examina esta afirmación y el pasaje adjunto. Identifica la premisa que conecta la evidencia con la conclusión. ¿Está explícita, justificada por el diseño o añadida por inferencia? Propón el cambio mínimo de redacción que preserve el hallazgo sin ampliar su alcance. No añadas fuentes.",
+        "task": "Registre una decisión que haya revisado, la premisa que fallaba y la evidencia que exigiría para restituirla.",
+        "example": "Un intervalo compatible con diferencias relevantes no permite concluir equivalencia. Cambiaría mi decisión ante una prueba diseñada con margen de equivalencia justificado; no ante un valor p de diferencia más elevado.",
+        "quiz": {
+          "question": "Dos procedimientos no difieren significativamente. ¿Qué permitiría sostener equivalencia?",
+          "options": [
+            "Un valor p de diferencia todavía mayor.",
+            "Un margen sustantivo predefinido y un análisis de equivalencia adecuado.",
+            "La coincidencia entre dos resúmenes de IA."
+          ],
+          "answer": 1,
+          "feedback": [
+            "La ausencia de significación no demuestra equivalencia.",
+            "El criterio de equivalencia debe justificarse y contrastarse mediante un diseño adecuado.",
+            "La coincidencia de resúmenes no agrega evidencia independiente."
+          ]
+        },
+        "completion": "Conserve el registro y explicite qué observación cambiaría su decisión. La respuesta automática comprueba un concepto; no evalúa la calidad científica de su argumento.",
         "scenes": [
-          {"heading":"Empieza por una necesidad", "screen":"Ejemplo: localizar cómo se definió una variable en un artículo.", "text":"Piensa en un artículo que necesites leer esta semana. Quizá buscas cómo se definió una variable o por qué se eligió un método. Esa necesidad es un buen punto de partida para usar inteligencia artificial. Una petición tan amplia como hacer toda la investigación dificulta saber si la respuesta es útil."},
-          {"heading":"Una respuesta puede parecer convincente", "screen":"La claridad de una explicación no demuestra que sea correcta.", "text":"Un modelo generativo produce respuestas a partir de patrones aprendidos y del contexto que recibe. Puede explicar una idea con claridad y, aun así, atribuirle al artículo algo que no dice. Aportar un documento ayuda a situar la respuesta, pero no elimina la necesidad de leer el pasaje original."},
-          {"heading":"Decide qué vas a comprobar", "screen":"Pregunta: ¿Dónde aparece esa definición y qué alcance tiene?", "text":"En esta primera actividad no necesitas abrir una cuenta. Escribe una tarea pequeña de tu proyecto. Por ejemplo: localizar la definición de una variable en dos artículos. Después explica cómo comprobarías el resultado. Si la respuesta menciona una página, tendrás que abrirla y revisar también el contexto de la definición."},
-          {"heading":"Tu criterio sigue siendo necesario", "screen":"Lectura de apoyo: Messeri y Crockett, 2024; Wang y colaboradores, 2023.", "text":"La perspectiva de Messeri y Crockett invita a examinar la sensación de entender que puede producir una herramienta convincente. La revisión de Wang y sus colaboradores muestra aplicaciones de la IA en la ciencia. Úsalas para pensar dónde te ayuda la herramienta y qué decisión científica debes conservar bajo tu responsabilidad."}
-        ],
-        "reading": "En la biblioteca, abre R2 y lee el resumen. Identifica si presenta un experimento o una reflexión conceptual. Después revisa el resumen de R3 para situar tu tarea dentro del trabajo de investigación.",
-        "steps": ["Escribe una dificultad que hayas tenido al leer un artículo reciente.", "Conviértela en una petición que pueda resolverse con uno o dos documentos. Evita pedir una conclusión sobre toda la literatura.", "Describe qué revisarías en el documento antes de usar la respuesta.", "Guarda tu respuesta en el cuaderno de esta unidad. La retomarás al final del taller."],
-        "task": "¿Qué tarea vas a apoyar con IA y cómo comprobarás que la respuesta sirve para tu investigación?",
-        "example": "Necesito comparar cómo dos artículos definen participación comunitaria. Pediré la definición y su página en cada texto. Después leeré ambos pasajes para comprobar si se refieren al mismo concepto. No concluiré que son equivalentes solo porque usan las mismas palabras.",
-        "quiz": {"question":"Una IA explica con mucha claridad el método de un artículo. ¿Qué permite concluir esa claridad?", "options":["Que ha interpretado el artículo correctamente.","Que la respuesta es fácil de entender; todavía hay que comprobarla.","Que el artículo no necesita lectura humana."],"answer":1,"feedback":["La fluidez no demuestra que el método descrito coincida con el documento. Abre el pasaje original.","Correcto. La claridad ayuda a leer, pero la correspondencia con la fuente debe comprobarse.","La lectura humana permite detectar atribuciones y conclusiones que el documento no sostiene."]},
-        "completion": "Puedes formular una tarea acotada y explicar qué evidencia revisarás."
+          {
+            "heading": "Una conclusión que podría circular",
+            "screen": "¿Qué premisa falta entre el resultado y la afirmación?",
+            "text": "Este taller parte de una dificultad propia del trabajo experto: una síntesis puede conservar los datos y alterar la inferencia. Examine la afirmación completa, no solamente sus cifras. La tarea consiste en identificar el paso argumental que no está autorizado por la evidencia."
+          },
+          {
+            "heading": "Decidir antes de conocer la clave",
+            "screen": "Seis expedientes ficticios. Probabilidad de respaldo y justificación.",
+            "text": "En el laboratorio encontrará seis expedientes construidos para esta actividad. Registre una probabilidad de respaldo y explique su juicio antes de revelar las claves. Los casos incluyen problemas de identificación causal y de interpretación documental; no representan respuestas reales de un modelo."
+          },
+          {
+            "heading": "Revisar el alcance",
+            "screen": "Una premisa no reportada no equivale a una premisa falsa.",
+            "text": "Al revisar las claves, distinga lo que contradice la evidencia de lo que no puede establecerse con ella. Una conclusión puede requerir abstención sin ser falsa. Conservar esta diferencia es especialmente importante cuando el sistema transforma una ausencia documental en una negación."
+          },
+          {
+            "heading": "Un resultado del ejercicio",
+            "screen": "Reescribir la conclusión y señalar la prueba que falta.",
+            "text": "La puntuación de Brier resume el error probabilístico de estos casos. No es una medida de su competencia investigadora. El resultado relevante es la revisión argumentada de una conclusión y la identificación de una observación que permitiría defender una afirmación más fuerte."
+          }
+        ]
       },
       {
-        "id":"1-2","title":"Reconocer el alcance de un resultado","minutes":45,"refs":["R4","R5","R6"],
-        "objective":"Evitar que una conclusión se extienda a situaciones que el estudio no evaluó.",
-        "scenes":[
-          {"heading":"El resultado tiene un alcance", "screen":"Una mejora en una tarea no prueba una mejora en cualquier investigación.","text":"Imagina que lees una noticia sobre una herramienta que mejora una tarea de escritura. Antes de trasladar esa conclusión a tu proyecto, necesitas saber quién participó y qué trabajo realizó. También importa cómo se evaluó la calidad. Un resultado útil puede perder precisión cuando se cuenta sin esas condiciones."},
-          {"heading":"Elige un caso cercano a tu área", "screen":"Proteínas: R4. Materiales: R5. Escritura profesional: R6.","text":"En esta unidad puedes elegir el caso más cercano a tus intereses. El trabajo sobre AlphaFold permite discutir la diferencia entre una estructura predicha y otras preguntas biológicas. El caso de materiales ayuda a distinguir una propuesta computacional de su comprobación experimental. El estudio de escritura plantea preguntas sobre la transferencia de resultados."},
-          {"heading":"Busca una frontera", "screen":"Completa: este estudio permite afirmar… pero no permite concluir…", "text":"No necesitas leer todos los artículos. Elige uno y busca el objetivo, la tarea evaluada y una limitación. Después escribe qué permite afirmar ese trabajo. Añade una segunda frase que describa una conclusión que no estaría justificada. Esa frontera será más útil que un resumen lleno de adjetivos."},
-          {"heading":"Contrasta tu interpretación", "screen":"Diferencia el hallazgo del artículo de tu propuesta de aplicación.", "text":"Si quieres aplicar el resultado a tu disciplina, presenta esa idea como una propuesta que requiere prueba. Por ejemplo, un efecto observado en escritura profesional no confirma por sí mismo una mejora en la calidad de una revisión científica. Guarda el pasaje que respalda tu interpretación y anota qué prueba adicional necesitarías."}
+        "id": "1-2",
+        "title": "Evaluar el procedimiento de consulta",
+        "minutes": 45,
+        "refs": [
+          "R7",
+          "R8"
         ],
-        "reading":"Elige R4, R5 o R6 en la biblioteca. Lee el resumen y localiza una sección que explique cómo se evaluó el resultado. Si no tienes acceso al texto completo, limita tu análisis a lo que aparece en el resumen y deja esa limitación escrita.",
-        "steps":["Selecciona un solo caso y anota su DOI.","Escribe qué se evaluó. Distingue el objeto del estudio de una posible aplicación futura.","Localiza una frase que sostenga el hallazgo. Guarda su página o sección.","Redacta una conclusión prudente y una pregunta que el estudio deja abierta."],
-        "task":"¿Qué permite afirmar el artículo que elegiste? ¿Qué sería exagerado concluir a partir de él?",
-        "example":"Si elijo el estudio sobre escritura profesional, debo describir las tareas evaluadas. No puedo convertir su conclusión en «la IA mejora cualquier investigación». Para estudiar mi propio proceso de revisión necesitaría una evaluación específica con criterios de calidad científica.",
-        "quiz":{"question":"¿Cómo presentarías una aplicación del resultado a una población que el estudio no incluyó?","options":["Como una hipótesis que necesita evaluación adicional.","Como una conclusión confirmada porque el artículo está publicado.","Como un resultado del artículo si la IA lo considera razonable."],"answer":0,"feedback":["Correcto. La propuesta puede ser valiosa, pero su evidencia todavía debe construirse.","La publicación no elimina los límites de la población o de la tarea estudiada.","La plausibilidad de una respuesta no convierte la aplicación en un hallazgo observado."]},
-        "completion":"Tu conclusión incluye el contexto evaluado y distingue una aplicación propuesta de un resultado observado."
+        "objective": "Comparar dos instrucciones manteniendo el corpus y la pregunta, sin confundir fluidez con respaldo.",
+        "reading": "En R8, consulte el diseño de evaluación y las ablaciones. Distinga preferencia del evaluador, cobertura bibliográfica y respaldo de citas. La implementación publicada no es equivalente a Acrobat.",
+        "steps": [
+          "Seleccione dos artículos públicos sobre una cuestión acotada. Registre DOI, tipo documental y páginas pertinentes en el Observatorio. En Acrobat, cree un PDF Space con estos documentos.",
+          "Condición A: solicite una síntesis que responda su pregunta con citas. Guarde la instrucción completa y la salida. Abra una conversación nueva para B: use la instrucción de contraste de esta unidad.",
+          "Mantenga pregunta y corpus. Registre fecha, producto, versión visible y orden de ejecución. Repita una vez invirtiendo el orden si el acceso lo permite; indique las ejecuciones faltantes.",
+          "Adjudique seis afirmaciones de cada condición abriendo sus citas numeradas. Registre respaldo completo, exceso inferencial o ausencia de evidencia. No seleccione solamente los errores llamativos.",
+          "Compare cambios de contenido, omisiones y abstenciones. Un resultado favorable en este piloto no identifica por sí solo su causa ni garantiza estabilidad."
+        ],
+        "prompt": "Responde la pregunta usando exclusivamente el corpus. Para cada conclusión, aporta documento y pasaje verificable mediante cita nativa. Examina la objeción más fuerte compatible con las fuentes. Separa una objeción documentada de una conjetura. Si la evidencia no permite adjudicar, indícalo. No inventes oposición para equilibrar la respuesta.",
+        "task": "Presente una afirmación de A y su contraparte en B. Documente si cambió el respaldo, solo la redacción o la decisión de responder.",
+        "example": "B introdujo una cautela, pero conservó la misma generalización a otra población. La modificación fue retórica; el pasaje siguió sin respaldar el alcance de la conclusión.",
+        "quiz": {
+          "question": "B obtiene más citas correctas, pero omite dos hallazgos relevantes que A recuperaba. ¿Qué concluye?",
+          "options": [
+            "B es globalmente superior.",
+            "La precisión de citas hace irrelevantes las omisiones.",
+            "Existe un intercambio entre dimensiones; debe evaluarse según el uso previsto."
+          ],
+          "answer": 2,
+          "feedback": [
+            "Una sola dimensión no determina utilidad global.",
+            "La omisión puede cambiar sustancialmente la conclusión.",
+            "Hay que separar fidelidad de citas y cobertura, con criterios explícitos para la tarea."
+          ]
+        },
+        "completion": "Conserve el registro y explicite qué observación cambiaría su decisión. La respuesta automática comprueba un concepto; no evalúa la calidad científica de su argumento.",
+        "scenes": [
+          {
+            "heading": "La unidad de evaluación",
+            "screen": "Pregunta, corpus e instrucción forman un procedimiento.",
+            "text": "La respuesta depende del corpus disponible y de cómo se formula la consulta. Comparar procedimientos exige conservar aquello que no se pretende modificar. En esta actividad, la intervención es la instrucción de contraste; la pregunta y los documentos deben permanecer constantes."
+          },
+          {
+            "heading": "Dos condiciones comparables",
+            "screen": "A: síntesis. B: examen de una objeción fundada.",
+            "text": "Ejecute las condiciones en conversaciones separadas y conserve las salidas completas. No descarte una respuesta porque sea inconveniente. Registre también aquello que la interfaz no permite controlar, como una actualización del servicio o una versión del modelo que no se muestra."
+          },
+          {
+            "heading": "Más allá de contar citas",
+            "screen": "Respaldo de una afirmación no equivale a cobertura del problema.",
+            "text": "Abra las citas nativas de Acrobat y lea el contexto. Una cita puede existir y no respaldar toda la conclusión. A su vez, una respuesta prudente puede omitir evidencia necesaria. Examine ambas dimensiones antes de preferir un procedimiento."
+          },
+          {
+            "heading": "Interpretar el piloto",
+            "screen": "El cambio observado no demuestra estabilidad.",
+            "text": "El estudio de OpenScholar permite discutir la evaluación de un sistema documental completo. No atribuya sus resultados a nuestra práctica con Acrobat. El piloto del taller identifica fallos y decisiones de diseño; una comparación sólida necesitaría más casos y una evaluación independiente."
+          }
+        ]
       },
       {
-        "id":"1-3","title":"Leer un artículo con Acrobat","minutes":50,"refs":["R1","R2"],
-        "objective":"Comprobar una afirmación abriendo la cita y leyendo su contexto en el PDF.",
-        "scenes":[
-          {"heading":"Abre un documento identificable", "screen":"Comprueba el título dentro del PDF; el nombre del archivo puede ser incorrecto.","text":"Abre en Acrobat un artículo que puedas utilizar legalmente. Comprueba el título en la primera página. Un archivo llamado revisión final puede contener otro documento. Después busca el Asistente de IA. Antes de pedir resultados, solicita que identifique el tipo de publicación y explique en qué parte del texto se basa."},
-          {"heading":"Pide una respuesta que puedas revisar", "screen":"Si no se reporta un dato, la respuesta debe reconocerlo.","text":"Copia la instrucción disponible debajo del video. Pide una afirmación sobre el artículo y la evidencia que la respalda. Si el texto es una perspectiva, no debe inventarse una muestra experimental. Cuando un dato no esté reportado, esa ausencia debe quedar visible en lugar de completarse con una suposición."},
-          {"heading":"Abre el número de cita", "screen":"Pulsa la cita nativa de Acrobat y lee alrededor del pasaje señalado.","text":"En la respuesta, pulsa el pequeño número de cita asociado a la afirmación. Revisa el documento al que conduce y lee alrededor del pasaje señalado. Un vínculo escrito por la IA puede no funcionar. Si ocurre, abre el archivo desde la lista de documentos y busca la localización manualmente."},
-          {"heading":"Escribe tu decisión", "screen":"¿El pasaje respalda toda la afirmación o solo una parte?", "text":"Anota la afirmación y el pasaje. Explica si la fuente la respalda por completo o si la respuesta amplía su alcance. Si no encuentras evidencia, déjala pendiente. El objetivo de la práctica no es obtener una respuesta perfecta a la primera, sino dejar una revisión que otra persona pueda repetir."}
+        "id": "1-3",
+        "title": "Hipótesis rivales y observaciones discriminantes",
+        "minutes": 50,
+        "refs": [
+          "R3",
+          "R9"
         ],
-        "reading":"Usa R1 como estudio empírico o R2 como perspectiva. Compara el tipo de publicación con los campos que pides a Acrobat. Consulta la ayuda oficial sobre citas si necesitas localizar el control.",
-        "steps":["Abre Acrobat en otra pestaña. Carga R1 o R2 y confirma el título dentro del documento.","Copia la instrucción de lectura crítica. Pégala en el Asistente de IA y espera la respuesta.","Elige una afirmación. Pulsa su cita numerada y lee el contexto del pasaje.","Registra tu decisión en el cuaderno. Repite con otra afirmación que te parezca dudosa.","Si tu cuenta no tiene IA, realiza la extracción manual en el mismo PDF. El objetivo de verificación no cambia."],
-        "prompt":"Usa únicamente este documento. Identifica primero el tipo de publicación. Extrae una afirmación central y una limitación; distingue las explícitas de las que tú infieres. Incluye página, un pasaje breve y la cita nativa de Acrobat. No inventes muestra ni diseño experimental. Si un dato no aparece, escribe No reportado. Explica qué no puedo concluir con esta fuente.",
-        "task":"Copia una afirmación de la respuesta. Añade la localización del pasaje y explica si la respalda por completo. Registra también la herramienta y la fecha.",
-        "example":"Una respuesta puede describir una reflexión conceptual como si fuera un experimento. En ese caso, debo corregir el tipo de publicación y eliminar los campos experimentales que no existen. La justificación debe señalar el encabezado o pasaje donde se reconoce el carácter del texto.",
-        "quiz":{"question":"La cita abre un pasaje relacionado con el tema, pero no sostiene la conclusión de la IA. ¿Qué haces?","options":["Acepto la conclusión porque la cita funciona.","La marco como no respaldada o parcial y explico la diferencia.","Cambio la cita por otra sin leerla."],"answer":1,"feedback":["Que el enlace abra solo demuestra que hay un destino. Todavía debes evaluar la relación entre pasaje y afirmación.","Correcto. La decisión depende del contenido de la fuente, no de la presencia del enlace.","Una cita nueva también requiere lectura y comparación con la afirmación."]},
-        "completion":"Has contrastado dos afirmaciones con sus pasajes y has registrado las decisiones."
+        "objective": "Usar la generación de alternativas para precisar qué evidencia discriminaría entre explicaciones.",
+        "reading": "R9 presenta un benchmark de predicción en neurociencia. Examine qué tarea se resuelve y qué no demuestra sobre descubrimiento autónomo. En R3, elija una aplicación pertinente a su disciplina.",
+        "steps": [
+          "Seleccione una explicación de un resultado publicado de su área. Escriba primero una interpretación rival plausible, sin consultar IA.",
+          "Pida a Acrobat otra explicación compatible con los documentos. Rechace las alternativas que contradigan hechos establecidos o simplemente reformulen la original.",
+          "Para cada explicación, formule una observación cuyo resultado esperado difiera. En estudios cualitativos, precise qué documento o patrón interpretativo permitiría discriminar; no fuerce una variable experimental.",
+          "Examine si la observación está disponible, si sería ética y si realmente separa las hipótesis. Registre qué supuestos adicionales necesita.",
+          "Compare la alternativa generada con la propia. Conserve solo la que cambie una decisión de diseño o amplíe justificadamente el espacio de explicaciones."
+        ],
+        "prompt": "A partir del resultado y los documentos, propone una explicación rival sustantiva. Explicita sus supuestos y una observación que tendría expectativas diferentes bajo cada explicación. Distingue evidencia existente de evidencia por obtener. Si las hipótesis no son distinguibles con el diseño disponible, explícalo.",
+        "task": "Redacte las explicaciones rivales y una prueba discriminante. Declare qué resultado todavía sería compatible con ambas.",
+        "example": "La mayor participación puede reflejar eficacia del programa o autoselección previa. Medir motivación después del programa no separa esas explicaciones; necesito evidencia temporalmente anterior o una estrategia de identificación distinta.",
+        "quiz": {
+          "question": "Dos explicaciones producen la misma predicción para todas las observaciones disponibles. ¿Cuál es el siguiente paso defendible?",
+          "options": [
+            "Preferir la explicación redactada con mayor detalle.",
+            "Declarar indistinguibilidad con ese diseño y proponer evidencia adicional.",
+            "Pedir al modelo que asigne porcentajes de verdad."
+          ],
+          "answer": 1,
+          "feedback": [
+            "El detalle verbal no resuelve la identificación.",
+            "Es una limitación del diseño disponible, no necesariamente de la calidad de las explicaciones.",
+            "Una probabilidad generada sin modelo inferencial justificado no resuelve la indistinguibilidad."
+          ]
+        },
+        "completion": "Conserve el registro y explicite qué observación cambiaría su decisión. La respuesta automática comprueba un concepto; no evalúa la calidad científica de su argumento.",
+        "scenes": [
+          {
+            "heading": "Una contribución posible de la IA",
+            "screen": "Ampliar las explicaciones que merecen examen.",
+            "text": "El uso de inteligencia artificial puede ser productivo cuando ayuda a formular una alternativa que no habíamos considerado. Su valor no reside en la cantidad de hipótesis propuestas. Una alternativa es útil si modifica qué evidencia buscaríamos o cómo diseñaríamos la investigación."
+          },
+          {
+            "heading": "La prueba discriminante",
+            "screen": "¿Qué esperaríamos observar bajo cada explicación?",
+            "text": "Defina la observación antes de decidir cuál explicación prefiere. Si ambas predicen lo mismo, la observación no discrimina. En investigación interpretativa, el contraste puede depender de la procedencia de un documento y de su relación con otras fuentes, no de una prueba experimental."
+          },
+          {
+            "heading": "Leer el benchmark con precisión",
+            "screen": "Predecir entre opciones no equivale a demostrar una teoría.",
+            "text": "BrainBench ofrece un caso para discutir predicción de resultados en neurociencia. Examine cómo se construyen las opciones y cómo se evalúa el desempeño. Evite traducir una ventaja en esa tarea a una afirmación general sobre superioridad científica de los modelos."
+          },
+          {
+            "heading": "Criterio de selección",
+            "screen": "Conservar una alternativa que cambie el diseño.",
+            "text": "Termine con una decisión concreta: qué nueva observación recogería, qué supuesto revisaría o por qué no puede discriminar todavía. Si la propuesta del modelo no cambia nada, registre ese resultado. Descartar una alternativa vacía también forma parte de la evaluación."
+          }
+        ]
       },
-      {"id":"1-pausa","title":"Haz una pausa","minutes":15,"pause":true},
       {
-        "id":"1-4","title":"Comparar documentos en PDF Spaces","minutes":60,"refs":["R1","R2","R3"],
-        "objective":"Construir una comparación que respete las diferencias entre tipos de publicación.",
-        "scenes":[
-          {"heading":"Un espacio para una pregunta", "screen":"Reúne documentos que aporten algo a tu pregunta; no cargues archivos por cantidad.","text":"Un PDF Space permite trabajar con varios documentos dentro de una misma conversación. Para esta práctica, reúne el estudio de citas de Walters y Wilder y la perspectiva de Messeri y Crockett. Ambos ayudan a pensar el uso de la IA, pero no ofrecen el mismo tipo de evidencia."},
-          {"heading":"Compara sin igualar", "screen":"Un estudio empírico y una perspectiva pueden dialogar sin tener el mismo método.","text":"Pide una comparación centrada en la pregunta que te interesa. Si ambos textos hablan de confianza, identifica qué sostiene cada uno y cómo lo sostiene. No obligues a la perspectiva a llenar campos de muestra o resultados experimentales. La comparación debe conservar las diferencias del corpus."},
-          {"heading":"Escuchar no sustituye comprobar", "screen":"Si generas un audio, contrasta una afirmación con el artículo.","text":"Si tu cuenta permite crear un resumen de audio, escúchalo después de revisar la comparación escrita. Escoge una afirmación del audio y localiza su respaldo. Una narración puede facilitar el repaso, pero también simplificar una limitación. Si no tienes esa función, utiliza el texto y realiza la misma comprobación."},
-          {"heading":"Conserva el desacuerdo", "screen":"Que dos textos no sean comparables también es un hallazgo de la lectura.","text":"Termina con una nota sobre lo que aprendiste al leer las fuentes juntas. Puedes encontrar una coincidencia o advertir que responden preguntas distintas. No hace falta forzar un acuerdo. Lo importante es que el lector pueda reconocer qué conclusión proviene de cada documento y cuál es tu interpretación."}
-        ],
-        "reading":"Vuelve a R1 y R2. R3 es una lectura de ampliación. No necesitas cargar tres documentos si la pregunta puede trabajarse con dos.",
-        "steps":["En Acrobat, entra a PDF Spaces y crea un espacio. Añade dos documentos autorizados y comprueba sus títulos.","Utiliza la instrucción de comparación. Abre las citas de una respuesta de cada fuente.","Anota un punto de relación entre los documentos y una diferencia que impida compararlos directamente.","Si tienes la función de audio, genera un resumen y verifica una afirmación que escuches. Si no está disponible, revisa esa afirmación en la respuesta escrita.","Guarda una comparación de entre 120 y 180 palabras. Indica cuándo estás interpretando."],
-        "prompt":"Compara estos documentos respecto a los límites del uso de IA en investigación. Identifica el tipo de publicación de cada uno. Explica una relación entre sus aportes y una diferencia importante. Acompaña cada afirmación con su fuente y cita nativa. No equipares reflexión conceptual con resultado experimental. Si no son comparables en un aspecto, explica por qué.",
-        "task":"Escribe tu comparación. Identifica las fuentes y señala una diferencia que deba mantenerse visible.",
-        "example":"Un estudio de referencias puede mostrar errores observados bajo condiciones concretas. Una perspectiva puede proponer una explicación de riesgos más amplios. Puedo relacionarlos, pero no presentar el argumento conceptual como si fuera otra medición del mismo estudio.",
-        "quiz":{"question":"Un PDF Space contiene dos artículos y ninguno menciona cierto tema. ¿Qué conclusión es válida?","options":["No existe investigación sobre ese tema.","El tema no aparece en los documentos revisados; haría falta ampliar la búsqueda.","El tema no es importante."],"answer":1,"feedback":["Dos artículos no representan toda la literatura. La ausencia en el corpus no demuestra ausencia global.","Correcto. Has descrito el límite de tu búsqueda sin convertirlo en una conclusión universal.","La importancia del tema no puede deducirse de su ausencia en una pequeña selección."]},
-        "completion":"La comparación conserva la identidad de cada fuente y evita atribuirles el mismo tipo de evidencia."
+        "id": "1-pausa",
+        "title": "Pausa de trabajo",
+        "minutes": 15,
+        "pause": true
       },
       {
-        "id":"1-5","title":"Preparar tu ficha de lectura","minutes":45,"refs":["R1","R2"],
-        "objective":"Cerrar el taller con un registro que puedas utilizar en tu proyecto y revisar más adelante.",
-        "scenes":[
-          {"heading":"Vuelve a tu pregunta inicial", "screen":"Revisa la tarea que elegiste en la primera unidad.","text":"Vuelve a la tarea que escribiste al comenzar. Ahora tienes una forma más concreta de comprobar una respuesta. Revisa si la pregunta original era demasiado amplia y ajústala si hace falta. El producto final debe ayudar a tu investigación, no limitarse a mostrar que utilizaste una herramienta."},
-          {"heading":"Deja una revisión legible", "screen":"Otra persona debe poder localizar el pasaje y entender tu decisión.","text":"Tu ficha debe permitir volver del enunciado a la fuente. Conserva el título del artículo y su identificador, junto con la localización del pasaje. Después escribe por qué aceptas la afirmación, la corriges o la dejas pendiente. Una nota breve y específica vale más que una valoración general como parece bien."},
-          {"heading":"Comprueba el registro bibliográfico", "screen":"El DOI ayuda a localizar el artículo; WoS requiere consulta del registro.","text":"La biblioteca del taller ofrece consultas por DOI para Web of Science. Si tienes acceso institucional, abre el registro y anota el número de acceso y la fecha. Si no puedes consultarlo, deja ese estado pendiente. Un DOI válido y una revista conocida no sustituyen una comprobación individual en la base."},
-          {"heading":"Lleva contigo el trabajo", "screen":"Descarga el cuaderno antes de cambiar de navegador.","text":"Descarga el cuaderno al terminar. Tus respuestas se guardan en este navegador, pero no se sincronizan con otro equipo. Elige una tarea pequeña para repetir durante la próxima semana y escribe cuándo la realizarás. Puedes continuar al segundo taller para convertir esta forma de trabajo en una aplicación propia."}
+        "id": "1-4",
+        "title": "Auditar una pretensión de novedad",
+        "minutes": 60,
+        "refs": [
+          "R1",
+          "R8"
         ],
-        "reading":"Consulta la ficha bibliográfica de R1 o del artículo de tu proyecto. Usa el protocolo WoS de la biblioteca para documentar lo que efectivamente pudiste comprobar.",
-        "steps":["Recupera la pregunta inicial y ajusta su alcance si ahora la ves demasiado amplia.","Reúne las afirmaciones revisadas. Comprueba que cada una tenga una localización y una decisión justificada.","Busca el DOI en WoS si cuentas con acceso. Registra el resultado; si no puedes entrar, escribe Pendiente.","Relee tu ficha como si la recibieras de otra persona. Corrige cualquier indicación que no permita localizar la evidencia.","Descarga el cuaderno del taller y escribe una fecha para aplicar el procedimiento a otro artículo."],
-        "task":"Redacta la ficha final: pregunta, artículo elegido, una afirmación revisada con su pasaje y tu decisión. Explica qué falta comprobar y cuándo continuarás.",
-        "example":"Una ficha terminada puede contener una afirmación pendiente. En ese caso debe explicar qué falta: por ejemplo, acceso a una tabla del texto completo. Lo que no debe ocurrir es que la ausencia de verificación quede oculta.",
-        "quiz":{"question":"No pudiste abrir WoS, pero el DOI del artículo funciona. ¿Cómo registras la verificación?","options":["WoS confirmado.","DOI localizado; verificación del registro WoS pendiente.","Artículo inexistente."],"answer":1,"feedback":["Localizar el DOI no confirma por sí solo la presencia del registro individual en WoS.","Correcto. Registras por separado lo que verificaste y lo que sigue pendiente.","La falta de acceso a una base no demuestra que el artículo no exista."]},
-        "completion":"Tu ficha permite seguir el razonamiento hasta la fuente y reconoce lo que falta verificar."
+        "objective": "Poner a prueba el alcance de una contribución frente al antecedente más próximo.",
+        "reading": "Consulte R1 para examinar errores bibliográficos y R8 para discutir recuperación documental. Ningún sistema de síntesis garantiza por sí mismo exhaustividad ni prioridad científica.",
+        "steps": [
+          "Escriba una contribución en una frase y separe su novedad conceptual de la novedad de contexto o de combinación metodológica.",
+          "En WoS busque un artículo conocido por DOI usando DO=(su DOI). Para la búsqueda temática use TS=(concepto AND método), añadiendo sinónimos pertinentes. Registre colección, fecha, ecuación y filtros; no utilice literalmente los marcadores.",
+          "Localice el antecedente que más debilitaría su novedad. Examine referencias y trabajos citantes. Si no tiene acceso institucional, prepare la estrategia y registre la comprobación como pendiente.",
+          "Cargue en Acrobat el antecedente y su formulación pública o ficticia. Solicite una comparación precisa de la contribución, sin pedir que confirme originalidad.",
+          "Reformule el alcance: indique qué diferencia subsiste y qué búsqueda adicional podría refutarla. Registre los resultados negativos como acotados a la búsqueda realizada."
+        ],
+        "prompt": "Compara la contribución propuesta con este antecedente. Identifica coincidencias conceptuales aunque el vocabulario sea distinto. Señala qué diferencia está documentada y cuál requiere una búsqueda adicional. No afirmes originalidad global ni inventes antecedentes. Aporta pasajes de los documentos.",
+        "task": "Entregue la ecuación de búsqueda, el antecedente más próximo y una formulación revisada de la contribución. Incluya el estado real de verificación WoS.",
+        "example": "La técnica ya se había aplicado a la misma clase de problema. La contribución defendible pasa a ser el examen de una condición de frontera, respaldada por un diseño específico; no el uso de la técnica en sí.",
+        "quiz": {
+          "question": "No aparecen resultados para la terminología usada en su propuesta. ¿Qué debe examinar primero?",
+          "options": [
+            "Equivalentes conceptuales y alcance de la estrategia de recuperación.",
+            "Si el modelo confirma que la idea es original.",
+            "El número de citas del artículo más reciente."
+          ],
+          "answer": 0,
+          "feedback": [
+            "La recuperación depende del vocabulario y de la colección; ausencia de resultados no prueba novedad.",
+            "La confirmación del modelo no sustituye una búsqueda documentada.",
+            "El recuento de citas no establece prioridad conceptual."
+          ]
+        },
+        "completion": "Conserve el registro y explicite qué observación cambiaría su decisión. La respuesta automática comprueba un concepto; no evalúa la calidad científica de su argumento.",
+        "scenes": [
+          {
+            "heading": "El antecedente incómodo",
+            "screen": "Busque el trabajo que más podría reducir su contribución.",
+            "text": "Una evaluación exigente de novedad comienza por el antecedente más próximo, no por una colección de referencias favorables. Formule qué diferencia sustantiva sostiene la contribución. Una variación de vocabulario puede ocultar que el problema ya fue tratado."
+          },
+          {
+            "heading": "Una búsqueda auditable",
+            "screen": "Conserve ecuación, colección, filtros y fecha.",
+            "text": "Web of Science permite registrar una estrategia reproducible dentro de una colección concreta. Verifique los artículos por DOI y conserve sus identificadores cuando estén disponibles. Una revista indexada no demuestra que usted haya comprobado el registro individual del artículo."
+          },
+          {
+            "heading": "Acrobat como instrumento de contraste",
+            "screen": "Compare pasajes y alcance de las contribuciones.",
+            "text": "Reúna el antecedente y una formulación pública de su propuesta. Solicite coincidencias y diferencias sustentadas en pasajes. La comparación documental ayuda a precisar el argumento; no certifica originalidad ni sustituye la búsqueda de literatura que todavía no está en el corpus."
+          },
+          {
+            "heading": "Reformular sin exagerar",
+            "screen": "¿Qué diferencia permanece después del contraste?",
+            "text": "El producto es una afirmación de contribución que resista el antecedente encontrado. Puede ser una condición de frontera, una explicación alternativa o una evidencia antes inaccesible. Declare qué búsqueda adicional podría modificar su conclusión y conserve las comprobaciones pendientes."
+          }
+        ]
+      },
+      {
+        "id": "1-5",
+        "title": "Dictamen sobre una contribución propia",
+        "minutes": 40,
+        "refs": [
+          "R2",
+          "R10"
+        ],
+        "objective": "Decidir qué parte de una contribución puede sostenerse y qué revisión exige el argumento.",
+        "reading": "Use R2 para examinar dependencia del juicio automatizado. Consulte R10 como referencia de reporte en salud; fuera de ese ámbito, adapte criterios pertinentes sin declarar cumplimiento formal.",
+        "steps": [
+          "Utilice un resumen publicado, un protocolo ficticio o un texto propio autorizado. No introduzca material confidencial de evaluación por pares.",
+          "Solicite la objeción metodológica más fuerte que las fuentes permitan. Exija distinguir una limitación reconocida de un defecto que invalide la conclusión.",
+          "Adjudique la objeción: válida y reparable, válida que exige cambiar la conclusión, o no sustentada. Cite la premisa y su evidencia.",
+          "Redacte un dictamen de 250–350 palabras. Indique el cambio que acepta, lo que conserva y la prueba que todavía falta.",
+          "Descargue el cuaderno. Revise si las conclusiones distinguen evidencia del corpus e inferencias propias, y si otra persona podría reconstruir su decisión."
+        ],
+        "prompt": "Formula la objeción más fuerte que pueda sostenerse con este texto. Identifica la conclusión afectada y la premisa cuestionada. No inventes defectos ni datos ausentes. Propón una reparación solo si el diseño permite sostenerla; en caso contrario, explica qué conclusión debe restringirse.",
+        "task": "Escriba el dictamen final y una decisión de investigación que cambiará a partir de la auditoría.",
+        "example": "Acepto restringir la conclusión a asociación en el contexto estudiado. Un ajuste adicional no resuelve la selección no observada. Conservo el hallazgo descriptivo y propongo un diseño distinto para la pregunta causal.",
+        "quiz": {
+          "question": "Una objeción válida afecta la identificación central y no puede repararse con los datos disponibles. ¿Qué corresponde?",
+          "options": [
+            "Mejorar la redacción de la defensa.",
+            "Añadir citas favorables sin cambiar la afirmación.",
+            "Restringir la conclusión y explicitar qué nuevo diseño sería necesario."
+          ],
+          "answer": 2,
+          "feedback": [
+            "La redacción no repara un problema de identificación.",
+            "Más referencias no sustituyen evidencia pertinente al diseño.",
+            "El dictamen debe distinguir una revisión editorial de un cambio necesario en la inferencia."
+          ]
+        },
+        "completion": "Conserve el registro y explicite qué observación cambiaría su decisión. La respuesta automática comprueba un concepto; no evalúa la calidad científica de su argumento.",
+        "scenes": [
+          {
+            "heading": "Un dictamen, no una defensa automática",
+            "screen": "La objeción debe afectar una premisa identificable.",
+            "text": "La última actividad integra el recorrido en una contribución de su área. Pida una objeción que pueda justificarse y determine qué conclusión afecta. No premie al sistema por sonar severo: una crítica sin respaldo puede ser tan problemática como una aprobación complaciente."
+          },
+          {
+            "heading": "Reparar o restringir",
+            "screen": "No toda limitación se resuelve con otra explicación.",
+            "text": "Distinga una información que puede aclararse de una condición que el diseño no satisface. Cuando la evidencia disponible no permite reparar el argumento, corresponde restringir la conclusión. Esta decisión exige juicio disciplinar y no puede delegarse a una fórmula de instrucciones."
+          },
+          {
+            "heading": "Dejar una decisión reconstruible",
+            "screen": "Identifique el cambio aceptado y su fundamento.",
+            "text": "El dictamen debe permitir que otra persona reconstruya la revisión sin presenciar su conversación con la herramienta. Conserve la instrucción y los pasajes relevantes. Si adopta criterios de una guía de reporte de salud en otra disciplina, explique esa adaptación."
+          },
+          {
+            "heading": "Cierre del primer taller",
+            "screen": "Un cambio justificable en la práctica de investigación.",
+            "text": "Descargue el cuaderno y formule una decisión que realmente cambiará en su proyecto. El producto no es una lista de aplicaciones. Es un argumento revisado, con un alcance preciso y una indicación explícita de la evidencia que todavía necesita."
+          }
+        ]
       }
     ]
   },
-  "2":{
-    "title":"Construye tu observatorio de evidencia",
-    "intro":"Convierte tu forma de leer artículos en una aplicación que puedas adaptar. Trabajarás con un prototipo funcional y conservarás el control de las decisiones de revisión.",
-    "product":"Un observatorio con fuentes registradas, una revisión documentada y un archivo HTML personalizado.",
-    "lessons":[
+  "2": {
+    "title": "Diseño y validación de aplicaciones de IA para investigación",
+    "intro": "Construya un banco de evaluación para una tarea de su proyecto. Compare procedimientos, examine sus abstenciones y modifique una regla de decisión en una aplicación portable. La validación científica del sistema constituye el problema central del taller.",
+    "product": "Una aplicación HTML local con casos y reglas propias, un registro de pruebas y un informe que delimita las condiciones de uso.",
+    "lessons": [
       {
-        "id":"2-1","title":"Definir qué hará tu aplicación","minutes":25,"refs":["R2","R3"],
-        "objective":"Describir una necesidad y establecer un resultado que puedas probar.",
-        "scenes":[
-          {"heading":"Una aplicación para una necesidad concreta","screen":"Ejemplo: comparar limitaciones metodológicas de artículos seleccionados.","text":"Antes de cambiar una línea de código, decide qué problema quieres resolver. Puede ser reunir las limitaciones metodológicas que has encontrado en varios artículos. La aplicación será más útil si sabes qué información recibirá y qué decisión quieres apoyar. No necesitas convertirla en un asistente para cualquier pregunta."},
-          {"heading":"Entiende dónde ocurre la IA","screen":"Acrobat genera la respuesta. El observatorio registra tu revisión.","text":"En este taller la generación de respuestas ocurre en Acrobat o en otra herramienta documental que tengas disponible. Tú copias los resultados al observatorio. La aplicación organiza las fuentes y conserva tus decisiones. No se conecta automáticamente a Adobe ni requiere una clave de una API de pago."},
-          {"heading":"Define una prueba antes de empezar","screen":"¿Qué debe ocurrir si una afirmación no tiene una fuente registrada?","text":"Escribe un ejemplo de funcionamiento correcto. Por ejemplo, una afirmación con una fuente desconocida debe rechazarse hasta que registres esa fuente. Otra regla es que una respuesta importada quede pendiente de revisión. Definir estas condiciones antes de construir ayuda a reconocer si un cambio funciona."},
-          {"heading":"Prueba la demostración","screen":"El caso de demostración es ficticio y está identificado como tal.","text":"Abre el observatorio y añade la demostración sintética. Encontrarás una afirmación que coincide con el pasaje y otra que lo exagera. Examina ambas antes de modificar el proyecto. Los datos ficticios sirven para aprender el funcionamiento; no deben presentarse como un resultado de investigación."}
+        "id": "2-1",
+        "title": "El contrato de evaluación",
+        "minutes": 25,
+        "refs": [
+          "R7",
+          "R10"
         ],
-        "reading":"Revisa R2 para justificar por qué una aplicación debe conservar la intervención humana. R3 puede ayudarte a elegir una tarea de tu disciplina.",
-        "steps":["Abre el Observatorio en otra pestaña y pulsa Añadir demostración sintética.","Lee el pasaje de las dos afirmaciones. Identifica cuál amplía su alcance sin respaldo.","Escribe qué tarea apoyará tu versión de la aplicación.","Define una condición que permita comprobar si funciona. Conserva la pestaña del Observatorio abierta."],
-        "task":"¿Para qué usarás tu observatorio? Describe un ejemplo de entrada y el resultado que esperas obtener.",
-        "example":"Quiero registrar limitaciones de artículos sobre participación comunitaria. La entrada será una afirmación con su fuente y página. Espero poder recuperar cuáles siguen pendientes de revisión antes de redactar la discusión.",
-        "quiz":{"question":"¿Qué parte realiza automáticamente el observatorio de este taller?","options":["Leer todos los PDF de Acrobat sin intervención.","Organizar las filas importadas y conservar decisiones registradas por una persona.","Confirmar la verdad de una conclusión."],"answer":1,"feedback":["No hay conexión automática con Acrobat. La transferencia se realiza copiando resultados.","Correcto. La generación y la comprobación tienen responsables y pasos distintos.","La aplicación no sustituye la lectura crítica ni confirma la verdad de las conclusiones."]},
-        "completion":"Has definido un uso concreto y puedes explicar qué hace la aplicación y qué debes hacer tú."
+        "objective": "Definir una aplicación acotada y sus condiciones de aceptación antes de observar resultados.",
+        "reading": "Examine en R7 qué significa abstenerse y en R10 qué información permite reconstruir una evaluación. Los umbrales del taller son elecciones locales, no estándares universales.",
+        "steps": [
+          "Abra el Laboratorio de contraste, sección Banco de evaluación. Defina una tarea: por ejemplo, clasificar si un pasaje respalda una afirmación, con cita localizable.",
+          "Describa las condiciones A y B, el producto utilizado y la fecha. Si no se muestra la versión del modelo, regístrelo expresamente.",
+          "Defina qué error sería crítico en su uso. Elija máximo riesgo selectivo y mínima cobertura; justifique las consecuencias de responder y de abstenerse.",
+          "Fije el contrato. La página registra una versión local: no es un prerregistro externo. Cambiarlo después de ver resultados exige declarar la modificación."
+        ],
+        "prompt": "Ayúdame a delimitar esta aplicación: [tarea y contexto]. Identifica una decisión concreta del usuario, qué evidencia autoriza una respuesta y qué error tendría consecuencias inaceptables. No propongas umbrales numéricos como si fueran estándares; solicita su justificación en el contexto.",
+        "task": "Justifique un umbral y el error que determina la suspensión del uso.",
+        "example": "En extracción para una revisión, atribuir un resultado a otra cohorte es crítico. Prefiero una fila pendiente a una atribución incorrecta; aun así, exigiré cobertura suficiente para que la herramienta resulte útil.",
+        "quiz": {
+          "question": "Después de ver que B falla, se relaja el umbral para aceptarlo. ¿Cómo debe registrarse?",
+          "options": [
+            "Como criterio inicial porque la página permite editarlo.",
+            "Como modificación posterior, que requiere nueva evaluación independiente.",
+            "No hace falta registrarlo si se informa la exactitud."
+          ],
+          "answer": 1,
+          "feedback": [
+            "La edición local no cambia la cronología del análisis.",
+            "El cambio puede justificarse, pero no presentarse como criterio fijado antes de observar los datos.",
+            "El umbral condiciona la decisión y forma parte del reporte."
+          ]
+        },
+        "completion": "Conserve el registro y explicite qué observación cambiaría su decisión. La respuesta automática comprueba un concepto; no evalúa la calidad científica de su argumento.",
+        "scenes": [
+          {
+            "heading": "Diseñar la decisión",
+            "screen": "¿Qué uso concreto se quiere permitir?",
+            "text": "La aplicación del taller organiza una evaluación que usted diseña. No se conecta automáticamente a un modelo. Primero defina la decisión que apoyará y qué evidencia necesita. Una herramienta puede ser útil para localizar pasajes y resultar insuficiente para adjudicar una conclusión."
+          },
+          {
+            "heading": "El costo del error",
+            "screen": "La abstención también tiene consecuencias.",
+            "text": "Determine qué error obligaría a suspender el uso. Defina después cuánto riesgo acepta entre las respuestas emitidas y qué cobertura mínima necesita. Una aplicación que siempre se abstiene evita algunas equivocaciones, pero puede no resolver la tarea para la que fue creada."
+          },
+          {
+            "heading": "Fijar el contrato",
+            "screen": "Los criterios preceden a los resultados.",
+            "text": "Registre las condiciones de comparación y fije el contrato en la página. Los valores iniciales son ejemplos, no recomendaciones validadas. Cada modificación crea una versión local; si se produce después de observar resultados, debe declararse como cambio del análisis."
+          },
+          {
+            "heading": "Alcance del registro",
+            "screen": "Una copia local no es un prerregistro externo.",
+            "text": "Conserve el archivo descargable junto con las instrucciones y los documentos utilizados. El historial facilita reconstruir decisiones, pero puede editarse y no acredita un registro público previo. Esa diferencia debe quedar explícita cuando se presente el piloto."
+          }
+        ]
       },
       {
-        "id":"2-2","title":"Registrar fuentes y traer una respuesta","minutes":45,"refs":["R1","R2"],
-        "objective":"Llevar una afirmación de Acrobat al observatorio sin perder su procedencia.",
-        "scenes":[
-          {"heading":"Registra la fuente antes de la respuesta","screen":"S1 debe identificar el mismo artículo en Acrobat y en el observatorio.","text":"En el observatorio registra el artículo que vas a utilizar. Dale un identificador breve, como ese uno, y copia el título exacto. Añade el DOI cuando exista. El identificador debe corresponder al mismo archivo en Acrobat; de lo contrario, una fila aparentemente completa puede conducir al documento equivocado."},
-          {"heading":"Genera una instrucción ajustada","screen":"Guarda la pregunta del proyecto antes de generar la instrucción.","text":"Configura la pregunta y los criterios de extracción. Guarda los cambios y pulsa Generar instrucción. Copia el texto en Acrobat, con el documento abierto. La instrucción pide filas con campos definidos para facilitar la transferencia. El formato ordenado no significa que la respuesta sea correcta."},
-          {"heading":"Elige una forma de transferencia","screen":"Puedes importar JSON o añadir una afirmación manualmente.","text":"Si recibes una lista JSON válida, pégala en el cuadro de importación. Si la respuesta contiene texto adicional o el formato falla, usa la entrada manual. En ambos casos debes conservar la afirmación y el pasaje con su localización. No necesitas aprender a programar para registrar esta primera evidencia."},
-          {"heading":"Importar no es verificar","screen":"Toda afirmación importada queda pendiente de revisión.","text":"Después de importar, comprueba que la fila aparezca como pendiente. Regresa a Acrobat y abre su cita nativa. Solo cuando hayas leído el pasaje y su contexto podrás registrar una decisión. Esta separación evita que la seguridad con la que responde el modelo se confunda con una revisión realizada."}
+        "id": "2-2",
+        "title": "Construir un conjunto de referencia",
+        "minutes": 45,
+        "refs": [
+          "R1",
+          "R10"
         ],
-        "reading":"Consulta R1 para recordar por qué las referencias requieren revisión. Puedes usar ese artículo como primera fuente del proyecto.",
-        "steps":["En Tu proyecto, escribe una pregunta acotada y guarda la configuración.","Registra una fuente con un identificador que no exista todavía. Si no verificaste WoS, conserva el estado Pendiente.","Pulsa Generar instrucción y copia el texto a Acrobat con el artículo correspondiente.","Trae una sola afirmación para la primera prueba. Usa Añadir una afirmación manualmente si el JSON no se importa.","Comprueba que la fuente y la página coincidan con el artículo. Mantén la fila pendiente hasta leer el pasaje."],
-        "task":"Registra qué fuente incorporaste, cuál fue la afirmación y si tuviste algún problema al transferirla.",
-        "example":"Si aparece «Fuente desconocida: S1», comprueba que hayas registrado S1 exactamente, sin confundirlo con S01. No cambies el identificador a uno existente solo para evitar el error: debe corresponder al artículo real.",
-        "quiz":{"question":"El JSON trae una afirmación marcada por la IA como verificada. ¿Cómo debe entrar al observatorio?","options":["Como pendiente, porque todavía falta la revisión humana.","Como respaldada, porque está en un formato estructurado.","Sin fuente, para simplificar la importación."],"answer":0,"feedback":["Correcto. Un estado enviado por el modelo no demuestra que una persona haya comprobado la fuente.","La estructura del JSON facilita la transferencia, pero no valida el contenido.","La fuente es necesaria para mantener la procedencia de la afirmación."]},
-        "completion":"Tienes al menos una afirmación registrada con una fuente identificable y su localización."
+        "objective": "Definir casos cuya respuesta esperada pueda adjudicarse antes de examinar las salidas del sistema.",
+        "reading": "Consulte el reporte de datos y evaluación en R10. Use R1 para discutir por qué una referencia plausible requiere comprobación individual.",
+        "steps": [
+          "Descargue la plantilla JSON del banco. Sustituya los casos ficticios por ocho casos propios: cuatro de desarrollo y cuatro de reserva. Este tamaño es didáctico y no justifica uso operativo.",
+          "Para cada caso, registre pregunta o afirmación, documento, pasaje y etiqueta esperada: Respaldada, No respaldada o Abstención. La última significa que la evidencia no permite adjudicar.",
+          "Incluya un caso con atribución a la fuente equivocada y otro donde falte la información necesaria. Defina si un error no abstento sería crítico.",
+          "Adjudique las referencias antes de consultar A y B. Si trabaja solo, registre las decisiones ahora y vuelva a examinarlas al final; una revisión independiente posterior sigue siendo necesaria.",
+          "Importe la plantilla validada. El banco muestra la reserva: sirve para aprender el procedimiento, no para garantizar ocultamiento."
+        ],
+        "prompt": "Propón casos límite para esta tarea sin inventar respuestas de referencia. Para cada propuesta indica qué documento y pasaje tendría que adjudicar una persona experta. Incluye casos de evidencia insuficiente. No completes etiquetas que no estén sustentadas por una fuente disponible.",
+        "task": "Describa el caso más ambiguo, su etiqueta de referencia y el criterio que permitiría resolver un desacuerdo.",
+        "example": "La ausencia del tamaño de muestra en el pasaje no respalda la afirmación de que el estudio no tuvo muestra. La referencia es Abstención hasta revisar el documento pertinente.",
+        "quiz": {
+          "question": "El pasaje no contiene información para decidir si la afirmación es cierta. ¿Qué etiqueta corresponde en este banco?",
+          "options": [
+            "No respaldada, porque toda ausencia equivale a falsedad.",
+            "Respaldada, si la afirmación es plausible.",
+            "Abstención, conservando la razón de insuficiencia."
+          ],
+          "answer": 2,
+          "feedback": [
+            "En este protocolo, No respaldada expresa una adjudicación negativa sustentada, no mera ausencia.",
+            "La plausibilidad no sustituye evidencia del caso.",
+            "El protocolo distingue evidencia insuficiente de una conclusión negativa adjudicada."
+          ]
+        },
+        "completion": "Conserve el registro y explicite qué observación cambiaría su decisión. La respuesta automática comprueba un concepto; no evalúa la calidad científica de su argumento.",
+        "scenes": [
+          {
+            "heading": "La referencia requiere trabajo científico",
+            "screen": "Una etiqueta sin evidencia no constituye un patrón de comparación.",
+            "text": "Construya los casos a partir de documentos autorizados y conserve los pasajes que permiten adjudicarlos. La referencia no debe copiar la respuesta del modelo. Si no puede resolver un caso con la información disponible, registre la insuficiencia en lugar de forzar una etiqueta."
+          },
+          {
+            "heading": "Separar desarrollo y reserva",
+            "screen": "No utilice la reserva para ajustar la instrucción.",
+            "text": "Los casos de desarrollo permiten corregir el procedimiento. La reserva se consulta después de fijar la versión que se evaluará. En esta página ambos conjuntos son visibles: la separación depende de su disciplina de trabajo y no es una protección técnica contra contaminación."
+          },
+          {
+            "heading": "Incluir fallos relevantes",
+            "screen": "Una fuente equivocada puede cambiar toda la conclusión.",
+            "text": "Construya casos que representen errores importantes para su disciplina. Una cifra correcta atribuida a otra muestra puede ser más grave que una omisión. La marca de error crítico debe justificarse antes de observar qué condición obtiene mejores resultados."
+          },
+          {
+            "heading": "Un banco pequeño tiene límites",
+            "screen": "Ocho casos enseñan el procedimiento; no validan un despliegue.",
+            "text": "El conjunto del taller permite comprobar la aplicación y detectar fallos. No estima de manera fiable el desempeño en una población de consultas. Conserve los desacuerdos de adjudicación y planifique una referencia independiente antes de usar el sistema en decisiones de investigación."
+          }
+        ]
       },
       {
-        "id":"2-3","title":"Documentar una revisión","minutes":50,"refs":["R1","R2"],
-        "objective":"Registrar una decisión explicada y recuperar el trabajo mediante una exportación.",
-        "scenes":[
-          {"heading":"Examina lo que afirma la frase","screen":"Una coincidencia de palabras no basta para respaldar una conclusión.","text":"Abre la afirmación que registraste y compárala con el pasaje original. Presta atención al alcance: una frase sobre una muestra concreta no puede convertirse sin más en una conclusión sobre todas las personas. Tampoco basta con que el texto contenga palabras parecidas a las de la respuesta."},
-          {"heading":"Explica tu decisión","screen":"Escribe qué respalda el pasaje y qué parte necesita corregirse.","text":"Selecciona el estado de revisión y escribe una nota. Evita comentarios como revisado o correcto sin explicación. Indica qué parte del pasaje sostiene la afirmación y qué matiz falta, si lo hay. Puedes usar un código como nombre de revisor si no deseas guardar tu nombre en el proyecto."},
-          {"heading":"Conserva un respaldo","screen":"El JSON permite recuperar el proyecto; el CSV facilita revisar la matriz.","text":"Exporta un respaldo JSON del observatorio. Ese archivo conserva la configuración y los datos del proyecto. También puedes exportar una matriz CSV para abrirla en una hoja de cálculo. Son productos distintos: la matriz ayuda a leer las filas, mientras el respaldo permite volver a cargarlas en la aplicación."},
-          {"heading":"Revisa después de recuperar","screen":"Al importar un respaldo, las decisiones vuelven a estado pendiente.","text":"Cuando recuperes un respaldo, la aplicación solicitará confirmación antes de sustituir el proyecto. Las afirmaciones recuperadas quedarán pendientes para no dar por válidas revisiones de un archivo externo. Conserva el respaldo original si necesitas consultar las notas previas. No reemplaces tu trabajo sin haberlo exportado."}
+        "id": "2-3",
+        "title": "Comparar respuestas y abstenciones",
+        "minutes": 50,
+        "refs": [
+          "R7",
+          "R8"
         ],
-        "reading":"Usa el mismo artículo de la unidad anterior. Si necesitas un caso inmediato, la demostración ficticia incluye una generalización que el pasaje no respalda.",
-        "steps":["Abre la cita en Acrobat y compara el alcance de la afirmación con el del pasaje.","Selecciona Respaldada, Parcial o No respaldada según tu lectura. Añade una justificación y un nombre o código de revisor.","Guarda la revisión y utiliza el filtro para localizar el estado elegido.","Exporta el respaldo JSON y la matriz CSV. Abre la matriz para comprobar que incluya la nota.","Solo si tienes una copia segura, prueba la recuperación del JSON. Lee el aviso antes de confirmar la sustitución."],
-        "task":"Explica una decisión de revisión. Indica dónde guardaste tu respaldo y qué diferencia hay entre ese archivo y la matriz CSV.",
-        "example":"Marqué la generalización de la demostración como No respaldada. El pasaje describe un escenario ficticio con doce personas, pero no demuestra una mejora universal. Guardé esa explicación para que la decisión no dependa de recordar la conversación.",
-        "quiz":{"question":"¿Qué nota permite comprender mejor una decisión de revisión?","options":["Revisado.","Parece correcto.","El pasaje describe una muestra específica; la respuesta generaliza a una población no estudiada."],"answer":2,"feedback":["La nota no explica qué comprobaste ni por qué elegiste ese estado.","La impresión de corrección no permite repetir la revisión.","Correcto. La nota identifica la diferencia que justifica la decisión."]},
-        "completion":"Has guardado una revisión explicada y exportado un respaldo que puedes localizar."
+        "objective": "Interpretar diferencias entre condiciones sin ocultar los denominadores ni las respuestas faltantes.",
+        "reading": "En R7 examine la relación entre error y abstención. En R8 distinga cambios en recuperación y generación; esta práctica compara instrucciones, no reproduce el estudio publicado.",
+        "steps": [
+          "Ejecute A y B sobre los casos de desarrollo usando el mismo corpus en Acrobat. Conserve las respuestas literales y sus citas; registre como Sin ejecutar cualquier caso que no haya podido consultar.",
+          "Clasifique cada salida según lo que efectivamente responde. No corrija la respuesta antes de registrarla. Añada el pasaje y su adjudicación a la nota del caso.",
+          "Calcule resultados. Lea exactitud, cobertura y riesgo selectivo con sus denominadores. Compare también los casos concretos, porque los promedios pueden ocultar errores críticos.",
+          "Identifique si el fallo proviene de un documento no recuperado, de una inferencia que excede el pasaje o de una referencia mal adjudicada.",
+          "Modifique una sola característica de B si encuentra una razón sustentada. Registre una nueva versión antes de evaluar la reserva."
+        ],
+        "prompt": "Clasifica la afirmación con base en los documentos: Respaldada, No respaldada o Abstención. Usa No respaldada solo cuando exista evidencia para una adjudicación negativa; usa Abstención cuando falte evidencia para decidir. Cita el pasaje y conserva el alcance de la afirmación. No respondas con conocimiento externo.",
+        "task": "Interprete un cambio en cobertura y riesgo. Señale qué error queda oculto si solo informa exactitud.",
+        "example": "B respondió menos casos y redujo errores entre los respondidos. No puedo atribuirle mayor utilidad sin valorar las abstenciones; además, uno de sus errores sigue siendo crítico.",
+        "quiz": {
+          "question": "Una condición se abstiene en todos los casos. ¿Cuál es su riesgo selectivo?",
+          "options": [
+            "Cero, porque no emitió errores.",
+            "No estimable, porque no hay respuestas en el denominador.",
+            "Cien por ciento, porque no resultó útil."
+          ],
+          "answer": 1,
+          "feedback": [
+            "Un denominador vacío no autoriza una tasa de cero.",
+            "Debe informarse junto con cobertura cero; exactitud puede tener otro valor según las referencias.",
+            "La utilidad y la tasa de error selectivo no son la misma medida."
+          ]
+        },
+        "completion": "Conserve el registro y explicite qué observación cambiaría su decisión. La respuesta automática comprueba un concepto; no evalúa la calidad científica de su argumento.",
+        "scenes": [
+          {
+            "heading": "Contar lo que ocurrió",
+            "screen": "No corrija la salida antes de evaluarla.",
+            "text": "Registre cada respuesta completa antes de clasificarla. Una corrección humana posterior puede producir un buen resultado final, pero no representa el desempeño original del sistema. Si no ejecutó un caso, conserve el estado pendiente en lugar de tratarlo como abstención."
+          },
+          {
+            "heading": "Leer los denominadores",
+            "screen": "Riesgo selectivo: errores entre respuestas no abstentas.",
+            "text": "La exactitud compara etiquetas con la referencia. La cobertura indica qué proporción recibió una respuesta distinta de abstención. El riesgo selectivo usa solamente esas respuestas. Si el sistema no respondió ninguna, el riesgo no es cero: no puede estimarse."
+          },
+          {
+            "heading": "Localizar el fallo",
+            "screen": "Recuperación deficiente y sobreinterpretación exigen reparaciones distintas.",
+            "text": "Examine el pasaje que recibió el sistema. Si faltaba el documento pertinente, mejorar la redacción de la respuesta no resuelve la recuperación. Si el pasaje estaba disponible y fue sobreinterpretado, la revisión debe centrarse en la inferencia y en las condiciones de abstención."
+          },
+          {
+            "heading": "Una comparación todavía descriptiva",
+            "screen": "Los mismos casos facilitan examinar qué cambió.",
+            "text": "Compare las condiciones caso por caso antes de interpretar los promedios. No declare superioridad estadística con este pequeño banco seleccionado. Una mejora aparente puede depender de los ejemplos elegidos y desaparecer al cambiar de población o de tarea."
+          }
+        ]
       },
-      {"id":"2-pausa","title":"Haz una pausa","minutes":15,"pause":true},
       {
-        "id":"2-4","title":"Modificar tu propia aplicación","minutes":60,"refs":["R2","R3"],
-        "objective":"Realizar cambios en un archivo HTML y comprobar su efecto al abrirlo en el navegador.",
-        "scenes":[
-          {"heading":"Descarga una versión para aprender","screen":"La versión HTML es un prototipo reducido y comienza sin datos.","text":"En el observatorio pulsa Descargar mi aplicación HTML. Recibirás un prototipo reducido para el ejercicio de construcción. No es una copia de todas las funciones del observatorio. Contiene una instrucción configurable y un formulario para añadir evidencia. Así puedes estudiar su funcionamiento sin instalar herramientas de desarrollo."},
-          {"heading":"Abre el archivo como texto","screen":"Busca const CONFIG y conserva las comillas y las comas.","text":"Abre el archivo con un editor de texto, como el Bloc de notas. Busca const CONFIG. Allí puedes cambiar el título, la pregunta y el criterio de extracción. Conserva las comillas y las comas del código. Guarda una copia antes de modificarlo para poder volver a una versión que funcione."},
-          {"heading":"Cambia una regla de trabajo","screen":"En REGLA, añade una condición de abstención adecuada a tu disciplina.","text":"Busca después la variable REGLA. Añade una condición útil para tu investigación. Por ejemplo, pide que no se atribuya causalidad a una asociación si el diseño no la justifica. Esta instrucción orienta la respuesta de la herramienta externa; no garantiza por sí sola que el modelo respete el límite."},
-          {"heading":"Comprueba el efecto del cambio","screen":"Abre el HTML en el navegador y genera una nueva instrucción.","text":"Guarda el archivo con extensión punto HTML y ábrelo en el navegador. Genera la instrucción y verifica que aparezcan tus cambios. Registra una evidencia de prueba y descarga los resultados. Si algo deja de funcionar, vuelve a la copia anterior y modifica una sola cosa cada vez."}
-        ],
-        "reading":"Vuelve a tu necesidad inicial. R2 ayuda a justificar las reglas que mantienen visible la incertidumbre. No necesitas una lectura adicional para comenzar a editar.",
-        "steps":["Guarda la configuración del proyecto y pulsa Descargar mi aplicación HTML en el Observatorio.","Haz una copia del archivo. Ábrelo en un editor de texto, no en Word.","Busca const CONFIG. Cambia el título y un criterio; conserva la sintaxis. Busca REGLA y añade una restricción pertinente.","Guarda el archivo como mi-observatorio.html. En Windows, selecciona Todos los archivos si el editor intenta añadir .txt.","Ábrelo con doble clic en el navegador. Pulsa Crear instrucción para la IA y comprueba tus cambios.","Añade una evidencia de prueba y descarga los resultados. Explica qué cambió en la instrucción respecto a la versión inicial."],
-        "prompt":"Quiero aprender a modificar este HTML. Sin cambiar el resto de su funcionamiento, ayúdame a añadir un filtro por estado. Explica dónde va cada cambio. No uses APIs ni paquetes externos. Conserva la representación segura de datos con textContent. Propón una prueba y no afirmes haberla ejecutado si no lo hiciste. Trabaja solo con este código sin datos privados.",
-        "task":"Describe los cambios que realizaste en CONFIG y REGLA. Copia una parte de la instrucción resultante que demuestre el cambio.",
-        "example":"Cambié el criterio a «Limitaciones del diseño del estudio» y añadí la regla «No atribuyas causalidad si el diseño solo permite describir una asociación». Después comprobé que ambas indicaciones aparecieran al generar la instrucción.",
-        "quiz":{"question":"Cambiaste CONFIG, pero no ves el cambio en el navegador. ¿Qué haces primero?","options":["Publico el archivo sin revisarlo.","Compruebo que guardé el archivo correcto y vuelvo a abrirlo o recargo la página.","Borro el proyecto completo."],"answer":1,"feedback":["La publicación no corrige un cambio que aún no has comprobado localmente.","Correcto. Es frecuente estar viendo una versión anterior o un archivo distinto.","No necesitas eliminar el proyecto. Empieza comprobando el archivo y la versión abierta."]},
-        "completion":"Tu HTML abre correctamente y la instrucción refleja dos cambios que puedes explicar."
+        "id": "2-pausa",
+        "title": "Pausa de trabajo",
+        "minutes": 15,
+        "pause": true
       },
       {
-        "id":"2-5","title":"Probar y entregar tu proyecto","minutes":45,"refs":["R1","R2"],
-        "objective":"Reconocer fallos previsibles y preparar un paquete que otra persona pueda utilizar.",
-        "scenes":[
-          {"heading":"Prueba también lo que puede fallar","screen":"Una demostración correcta no basta para evaluar la aplicación.","text":"Antes de dar por terminado el proyecto, prueba situaciones incómodas. En el observatorio puedes importar una fila con una fuente que no existe y comprobar que la rechace. También puedes intentar importar un estado de verificación y observar que la afirmación quede pendiente. Haz estas pruebas con datos ficticios."},
-          {"heading":"Separa las versiones que estás probando","screen":"El observatorio completo y tu HTML reducido no tienen las mismas funciones.","text":"El observatorio completo tiene importación y revisión. El HTML que descargaste es una base más pequeña para aprender a construir. No esperes que haga lo que todavía no has programado. En tu versión comprueba que cambie la instrucción, que acepte una evidencia y que permita descargar los resultados."},
-          {"heading":"Explica una limitación real","screen":"Indica lo que debe revisar la persona usuaria antes de usar los resultados.","text":"Escribe una nota de uso para alguien que no estuvo contigo. Explica cómo abrir la aplicación y qué información necesita. Incluye una limitación concreta, como la ausencia de conexión automática a Acrobat. Si publicas tu variante, comparte el código y ejemplos ficticios, no archivos privados del proyecto de investigación."},
-          {"heading":"Cierra con algo reproducible","screen":"Entrega el archivo que funciona y un registro de las pruebas realizadas.","text":"Conserva el HTML personalizado y los resultados de las pruebas. Añade el respaldo del observatorio si forma parte de tu trabajo. Al descargar el cuaderno tendrás reunidas tus decisiones durante el taller. La entrega está completa cuando puedes explicar qué hace la aplicación y mostrar una prueba de ese comportamiento."}
+        "id": "2-4",
+        "title": "Construir una aplicación de evaluación propia",
+        "minutes": 60,
+        "refs": [
+          "R7",
+          "R10"
         ],
-        "reading":"R1 fundamenta la necesidad de revisar los resultados. Usa R2 para discutir qué decisiones no debería asumir la herramienta sin intervención humana.",
-        "steps":["En el Observatorio completo, prueba una fuente inexistente. Después prueba una importación que incluya un estado de verificación: debe quedar pendiente.","Comprueba que el texto con etiquetas HTML se muestre como texto y que el filtro encuentre las filas del estado elegido.","En tu HTML reducido, verifica la instrucción modificada, la entrada manual y la descarga de resultados. Si añadiste funciones, pruébalas por separado.","Escribe el resultado observado y cualquier limitación. No marques como superada una prueba que no realizaste.","Descarga tu cuaderno y reúne los archivos. Escribe una instrucción breve para que otra persona abra y pruebe tu versión."],
-        "task":"Registra las pruebas realizadas y su resultado. Escribe cómo abrir tu aplicación, qué puede hacer y qué limitación debe conocer otra persona.",
-        "example":"Mi HTML se abre en el navegador y genera una instrucción con los criterios del proyecto. Probé añadir una fila ficticia y descargarla. No tiene revisión por estados ni conexión a Acrobat; esas funciones requerirían desarrollo adicional.",
-        "quiz":{"question":"Tu HTML no tiene importación JSON. ¿Cómo lo documentas?","options":["Afirmo que sí la tiene porque el observatorio completo la incluye.","Explico que mi versión usa entrada manual y pruebo ese recorrido.","Oculto esa limitación."],"answer":1,"feedback":["Las funciones de una aplicación no se transfieren automáticamente a otra versión.","Correcto. Una limitación explícita permite usar el prototipo de forma adecuada.","Ocultar la limitación dificultaría que otra persona reprodujera tu trabajo."]},
-        "completion":"Conservas el archivo que funciona y puedes explicar las pruebas que realizaste."
+        "objective": "Modificar una regla de decisión y comprobar su efecto en una aplicación HTML autónoma.",
+        "reading": "Use los criterios de reporte de R10 que resulten pertinentes. La aplicación construida evalúa etiquetas adjudicadas; no ejecuta un modelo ni confirma automáticamente la validez de las fuentes.",
+        "steps": [
+          "Con un contrato fijado y casos cargados, pulse Descargar mi banco como aplicación HTML. Abra el archivo local y compruebe que conserva sus casos y permite cambiar las etiquetas de A y B.",
+          "Abra una copia del HTML con un editor de texto. Localice const CONFIG y la función gate. Identifique en qué orden se comprueban casos faltantes, tamaño mínimo y umbrales.",
+          "Cambie una regla sustantiva: por ejemplo, establezca que cualquier error crítico impida continuar incluso si el banco es todavía insuficiente. Mueva esa comprobación antes de la comprobación de tamaño; conserve el mensaje de insuficiencia para los demás casos.",
+          "Pruebe un caso crítico equivocado con menos casos que minN: el resultado debe expresar el veto crítico. Después elimine ese error y confirme que reaparece Evidencia insuficiente. Pruebe también cobertura cero.",
+          "Guarde las versiones inicial y modificada con un registro de resultados esperados y observados. Si solicita ayuda de IA, comparta solo código sin documentos ni registros privados y revise cada cambio."
+        ],
+        "prompt": "Revisa esta función gate de una aplicación local. Quiero que cualquier error crítico tenga prioridad sobre el tamaño insuficiente, manteniendo la comprobación de riesgo no estimable. Modifica solo esa regla. Explica cómo cambia la decisión en un banco pequeño con un error crítico y propone pruebas de frontera. No añadas servicios externos.",
+        "task": "Documente la regla modificada, dos pruebas de frontera y una limitación que el código no puede resolver.",
+        "example": "Antes: cuatro casos y un error crítico producían Evidencia insuficiente. Después: el veto crítico tiene prioridad. Al corregir el error, vuelve la insuficiencia. El cambio de código no resuelve si la referencia humana era válida.",
+        "quiz": {
+          "question": "Cambiar el umbral hasta que la aplicación acepte los casos observados produce…",
+          "options": [
+            "Una validación independiente.",
+            "Una adaptación al banco observado que exige otra reserva.",
+            "Una mejora demostrada de la capacidad del modelo."
+          ],
+          "answer": 1,
+          "feedback": [
+            "Los casos usados para adaptar la regla dejan de ser independientes de esa decisión.",
+            "El ajuste forma parte del desarrollo; debe evaluarse después con casos no utilizados.",
+            "Se modificó una política local, no el modelo."
+          ]
+        },
+        "completion": "Conserve el registro y explicite qué observación cambiaría su decisión. La respuesta automática comprueba un concepto; no evalúa la calidad científica de su argumento.",
+        "scenes": [
+          {
+            "heading": "La herramienta que se construye",
+            "screen": "Un evaluador portable con reglas explícitas.",
+            "text": "El archivo descargable contiene los casos y la política de evaluación. Funciona localmente sin una clave de programación ni una conexión al modelo. Las respuestas se obtienen fuera de la aplicación y se registran después de adjudicarlas con los documentos."
+          },
+          {
+            "heading": "Modificar una decisión real",
+            "screen": "El orden de las reglas también expresa una política.",
+            "text": "Localice la función que decide si se cumplen los criterios. En la versión inicial se comprueba primero si hay evidencia suficiente. Su ejercicio consiste en dar prioridad a un error crítico. Ese cambio altera la decisión, no solamente la apariencia de la página."
+          },
+          {
+            "heading": "Probar la frontera",
+            "screen": "Un error crítico con pocos casos debe activar el veto.",
+            "text": "Construya un caso que distinga las dos versiones. Use pocos casos y un error crítico, observe la decisión y elimine después el error. Compruebe también qué ocurre cuando todas las respuestas son abstenciones. Conserve lo esperado y lo observado en cada prueba."
+          },
+          {
+            "heading": "El código no adjudica la ciencia",
+            "screen": "Una regla correcta puede operar sobre una referencia equivocada.",
+            "text": "La aplicación hace explícita una política y calcula métricas, pero no determina si sus etiquetas están científicamente justificadas. El informe debe conservar esa separación. Antes de compartir el HTML, revise los casos incluidos: el archivo exportado contiene los datos de su banco."
+          }
+        ]
+      },
+      {
+        "id": "2-5",
+        "title": "Pruebas de tensión y decisión de uso",
+        "minutes": 45,
+        "refs": [
+          "R8",
+          "R10"
+        ],
+        "objective": "Examinar estabilidad ante una perturbación pertinente y producir un informe de evaluación reproducible.",
+        "reading": "Consulte cómo R8 examina componentes del sistema. Use R10 para revisar qué detalles faltan en su reporte, señalando su ámbito original de salud.",
+        "steps": [
+          "Fije la última versión y ejecute la reserva. Si ya la utilizó para ajustar instrucciones o reglas, reclasifíquela como desarrollo y proponga nuevos casos.",
+          "Seleccione una perturbación: retire un pasaje indispensable o incorpore un documento con resultado discrepante. No cambie ambas cosas al mismo tiempo.",
+          "Escriba el comportamiento esperado antes de ejecutar. La ausencia del pasaje debería modificar la posibilidad de responder; una discrepancia debería hacerse explícita, no resolverse por mayoría de documentos.",
+          "Conserve las salidas y sus citas. Identifique si el cambio observado corresponde a la perturbación, reconociendo que la variabilidad del servicio requiere repeticiones adicionales.",
+          "Descargue el informe y redacte una decisión: continuar desarrollo, restringir el uso a una tarea o diseñar validación independiente. Declare tamaño, selección de casos y cambios posteriores al contrato."
+        ],
+        "prompt": "Examina los documentos disponibles para esta afirmación. Si falta el pasaje necesario, abstente y especifica qué evidencia falta. Si hay resultados discrepantes, conserva la discrepancia e identifica diferencias de diseño o contexto que estén documentadas. No resuelvas por número de documentos ni inventes una explicación conciliadora.",
+        "task": "Presente un informe breve con la perturbación, el resultado observado y la decisión de uso. Incluya el próximo estudio necesario para sostener esa decisión.",
+        "example": "Al retirar el pasaje indispensable, el sistema mantuvo la conclusión con una cita irrelevante. Suspendo esa función de adjudicación y conservo únicamente la búsqueda asistida de pasajes mientras evalúo una regla de abstención.",
+        "quiz": {
+          "question": "La aplicación supera ocho casos seleccionados por su creador. ¿Qué conclusión puede sostener?",
+          "options": [
+            "Superó ese banco; falta evaluar representatividad y desempeño independiente.",
+            "Está validada para la disciplina completa.",
+            "La revisión humana ya no aporta valor."
+          ],
+          "answer": 0,
+          "feedback": [
+            "El reporte debe conservar el alcance real del conjunto evaluado.",
+            "La selección y el tamaño impiden esa generalización.",
+            "El ejercicio depende de adjudicación experta y no elimina esa necesidad."
+          ]
+        },
+        "completion": "Conserve el registro y explicite qué observación cambiaría su decisión. La respuesta automática comprueba un concepto; no evalúa la calidad científica de su argumento.",
+        "scenes": [
+          {
+            "heading": "Una perturbación pertinente",
+            "screen": "¿Qué debería cambiar si se retira evidencia indispensable?",
+            "text": "La prueba final examina si la respuesta depende de la evidencia que declara utilizar. Retire un pasaje necesario y formule de antemano el comportamiento esperado. Si la conclusión permanece intacta con otra cita irrelevante, habrá identificado un fallo que merece investigación."
+          },
+          {
+            "heading": "Conservar las discrepancias",
+            "screen": "Una síntesis no debe borrar resultados incompatibles.",
+            "text": "Otra prueba posible consiste en incorporar evidencia discrepante. Examine si el sistema conserva el desacuerdo y distingue diferencias documentadas de explicaciones conjeturales. El número de documentos favorables no sustituye una evaluación de sus diseños y de su dependencia."
+          },
+          {
+            "heading": "Una decisión proporcional",
+            "screen": "El piloto puede justificar una restricción de uso.",
+            "text": "Interprete el resultado según la tarea y las consecuencias del error. Superar el banco no autoriza una generalización a toda la disciplina. Un resultado útil puede consistir en restringir la aplicación a localizar pasajes y reservar la adjudicación para revisión experta."
+          },
+          {
+            "heading": "Un informe reconstruible",
+            "screen": "Conserve el contrato, sus modificaciones y los casos evaluados.",
+            "text": "Descargue el informe y acompañe las métricas con los documentos y las salidas originales que pueda conservar legalmente. Declare las limitaciones del banco y qué evaluación independiente necesita. El producto final es una aplicación examinable y un protocolo de validación todavía perfectible."
+          }
+        ]
       }
     ]
   }

@@ -1,43 +1,37 @@
 WEBVTT
 
-00:00:00.000 --> 00:00:06.816
-Piensa en un artículo que necesites leer esta semana. Quizá buscas cómo se definió una variable o por qué
+00:00:00.000 --> 00:00:06.440
+Este taller parte de una dificultad propia del trabajo experto: una síntesis puede conservar los datos y
 
-00:00:06.816 --> 00:00:13.632
-se eligió un método. Esa necesidad es un buen punto de partida para usar inteligencia artificial. Una
+00:00:06.440 --> 00:00:12.880
+alterar la inferencia. Examine la afirmación completa, no solamente sus cifras. La tarea consiste en
 
-00:00:13.632 --> 00:00:20.448
-petición tan amplia como hacer toda la investigación dificulta saber si la respuesta es útil.
+00:00:12.880 --> 00:00:19.320
+identificar el paso argumental que no está autorizado por la evidencia.
 
-00:00:20.448 --> 00:00:27.312
-Un modelo generativo produce respuestas a partir de patrones aprendidos y del contexto que recibe. Puede
+00:00:19.320 --> 00:00:26.072
+En el laboratorio encontrará seis expedientes construidos para esta actividad. Registre una probabilidad
 
-00:00:27.312 --> 00:00:34.176
-explicar una idea con claridad y, aun así, atribuirle al artículo algo que no dice. Aportar un documento
+00:00:26.072 --> 00:00:32.824
+de respaldo y explique su juicio antes de revelar las claves. Los casos incluyen problemas de
 
-00:00:34.176 --> 00:00:41.040
-ayuda a situar la respuesta, pero no elimina la necesidad de leer el pasaje original.
+00:00:32.824 --> 00:00:39.576
+identificación causal y de interpretación documental; no representan respuestas reales de un modelo.
 
-00:00:41.040 --> 00:00:47.088
-En esta primera actividad no necesitas abrir una cuenta. Escribe una tarea pequeña de tu proyecto. Por
+00:00:39.576 --> 00:00:45.880
+Al revisar las claves, distinga lo que contradice la evidencia de lo que no puede establecerse con ella.
 
-00:00:47.088 --> 00:00:53.136
-ejemplo: localizar la definición de una variable en dos artículos. Después explica cómo comprobarías el
+00:00:45.880 --> 00:00:52.184
+Una conclusión puede requerir abstención sin ser falsa. Conservar esta diferencia es especialmente
 
-00:00:53.136 --> 00:00:59.184
-resultado. Si la respuesta menciona una página, tendrás que abrirla y revisar también el contexto de la
+00:00:52.184 --> 00:00:58.488
+importante cuando el sistema transforma una ausencia documental en una negación.
 
-00:00:59.184 --> 00:01:05.232
-definición.
+00:00:58.488 --> 00:01:04.496
+La puntuación de Brier resume el error probabilístico de estos casos. No es una medida de su competencia
 
-00:01:05.232 --> 00:01:10.428
-La perspectiva de Messeri y Crockett invita a examinar la sensación de entender que puede producir una
+00:01:04.496 --> 00:01:10.504
+investigadora. El resultado relevante es la revisión argumentada de una conclusión y la identificación de
 
-00:01:10.428 --> 00:01:15.624
-herramienta convincente. La revisión de Wang y sus colaboradores muestra aplicaciones de la IA en la
-
-00:01:15.624 --> 00:01:20.820
-ciencia. Úsalas para pensar dónde te ayuda la herramienta y qué decisión científica debes conservar bajo
-
-00:01:20.820 --> 00:01:26.016
-tu responsabilidad.
+00:01:10.504 --> 00:01:16.512
+una observación que permitiría defender una afirmación más fuerte.

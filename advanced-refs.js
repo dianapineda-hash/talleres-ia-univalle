@@ -1,0 +1,6 @@
+export const advancedRefs=[
+['R7','Zhou et al. (2024)','Larger and more instructable language models become less reliable','Nature','10.1038/s41586-024-07930-y','Evaluación empírica de modelos','Examinar la abstención y los errores plausibles en las condiciones evaluadas. No extrapolar el título a cualquier modelo actual.'],
+['R8','Asai et al. (2026)','Synthesizing scientific literature with retrieval-augmented language models','Nature','10.1038/s41586-025-10072-4','Sistema de recuperación y evaluación','Leer las ablaciones y la evaluación por expertos. Separar preferencia por una respuesta de exactitud y cobertura de la evidencia.'],
+['R9','Luo et al. (2025; publicación en línea en 2024)','Large language models surpass human experts in predicting neuroscience results','Nature Human Behaviour','10.1038/s41562-024-02046-9','Benchmark de predicción científica','Examinar BrainBench y sus controles de contaminación. Distinguir elegir entre resultados propuestos de producir un descubrimiento validado.'],
+['R10','Gallifant et al. (2025)','The TRIPOD-LLM reporting guideline for studies using large language models','Nature Medicine','10.1038/s41591-024-03425-5','Guía de reporte','Revisar qué información permite reconstruir una evaluación. Su ámbito es salud; fuera de él se adapta como orientación, no como certificación de cumplimiento.']
+];

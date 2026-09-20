@@ -35,6 +35,14 @@ Las respuestas se guardan en localStorage de cada navegador. No hay analítica n
 
 Node 18 o superior. Sin dependencias de ejecución: `npm test` y `npm run build`. Servir `dist` mediante HTTP. Render ejecuta las pruebas y construye el sitio desde `main`.
 
-Diez pruebas comprueban estructura, duración de recorridos, medios presentes, importaciones y manejo seguro de datos. La navegación y reproducción se comprueban adicionalmente en navegador.
+Diecisiete pruebas comprueban estructura, duración de recorridos, medios presentes, importaciones y manejo seguro de datos. La navegación y reproducción se comprueban adicionalmente en navegador.
 
-Material para investigadores de la Universidad del Valle. No implica aval institucional. El logosímbolo se sirve sin modificación desde el portal oficial; conserva sus derechos institucionales. Se mantiene Arial y el rojo institucional en títulos principales.
+Material para investigadores de la Universidad del Valle. No implica aval institucional. El logosímbolo se conserva localmente, sin modificación, desde el archivo del portal oficial; conserva sus derechos institucionales. Se mantiene Arial y el rojo institucional en títulos principales.
+
+## Revisión avanzada
+
+Dirigida a docentes con doctorado y posdoctorado. Diez unidades reescritas con decisiones de diseño, hipótesis rivales, contraste de novedad y evaluación de aplicaciones. Recursos R7–R10: fiabilidad, OpenScholar, BrainBench y TRIPOD-LLM (adaptación explícita fuera de salud).
+
+`laboratorio.html` incorpora seis expedientes ficticios, puntuación de Brier y banco A/B con particiones de desarrollo/reserva. Calcula exactitud, cobertura y riesgo selectivo; distingue abstenciones y casos no ejecutados. Contratos versionados localmente, informe JSON y aplicación HTML portable. No ejecuta modelos, no protege el ocultamiento de la reserva y no permite inferir superioridad poblacional con los casos de demostración.
+
+Las nuevas respuestas se guardan en autogestion-v3; las antiguas no se reinterpretan como respuestas al nuevo currículo. Identidad documentada en IDENTIDAD.md con páginas del manual.
