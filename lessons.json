@@ -1,29 +1,34 @@
 {
   "1": {
     "title": "IA para investigar: posibilidades, herramientas y ética",
-    "intro": "Aprenda qué puede hacer con IA, elija herramientas gratuitas y convierta sus respuestas en trabajo verificable. Formación práctica para investigadores, docentes y estudiantes de posgrado, sin experiencia previa en IA.",
-    "product": "Un mapa personal de herramientas, una ficha de lectura verificada y un protocolo de uso con criterios de ética algorítmica.",
+    "intro": "Aprenda desde cero a buscar literatura, leer fuentes y revisar textos con herramientas gratuitas de IA. Practique con un caso incluido y tome una decisión de ética algorítmica en cada actividad.",
+    "product": "Un mapa personal de herramientas, una ficha de lectura comprobada y un protocolo de uso, con instrucciones, respuestas reales y decisiones éticas guardadas en su cuaderno.",
     "lessons": [
       {
         "id": "v4-1-1",
         "title": "Qué puede hacer la IA en su investigación",
         "minutes": 25,
-        "objective": "Reconocer oportunidades concretas y elegir una tarea pequeña que conserve el juicio del investigador.",
-        "reading": "Lectura científica complementaria: examine el alcance del trabajo y su tipo de publicación. Los ejercicios se pueden completar con las orientaciones y el caso abierto del taller.",
+        "objective": "Realizar su primera consulta y distinguir lo que propone la IA de lo que usted puede verificar.",
+        "reading": "Lectura opcional para después de la práctica. Relacione las fuentes de apoyo con un error o un límite que haya observado. No se exige adquirir el texto completo ni completar una consulta institucional para avanzar.",
         "scenes": [
           {
-            "heading": "Comprender para aplicar",
-            "text": "La IA puede ayudar a formular preguntas, ampliar vocabulario de búsqueda, descubrir relaciones entre artículos, extraer información, proponer código, comparar argumentos y preparar materiales de comunicación. Una predicción estima un resultado; una búsqueda recupera documentos; la IA generativa produce una respuesta. Estas funciones se pueden combinar, pero requieren controles diferentes. Redactar una hipótesis no prueba su verdad. El valor se mide en una tarea acotada y en la calidad de la revisión humana."
+            "heading": "Idea central",
+            "text": "Un asistente genera texto a partir de una instrucción, también llamada prompt. Puede resumir, explicar, traducir, proponer preguntas o código y ayudar a redactar. Una respuesta convincente puede omitir condiciones o inventar información. Buscar un documento, generar un texto y comprobar una afirmación son tareas diferentes."
+          },
+          {
+            "heading": "Idea central",
+            "text": "Usaremos un caso ficticio sobre formación y adopción digital. S1 es una encuesta sintética con párrafos P1–P4. No necesita buscar ni comprar textos para empezar. Lea S1 en la guía antes de consultar; el caso no contiene datos personales ni representa una investigación real."
           }
         ],
         "steps": [
-          "Escriba su pregunta de investigación, población o contexto y una decisión que hoy le cuesta tiempo.",
-          "Clasifique seis tareas: descubrir artículos, resumir un PDF, predecir una categoría, proponer código, diseñar preguntas de entrevista y comprobar una cita.",
-          "Elija una tarea y dibuje entrada → ayuda de IA → resultado → control humano. Use documentos abiertos o un caso sintético.",
-          "Abra el mapa de herramientas. Seleccione una opción principal y una alternativa gratuita para esa tarea."
+          "Abra la guía de esta actividad y lea S1. Cree una carpeta llamada «Mi taller de IA» para las descargas. Reserve 5 minutos para entrar, 10 para consultar y 10 para verificar y registrar.",
+          "Elija ChatGPT Free o Claude Free. Abra el enlace de la guía, entre o cree una cuenta gratuita si se lo solicita y abra una conversación nueva. No necesita activar una prueba de pago, adjuntar archivos ni crear un asistente personalizado.",
+          "En la guía, pulse «Copiar primera consulta con S1». Péguela en el cuadro donde se escribe un mensaje y envíela. El botón de copiar incluye tanto la instrucción como el documento completo.",
+          "Compare la respuesta con S1 P1 y P4: debe conservar tres días por semana, último mes y ausencia de causalidad demostrada. Si falta algo, pida corregirlo usando esos párrafos.",
+          "Guarde aquí herramienta, fecha, instrucción usada, respuesta y una corrección o confirmación. Indique si realmente ejecutó la consulta. Si falta acceso, deje la práctica pendiente y continúe la preparación."
         ],
-        "task": "Describa su tarea, el resultado útil, la herramienta elegida y la decisión que seguirá tomando usted.",
-        "example": "Necesito comparar cómo tres artículos definen capacidad de absorción. La IA puede proponer una matriz; yo verifico cada definición y su contexto antes de usarla.",
+        "task": "Registre su primera consulta: herramienta y fecha; respuesta recibida; pasaje comprobado; corrección que hizo y decisión que conserva usted.",
+        "example": "Referencia didáctica, no respuesta ejecutada: S1 define adopción como usar un registro digital de ventas al menos tres días por semana durante el último mes (P1). La encuesta describe asociación, sin demostrar que la formación la cause (P4). Yo decido si la redacción conserva esas condiciones.",
         "quiz": {
           "question": "¿Cuál es una primera tarea bien delimitada?",
           "options": [
@@ -44,45 +49,60 @@
         ],
         "links": [
           {
-            "label": "Mapa de herramientas gratuitas",
-            "url": "herramientas.html"
+            "label": "Guía resuelta de esta actividad",
+            "url": "practica-herramientas.html#actividad-1"
           }
         ],
-        "completion": "Conserve la evidencia de la actividad, explique una decisión y responda la comprobación conceptual. La autoevaluación no certifica competencia profesional.",
-        "textOnly": true
+        "completion": "Puede explicar qué escribió, qué respondió la herramienta y qué verificó personalmente. La respuesta modelo de la guía no cuenta como una consulta realizada.",
+        "textOnly": true,
+        "ethics": {
+          "people": "Personas cuyos datos podrían usarse y lectores del resultado.",
+          "risk": "Exponer información privada o convertir una respuesta fluida en una conclusión sin respaldo.",
+          "before": "Use únicamente S1, autorizado y sintético; no pegue entrevistas, nombres ni documentos de su proyecto en esta primera prueba.",
+          "check": "Confronte las condiciones de P1 y el límite de P4 con la respuesta.",
+          "question": "¿Qué material envió, por qué podía usarlo y qué aceptó, corrigió o rechazó después de verificarlo?",
+          "example": "Envié S1, material sintético autorizado. Conservé la definición tras contrastarla con P1 y rechacé atribuir causalidad por el límite de P4."
+        },
+        "checkpoint": "Puede explicar qué escribió, qué respondió la herramienta y qué verificó personalmente. La respuesta modelo de la guía no cuenta como una consulta realizada.",
+        "requiresExecution": true
       },
       {
         "id": "v4-1-2",
         "title": "Elegir herramientas con criterio",
         "minutes": 30,
-        "objective": "Distinguir asistentes generales, buscadores académicos, mapas de literatura y lectura basada en fuentes.",
-        "reading": "Lectura científica complementaria: examine el alcance del trabajo y su tipo de publicación. Los ejercicios se pueden completar con las orientaciones y el caso abierto del taller.",
+        "objective": "Probar dos formas de encontrar literatura y elegir herramientas según la tarea y su acceso gratuito.",
+        "reading": "Lectura opcional para después de la práctica. Relacione las fuentes de apoyo con un error o un límite que haya observado. No se exige adquirir el texto completo ni completar una consulta institucional para avanzar.",
         "scenes": [
           {
-            "heading": "Comprender para aplicar",
-            "text": "La mejor herramienta depende de la tarea, la disciplina y los datos que puede compartir. Elicit y Consensus apoyan exploraciones de literatura; Semantic Scholar recupera artículos y relaciones; ResearchRabbit explora redes; Gemini Notebook trabaja con un corpus elegido; ChatGPT y Claude ayudan a elaborar instrucciones, argumentos o código. Zotero organiza referencias y no es un modelo generativo. Una cuenta gratuita no garantiza todas las funciones ni acceso al texto completo."
+            "heading": "Idea central",
+            "text": "Semantic Scholar ayuda a descubrir publicaciones. Elicit y Consensus permiten explorar preguntas en literatura académica; use uno de los dos. Gemini Notebook trabaja con fuentes elegidas; ChatGPT y Claude ayudan con texto. ResearchRabbit explora relaciones bibliográficas. Zotero organiza referencias y no es una IA generativa."
+          },
+          {
+            "heading": "Idea central",
+            "text": "El orden de resultados depende de la cobertura y del sistema de búsqueda. Ni la primera posición, ni muchas citas, ni una síntesis automática demuestran calidad o exhaustividad. Un resultado inexistente en su consulta no demuestra que no exista investigación."
           }
         ],
         "steps": [
-          "En el mapa, compare dos herramientas para la misma necesidad: entrada, salida, evidencia visible y restricción gratuita.",
-          "Localice un artículo con Semantic Scholar y abra su DOI o repositorio. Registre la consulta y la fecha.",
-          "Explore una pregunta en Elicit o Consensus usando el acceso básico disponible. Si alcanza una cuota, continúe con Semantic Scholar y lectura del resumen.",
-          "Elija tres artículos relacionados con ResearchRabbit o mediante las referencias de un artículo. Explique qué literatura puede quedar fuera."
+          "Dedique 10 minutos a Semantic Scholar, 10 a Elicit o Consensus y 10 a comparar. Abra el mapa de la guía; no es necesario registrarse en todas las herramientas.",
+          "En Semantic Scholar busque «digital skills training small businesses technology adoption». Abra un resultado y localice título, autores, año y enlace al editor o repositorio. Lea el resumen disponible; anote si pudo leer el texto completo. Repita con «formación digital pequeños negocios adopción tecnológica».",
+          "Elija Elicit Basic o Consensus Free. En Elicit use la búsqueda de artículos; en Consensus use Papers o la búsqueda básica. Escriba «What evidence links digital skills training with technology adoption in small businesses?». Evite informes avanzados o funciones que pidan pago.",
+          "Abra un resultado de la segunda herramienta y compruebe sus datos en el editor o repositorio. Registre dos referencias en total, su consulta exacta, fecha, idioma y motivo de selección. Si es el mismo artículo, anote la coincidencia y busque otro para comparar.",
+          "Compare lo que apareció en español e inglés y señale una población o región cuya presencia no pudo establecer. Copie a mano sus dos registros: la exportación no es necesaria. Elija una herramienta principal y una alternativa, explicando para qué las usaría."
         ],
-        "task": "Registre dos herramientas comparadas, una elección justificada, su límite y una alternativa gratuita.",
-        "example": "Uso Semantic Scholar para localizar artículos y Gemini Notebook para comparar los tres textos autorizados. La selección no cubre toda la literatura y debo buscar también términos en español.",
+        "task": "Registre dos referencias reales verificadas, consultas y fecha; acceso (resumen o texto completo); criterio de elección; principal y alternativa. No invente títulos para llenar la ficha.",
+        "example": "Modelo de registro: [título real] | [autoría y año cotejados] | [URL del editor/repositorio y DOI si consta] | [consulta y herramienta] | [resumen/texto completo] | selección por población y diseño. Si no aparece un resultado pertinente, registre «No localizado en esta consulta», amplíe términos y no afirme ausencia de literatura.",
         "quiz": {
-          "question": "¿Qué permite afirmar un mapa de artículos relacionados?",
+          "question": "Una búsqueda en inglés devuelve más resultados que la búsqueda en español. ¿Qué permite concluir?",
           "options": [
-            "Que la revisión es exhaustiva.",
-            "Que lo más conectado es necesariamente lo mejor.",
-            "Que ofrece relaciones útiles que debo contrastar con otras búsquedas."
+            "Que la evidencia en inglés siempre es mejor.",
+            "Que no hay investigación local.",
+            "Que debo revisar diferencias de términos y cobertura antes de concluir."
           ],
           "answer": 2,
           "feedback": [
-            "La cobertura debe documentarse y complementarse.",
-            "La visibilidad bibliográfica no equivale a calidad.",
-            "Correcto: el mapa orienta, pero no demuestra exhaustividad."
+            "Idioma y número de resultados no demuestran calidad.",
+            "Una consulta sin resultados no prueba ausencia de investigación.",
+            "Correcto: documente ambas consultas y complemente la cobertura."
           ]
         },
         "prompt": "",
@@ -92,33 +112,48 @@
         ],
         "links": [
           {
-            "label": "Mapa de herramientas gratuitas",
-            "url": "herramientas.html"
+            "label": "Guía resuelta de esta actividad",
+            "url": "practica-herramientas.html#actividad-2"
           }
         ],
-        "completion": "Conserve la evidencia de la actividad, explique una decisión y responda la comprobación conceptual. La autoevaluación no certifica competencia profesional.",
-        "textOnly": true
+        "completion": "Tiene dos registros comprobados o documentó una búsqueda sin resultados pertinentes. Reconoce las funciones de las herramientas y una limitación de cobertura.",
+        "textOnly": true,
+        "ethics": {
+          "people": "Investigadores y comunidades menos visibles en las bases consultadas.",
+          "risk": "Confundir visibilidad, idioma inglés o número de citas con pertinencia y calidad.",
+          "before": "Busque una pregunta pública; no introduzca hipótesis confidenciales ni información de participantes.",
+          "check": "Compare idiomas y cobertura; verifique los metadatos fuera de la síntesis automática.",
+          "question": "¿Qué posible sesgo de cobertura detectó, a quién podría excluir y qué búsqueda adicional hará?",
+          "example": "La consulta inglesa recuperó resultados distintos. No pude establecer cobertura de pequeños negocios colombianos; añadiré términos locales y repositorios regionales antes de generalizar. Es un modelo, no un resultado ya observado."
+        },
+        "checkpoint": "Tiene dos registros comprobados o documentó una búsqueda sin resultados pertinentes. Reconoce las funciones de las herramientas y una limitación de cobertura.",
+        "requiresExecution": true
       },
       {
         "id": "v4-1-3",
         "title": "Buscar, leer y verificar fuentes",
         "minutes": 30,
-        "objective": "Recorrer una cadena de evidencia desde una pregunta hasta el pasaje original.",
-        "reading": "Lectura científica complementaria: examine el alcance del trabajo y su tipo de publicación. Los ejercicios se pueden completar con las orientaciones y el caso abierto del taller.",
+        "objective": "Usar un cuaderno gratuito con una fuente y abrir una cita para verificar una respuesta.",
+        "reading": "Lectura opcional para después de la práctica. Relacione las fuentes de apoyo con un error o un límite que haya observado. No se exige adquirir el texto completo ni completar una consulta institucional para avanzar.",
         "scenes": [
           {
-            "heading": "Comprender para aplicar",
-            "text": "Un resumen automático es una entrada a la lectura. La referencia debe existir, corresponder al documento consultado y respaldar la afirmación completa. Revise autoría, año, tipo documental, método y límites. Si solo dispone del resumen, restrinja las conclusiones a lo que allí aparece. Un artículo de perspectiva no tiene por qué incluir muestra; un preprint no debe presentarse como artículo revisado por pares."
+            "heading": "Idea central",
+            "text": "Una cita es una ruta hacia la evidencia, no una garantía de que la conclusión sea correcta. Compruebe que el pasaje contiene las cifras, las condiciones y el alcance de la frase. Si solo leyó un resumen, no atribuya al texto completo información que no ha consultado."
+          },
+          {
+            "heading": "Idea central",
+            "text": "Aquí trabajará únicamente con S1 en Gemini Notebook (antes NotebookLM), acceso Standard gratuito. El cuaderno permite conversar con documentos seleccionados. Una cuenta habilitada y sus cuotas condicionan el acceso."
           }
         ],
         "steps": [
-          "Elija dos textos abiertos. Anote título, autores, año, DOI o URL y tipo documental en el Registro de evidencia.",
-          "En Gemini Notebook, cree un cuaderno y añada los textos autorizados; compruebe que ambos se procesaron.",
-          "Seleccione las fuentes y use la instrucción propuesta. Abra cada cita, lea el pasaje completo y el contexto.",
-          "Audite tres afirmaciones: respaldada, parcial o no respaldada. Corrija la redacción y documente las ausencias."
+          "Abra Gemini Notebook desde la guía, inicie sesión con una cuenta habilitada y cree un cuaderno llamado «Taller 1 · Lectura de S1». Reserve 10 minutos para cargar, 10 para preguntar y 10 para revisar.",
+          "En «Añadir fuentes», elija subir el TXT de S1 o pegar texto copiado. La guía ofrece ambas opciones. Compruebe que el documento procesado contiene P1, P2, P3 y P4; seleccione solo S1.",
+          "Copie la instrucción de abajo en la conversación. Abra la cita de cada afirmación y localice P2–P4. Si no aparece una cita, pida el pasaje y compruebe el original; registre el fallo si no puede abrirla.",
+          "Calcule a mano 16/20 = 80 % y 8/20 = 40 %. La diferencia es 40 puntos porcentuales entre grupos; no un aumento de 40 % antes-después.",
+          "Complete la ficha: afirmación, respuesta de IA, fuente y párrafo, pasaje comprobado, veredicto y corrección. Busque también la palabra «ingresos»: no fueron medidos."
         ],
-        "task": "Conserve tres afirmaciones, sus pasajes, el estado de respaldo y al menos una corrección razonada.",
-        "example": "El artículo informa una asociación en una muestra concreta. Sustituyo «produce» por «se asocia con» y mantengo la población y las limitaciones del diseño.",
+        "task": "Pegue su ficha de lectura: afirmación, respuesta real, S1 y párrafo, pasaje, veredicto (respaldada/parcial/no respaldada) y corrección. Anote herramienta y fecha.",
+        "example": "Ficha modelo: «La formación causó un aumento de 40 %» → no respaldada. S1 P2 dice que no hubo asignación aleatoria ni medición previa; P3 informa 80 % frente a 40 %; P4 limita la inferencia. Corrección: diferencia descriptiva de 40 puntos porcentuales entre grupos del caso sintético, sin causalidad demostrada.",
         "quiz": {
           "question": "Una respuesta incluye una cita real. ¿Qué falta?",
           "options": [
@@ -133,44 +168,55 @@
             "El número de citas no sustituye la comprobación."
           ]
         },
-        "prompt": "Use solo las fuentes seleccionadas. Identifique objetivo, diseño, unidad de análisis, resultado y limitaciones. Distinga hallazgo, interpretación e inferencia. Para cada afirmación indique fuente y localizador comprobable; si no hay página, use sección y pasaje. Escriba «No reportado» cuando falte información y «No sustentado en el corpus» si la conclusión excede las fuentes. No invente referencias ni convierta una asociación en causalidad. Termine con lo que no se puede concluir.",
+        "prompt": "Trabaje solo con S1. Prepare una tabla con diseño, muestra, adopción en cada grupo, diferencia en puntos porcentuales y límite causal. Cite cada dato con una cita que pueda abrir y el párrafo P1–P4. ¿Qué informa sobre ingresos? Si no lo midió, indíquelo. Identifique el material como CASO SINTÉTICO y no añada información externa.",
         "refs": [
           "R1",
           "R2"
         ],
         "links": [
           {
-            "label": "Lectura con fuentes",
-            "url": "https://notebook.google.com/"
-          },
-          {
-            "label": "Registro de evidencia",
-            "url": "observatorio.html"
+            "label": "Guía resuelta de esta actividad",
+            "url": "practica-herramientas.html#actividad-3"
           }
         ],
-        "completion": "Conserve la evidencia de la actividad, explique una decisión y responda la comprobación conceptual. La autoevaluación no certifica competencia profesional.",
-        "textOnly": true
+        "completion": "Tiene una ficha con pasaje localizado y una afirmación revisada; distingue puntos porcentuales, porcentajes y causalidad.",
+        "textOnly": true,
+        "ethics": {
+          "people": "Lectores, participantes y quienes podrían decidir basándose en el informe.",
+          "risk": "Presentar asociación como causa, fabricar ingresos o dar por comprobada una cita sin abrirla.",
+          "before": "Cargue S1 completo y mantenga su etiqueta sintética; no mezcle el caso con artículos reales.",
+          "check": "Abra la cita, compruebe denominadores y corrija cualquier generalización.",
+          "question": "¿Qué afirmación verificó, qué pasaje la sostiene o la limita y qué decidió hacer con ella?",
+          "example": "Rechacé «causó un aumento». Contrasté P2–P4 y escribí «diferencia descriptiva de 40 puntos porcentuales». No atribuí ingresos porque S1 no los midió."
+        },
+        "checkpoint": "Tiene una ficha con pasaje localizado y una afirmación revisada; distingue puntos porcentuales, porcentajes y causalidad.",
+        "requiresExecution": true
       },
       {
         "id": "v4-1-4",
         "title": "Instrucciones que permiten revisar el resultado",
         "minutes": 30,
-        "objective": "Diseñar y comparar instrucciones con tarea, contexto, evidencia, formato y abstención.",
-        "reading": "Lectura científica complementaria: examine el alcance del trabajo y su tipo de publicación. Los ejercicios se pueden completar con las orientaciones y el caso abierto del taller.",
+        "objective": "Comparar dos instrucciones con el mismo documento y evaluar la precisión del resultado.",
+        "reading": "Lectura opcional para después de la práctica. Relacione las fuentes de apoyo con un error o un límite que haya observado. No se exige adquirir el texto completo ni completar una consulta institucional para avanzar.",
         "scenes": [
           {
-            "heading": "Comprender para aplicar",
-            "text": "Una instrucción útil define qué debe hacerse, con qué material, para quién y bajo qué regla de calidad. Añadir «actúa como experto» no sustituye estos elementos. Compare versiones sobre las mismas fuentes y preguntas. Una respuesta más cauta puede seguir equivocada. Registre omisiones junto con errores: abstenerse de todo tampoco produce un asistente útil."
+            "heading": "Idea central",
+            "text": "Una instrucción útil identifica tarea, fuente, formato y límite. No necesita fórmulas secretas. Hacer dos consultas con el mismo texto ayuda a observar errores y omisiones; una sola comparación no demuestra que un modelo sea mejor en general."
+          },
+          {
+            "heading": "Idea central",
+            "text": "Evaluaremos cinco condiciones: etiqueta de caso sintético, 80 % y 40 %, diferencia de 40 puntos porcentuales, límite causal y ausencia de datos de ingresos. La longitud y el vocabulario técnico no son criterios de calidad."
           }
         ],
         "steps": [
-          "Solicite un resumen breve de un mismo pasaje. Conserve la respuesta A.",
-          "Repita con la instrucción crítica y un formato de tabla: afirmación, evidencia, límite. Conserve B.",
-          "Compare tres afirmaciones y una omisión en ambas respuestas. No cambie el corpus durante la comparación.",
-          "En el Laboratorio de contraste, resuelva dos expedientes y explique qué premisa faltaba para aceptar la conclusión."
+          "Vuelva al asistente de texto gratuito que usó en la unidad 1. En la guía hay dos instrucciones completas con S1 incluido. Reserve 10 minutos para consultar, 10 para contrastar y 10 para registrar.",
+          "Abra una conversación nueva y envíe A: «Resuma S1». Guarde su respuesta. Abra otra conversación nueva con la misma herramienta y, si es visible, el mismo modelo; envíe B, que acota tarea, formato y límites.",
+          "Compare A y B usando las cinco condiciones de la guía. Para cada una marque «presente y correcto», «omitido» o «incorrecto», con un fragmento de la respuesta. Revise S1 para decidir.",
+          "Corrija una omisión o confirme que ambas respuestas cumplen. Conserve herramienta, modelo si se muestra, fecha, instrucciones, respuestas y revisión. Si la herramienta cambia de modelo por su cuota, regístrelo y limite la comparación.",
+          "Escriba su versión final de cuatro o cinco frases, con la etiqueta sintética y los párrafos de apoyo. No agregue referencias que la herramienta sugiera sin verificarlas."
         ],
-        "task": "Entregue las instrucciones A y B, el contraste de evidencia y una decisión sobre cuál sirve mejor para su tarea.",
-        "example": "B identifica una ausencia que A rellenaba, pero omite un resultado pertinente. Conservo su regla de abstención y ajusto los campos de extracción.",
+        "task": "Registre A y B, o sus fragmentos relevantes, y compare las cinco condiciones. Incluya su párrafo corregido y un límite de esta comparación.",
+        "example": "Referencia: CASO SINTÉTICO. La encuesta transversal describe 40 negocios por conveniencia. Declaran adopción 16/20 con formación (80 %) y 8/20 sin formación (40 %), diferencia de 40 puntos porcentuales (S1 P2–P3). La asociación no demuestra causalidad y no se midieron ingresos (P4). Este es un resultado orientador, no una salida real de A o B.",
         "quiz": {
           "question": "¿Cómo se evalúa una mejora de instrucción?",
           "options": [
@@ -185,19 +231,29 @@
             "El tono no mide respaldo."
           ]
         },
-        "prompt": "Use solo las fuentes seleccionadas. Identifique objetivo, diseño, unidad de análisis, resultado y limitaciones. Distinga hallazgo, interpretación e inferencia. Para cada afirmación indique fuente y localizador comprobable; si no hay página, use sección y pasaje. Escriba «No reportado» cuando falte información y «No sustentado en el corpus» si la conclusión excede las fuentes. No invente referencias ni convierta una asociación en causalidad. Termine con lo que no se puede concluir.",
+        "prompt": "",
         "refs": [
           "R1",
           "R2"
         ],
         "links": [
           {
-            "label": "Laboratorio de contraste",
-            "url": "laboratorio.html"
+            "label": "Guía resuelta de esta actividad",
+            "url": "practica-herramientas.html#actividad-4"
           }
         ],
-        "completion": "Conserve la evidencia de la actividad, explique una decisión y responda la comprobación conceptual. La autoevaluación no certifica competencia profesional.",
-        "textOnly": true
+        "completion": "Puede mostrar una comparación con evidencia y un texto final revisado; no confunde mejor estilo con mejor respaldo.",
+        "textOnly": true,
+        "ethics": {
+          "people": "Coautores y lectores que podrían atribuir precisión a un texto bien redactado.",
+          "risk": "Cambiar el significado al mejorar el estilo u ocultar un error de la IA.",
+          "before": "Use el mismo S1 y conserve ambos intentos; no seleccione solo la respuesta más favorable.",
+          "check": "Contraste las cinco condiciones y mantenga registro de correcciones.",
+          "question": "¿Qué cambió entre A y B y por qué acepta o rechaza ese cambio? ¿Qué no permite concluir esta comparación?",
+          "example": "Acepté añadir el límite causal por S1 P4. No aceptaría cambiar «asociación» por «efecto». Dos salidas no prueban superioridad general de una herramienta."
+        },
+        "checkpoint": "Puede mostrar una comparación con evidencia y un texto final revisado; no confunde mejor estilo con mejor respaldo.",
+        "requiresExecution": true
       },
       {
         "id": "v4-1-5",
@@ -210,22 +266,28 @@
         "id": "v4-1-6",
         "title": "Ética algorítmica: sesgos, datos y poder",
         "minutes": 40,
-        "objective": "Detectar a quién beneficia o perjudica un procedimiento y definir controles concretos.",
-        "reading": "Lectura científica complementaria: examine el alcance del trabajo y su tipo de publicación. Los ejercicios se pueden completar con las orientaciones y el caso abierto del taller.",
+        "objective": "Detectar una inferencia discriminatoria y decidir qué datos, recomendaciones y usos son admisibles.",
+        "reading": "Lectura opcional para después de la práctica. Relacione las fuentes de apoyo con un error o un límite que haya observado. No se exige adquirir el texto completo ni completar una consulta institucional para avanzar.",
         "scenes": [
           {
-            "heading": "Comprender para aplicar",
-            "text": "La ética algorítmica examina decisiones a lo largo del ciclo de uso: selección de datos, cobertura lingüística, criterios del modelo, interpretación y efectos sobre personas. Un buscador puede sobrerrepresentar revistas en inglés; un clasificador puede reproducir desigualdades; una síntesis puede borrar posiciones minoritarias. Transparencia, equidad, privacidad y supervisión humana deben traducirse en controles observables. Las recomendaciones de UNESCO son un referente de orientación; no se presentan como una política adoptada por la Universidad."
+            "heading": "Idea central",
+            "text": "La ética algorítmica examina cómo datos, objetivos y sistemas distribuyen beneficios, errores y poder. En investigación importa quién aparece en las fuentes, quién queda fuera, quién revisa y quién puede cuestionar una conclusión. Es una práctica durante todo el proceso."
+          },
+          {
+            "heading": "Idea central",
+            "text": "S2 contiene ocho entrevistas sintéticas: cinco menciones de falta de tiempo y tres de conexión inestable, que pueden superponerse. No informa edad ni género. No permite atribuir capacidad, motivación o conducta a grupos demográficos. Quitar nombres tampoco garantiza anonimato en documentos reales."
           }
         ],
         "steps": [
-          "Caso 1: la búsqueda devuelve solo estudios en inglés y del Norte global. Repita en español, añada repositorios regionales y registre qué cambia.",
-          "Caso 2: una entrevista contiene nombres, cargos y eventos que permiten identificar a alguien. Decida qué excluir y qué autorización necesitaría antes de usar servicios externos. Quitar el nombre puede ser insuficiente.",
-          "Caso 3: el asistente recomienda seleccionar participantes según un atributo sensible. Examine pertinencia científica, posibles daños y una alternativa de revisión humana.",
-          "Complete para cada caso: persona afectada, riesgo, control, responsable y evidencia de que el control funcionó. Consulte la sección de ética del Hub."
+          "Lea S2 en la guía. Antes de usar la IA, escriba qué información no contiene y por qué las menciones no equivalen a porcentajes de toda una población. Reserve 10 minutos para leer, 10 para probar y 20 para revisar y decidir.",
+          "Abra una conversación nueva en su asistente gratuito. Copie la prueba de sesgo con S2 desde la guía. Se le pide evaluar dos frases problemáticas, no adoptarlas como verdaderas.",
+          "Compare con el resultado de referencia: la IA debe rechazar inferencias por edad o género y conservar las barreras reportadas, sin inventar motivos ni sumar categorías excluyentes. Guarde la respuesta real, incluso si falla.",
+          "Proponga una acción: consultar con participantes las barreras de tiempo y conectividad antes de diseñar apoyos. Identifíquela como propuesta por validar, no como resultado del estudio ni decisión automática sobre personas.",
+          "Resuelva el caso de privacidad de la guía: entrevista real con nombre, barrio, oficio raro y dato de salud. Decida no cargarla en esta práctica; use el caso sintético. Para el proyecto real, revise finalidad, permisos, minimización, posibilidad de reidentificación y entorno autorizado antes de cualquier carga.",
+          "Complete una fila de su protocolo: personas afectadas → riesgo → control → evidencia → responsable → decisión (usar, corregir o detener)."
         ],
-        "task": "Construya una matriz de tres riesgos con personas afectadas, controles, responsables y una decisión de no uso.",
-        "example": "No subo entrevistas identificables. Trabajo con un fragmento sintético y reviso la autorización institucional antes de cualquier uso real. Amplío la búsqueda regional para examinar una posible omisión de cobertura.",
+        "task": "Registre la respuesta a la prueba de sesgo, qué falta en S2, una propuesta por validar y su fila de protocolo. Explique también qué haría con la entrevista privada del ejemplo.",
+        "example": "Modelo: S2 no informa edad ni género; no respalda que las mujeres mayores tengan menos capacidad. «No quieren aprender» atribuye una motivación no medida. Mantengo tiempo y conectividad como barreras mencionadas, sin generalizar. Propongo consultar apoyos con participantes. Detengo la carga de la entrevista privada y uso S2 sintético.",
         "quiz": {
           "question": "¿Qué demuestra mejor una práctica ética?",
           "options": [
@@ -247,37 +309,48 @@
         ],
         "links": [
           {
-            "label": "Ética algorítmica del IA Hub",
-            "url": "https://ia-hub-univalle.onrender.com/#etica"
-          },
-          {
-            "label": "Recomendación de UNESCO",
-            "url": "https://www.unesco.org/en/articles/recommendation-ethics-artificial-intelligence"
+            "label": "Guía resuelta de esta actividad",
+            "url": "practica-herramientas.html#actividad-6"
           }
         ],
-        "completion": "Conserve la evidencia de la actividad, explique una decisión y responda la comprobación conceptual. La autoevaluación no certifica competencia profesional.",
-        "textOnly": true
+        "completion": "Tiene una prueba registrada y una decisión con personas afectadas, evidencia y control; no basta con escribir «uso responsable».",
+        "textOnly": true,
+        "ethics": {
+          "people": "Participantes, comunidades representadas de forma incompleta y grupos que podrían ser estereotipados.",
+          "risk": "Inferir atributos no medidos, excluir por estereotipos o reidentificar una entrevista.",
+          "before": "Use solo S2 sintético; examine qué variables faltan antes de formular conclusiones.",
+          "check": "Rechace inferencias por edad o género; no publique decisiones automáticas sobre personas.",
+          "question": "¿A quién podría perjudicar la respuesta, qué evidencia falta y qué corrigió o detuvo?",
+          "example": "Una atribución de menor capacidad perjudicaría al grupo mencionado sin datos que la sustenten. La rechazo, conservo solo las barreras reportadas y detengo la carga de la entrevista real."
+        },
+        "checkpoint": "Tiene una prueba registrada y una decisión con personas afectadas, evidencia y control; no basta con escribir «uso responsable».",
+        "requiresExecution": true
       },
       {
         "id": "v4-1-7",
         "title": "Autoría, transparencia y reproducibilidad",
         "minutes": 25,
-        "objective": "Documentar la contribución de IA y conservar una cadena de decisiones revisable.",
-        "reading": "Lectura científica complementaria: examine el alcance del trabajo y su tipo de publicación. Los ejercicios se pueden completar con las orientaciones y el caso abierto del taller.",
+        "objective": "Documentar el uso de IA de forma que otra persona pueda revisar su trabajo y sus correcciones.",
+        "reading": "Lectura opcional para después de la práctica. Relacione las fuentes de apoyo con un error o un límite que haya observado. No se exige adquirir el texto completo ni completar una consulta institucional para avanzar.",
         "scenes": [
           {
-            "heading": "Comprender para aplicar",
-            "text": "La responsabilidad por la investigación sigue en las personas autoras. Declare la tarea asistida, herramienta, fecha, fuentes y verificación realizada según las reglas de su institución, revista o financiador. No atribuya a la IA trabajo de campo, experimentos ni análisis que no se hicieron. Guarde instrucciones y decisiones sin difundir datos restringidos. La reproducción exacta puede variar con actualizaciones del servicio, incluso al reutilizar una instrucción."
+            "heading": "Idea central",
+            "text": "La persona investigadora responde por las afirmaciones, citas y decisiones que presenta. Conservar la instrucción no garantiza repetir exactamente una salida: versiones, contexto y variación del sistema pueden cambiarla. La bitácora permite auditar el proceso."
+          },
+          {
+            "heading": "Idea central",
+            "text": "Una declaración de uso debe describir lo que realmente se hizo. Compruebe además las reglas de su institución, revista o convocatoria. La plantilla del taller es una ayuda para documentar, no una política institucional ni una acreditación."
           }
         ],
         "steps": [
-          "Redacte una declaración de uso con tarea, herramienta, fecha y revisión humana.",
-          "Separe qué hizo usted, qué propuso la IA y qué aceptó o rechazó.",
-          "Guarde consulta, corpus, respuesta y correcciones en el cuaderno. Excluya información confidencial.",
-          "Consulte las reglas del destino de publicación. Si no ha podido revisarlas, registre esa comprobación como pendiente."
+          "Seleccione una práctica que haya realizado. Anote fecha, herramienta, plan gratuito, modelo o versión si se muestra (o «no mostrado»), tarea, fuente y versión.",
+          "Conserve la instrucción exacta, la respuesta original y la versión que corrigió. En el cuaderno incluya qué afirmaciones cotejó y con qué párrafos.",
+          "Adapte la declaración completa de la guía a su experiencia. No diga que usó herramientas que solo exploró en el mapa. Si no ha ejecutado una consulta, declare esa parte pendiente.",
+          "Descargue el cuaderno y ábralo en un editor de texto. Compruebe que conserva respuestas, estado de ejecución y decisiones éticas. Guárdelo en su carpeta; el archivo no restaura automáticamente el avance en otro navegador.",
+          "Revise antes de compartir: retire datos personales, enlaces a cuadernos privados y cualquier información sin permiso. Identifique S1–S3 como sintéticos en todo producto del caso."
         ],
-        "task": "Escriba una declaración de uso y una bitácora mínima que permita comprender y revisar su proceso.",
-        "example": "Utilicé un asistente para proponer una matriz de lectura de tres documentos abiertos. Verifiqué las citas y corregí dos inferencias. El análisis y la redacción final fueron revisados por la persona autora.",
+        "task": "Escriba su bitácora y una declaración de uso ajustada a lo que realmente hizo. Registre dónde guardó el cuaderno y qué revisó antes de compartir.",
+        "example": "Modelo para adaptar solo si se realizó: utilicé [herramienta, plan y fecha; modelo si visible] para extraer y revisar información de S1, caso sintético v1. Conservé instrucciones y respuestas; comprobé P1–P4 y corregí la inferencia causal. La selección, interpretación y revisión final son de la persona investigadora. No se usaron datos reales de participantes.",
         "quiz": {
           "question": "¿Qué debe conservar una bitácora útil?",
           "options": [
@@ -297,30 +370,50 @@
           "R1",
           "R2"
         ],
-        "links": [],
-        "completion": "Conserve la evidencia de la actividad, explique una decisión y responda la comprobación conceptual. La autoevaluación no certifica competencia profesional.",
-        "textOnly": true
+        "links": [
+          {
+            "label": "Guía resuelta de esta actividad",
+            "url": "practica-herramientas.html#actividad-7"
+          }
+        ],
+        "completion": "Tiene una declaración veraz, una bitácora legible y un respaldo abierto y revisado.",
+        "textOnly": true,
+        "ethics": {
+          "people": "Coautores, lectores y personas cuya información podría circular en el respaldo.",
+          "risk": "Ocultar la intervención de IA, atribuirle autoría humana o compartir información privada en la bitácora.",
+          "before": "Declare solo usos efectivamente realizados y mantenga separadas la salida y su revisión.",
+          "check": "Abra el respaldo y revise su contenido antes de compartirlo.",
+          "question": "¿Qué declarará sobre el uso de IA, quién asume la revisión y qué excluyó del archivo compartible?",
+          "example": "Declararé la tarea y la herramienta realmente usadas. Asumo la revisión de S1 y las correcciones. Compartiré solo el caso sintético y mi registro sin información personal."
+        },
+        "checkpoint": "Tiene una declaración veraz, una bitácora legible y un respaldo abierto y revisado.",
+        "requiresExecution": false
       },
       {
         "id": "v4-1-8",
         "title": "De la herramienta al método de trabajo",
         "minutes": 30,
-        "objective": "Integrar descubrimiento, lectura y juicio crítico en una práctica propia.",
-        "reading": "Lectura científica complementaria: examine el alcance del trabajo y su tipo de publicación. Los ejercicios se pueden completar con las orientaciones y el caso abierto del taller.",
+        "objective": "Integrar las herramientas en un flujo pequeño y preparar el paso hacia su clon de investigación.",
+        "reading": "Lectura opcional para después de la práctica. Relacione las fuentes de apoyo con un error o un límite que haya observado. No se exige adquirir el texto completo ni completar una consulta institucional para avanzar.",
         "scenes": [
           {
-            "heading": "Comprender para aplicar",
-            "text": "Un flujo de investigación combina herramientas con decisiones explícitas. Buscar, organizar, comparar y redactar son tareas diferentes. Defina un criterio de aceptación antes de consultar la IA y verifique después si se cumple. Su primer producto es un protocolo de uso, no una promesa de automatización total. El siguiente taller lo transformará en un asistente configurable."
+            "heading": "Idea central",
+            "text": "Un método conecta entradas, tarea, salida, verificación y decisión. Use IA donde ayude a una tarea concreta y conserve pasos manuales cuando basten. Regenerar muchas respuestas sin un criterio no mejora necesariamente la calidad y consume tiempo y recursos."
+          },
+          {
+            "heading": "Idea central",
+            "text": "La ruta mínima es descubrir literatura → seleccionar fuentes → leer con citas → revisar → redactar → documentar. El mapa no es una lista de herramientas obligatorias. En el taller 2 configurará un asistente sobre sus fuentes y criterios, con el mismo caso si aún no tiene documentos propios."
           }
         ],
         "steps": [
-          "Repita su tarea inicial con una herramienta gratuita. Si no hay cuota, conserve las fuentes y ejecute manualmente el mismo procedimiento.",
-          "Revise tres afirmaciones y cuente errores, omisiones y abstenciones justificadas.",
-          "Escriba un protocolo con entrada permitida, tarea, formato, control humano y condición de parada.",
-          "Prepare para el taller 2 una pregunta acotada, tres fuentes abiertas y una muestra de escritura propia que esté autorizado a compartir."
+          "Complete el mapa de cinco filas de la guía: descubrir (Semantic Scholar y Elicit o Consensus), leer (Gemini Notebook), redactar (el asistente elegido), verificar (usted y la fuente) y organizar (carpeta o Zotero opcional).",
+          "Para cada fila anote entrada, herramienta, salida, control y alternativa gratuita o manual. Use el ejemplo completo como referencia y adapte al menos una fila a su disciplina.",
+          "Defina un encargo pequeño: comparar cómo tres documentos definen adopción digital y qué límites tienen. Reúna S1–S3 desde la guía para ensayar; en un proyecto real use solo fuentes cuyo uso esté autorizado.",
+          "Escriba una regla de detención: si una cita no respalda una afirmación, no la uso; si no conozco permisos o datos, no los cargo. Establezca una persona responsable y una fecha para revisar.",
+          "Conserve su mapa y protocolo junto al cuaderno. Abra el enlace al taller 2 cuando pueda explicar qué hará la IA y qué seguirá decidiendo usted."
         ],
-        "task": "Entregue el mapa de herramientas, una ficha crítica y su protocolo ético de uso de IA.",
-        "example": "Acepto una matriz solo si cada fila identifica la fuente y el pasaje. Detengo el flujo si aparecen datos restringidos o si la conclusión no se sostiene en el corpus.",
+        "task": "Escriba su mapa de cinco filas, una adaptación a su disciplina y el encargo para el taller 2. Incluya una regla de detención y una alternativa cuando no haya acceso gratuito.",
+        "example": "Ejemplo: S1–S3 autorizados → Gemini Notebook → tabla de definiciones y límites → yo cotejo cada párrafo → uso solo las filas respaldadas. Si se agota la cuota, guardo el trabajo, verifico manualmente y dejo pendientes las consultas no realizadas. Para redactar el informe usaré solo la tabla revisada.",
         "quiz": {
           "question": "¿Qué conviene llevar al segundo taller?",
           "options": [
@@ -342,37 +435,47 @@
         ],
         "links": [
           {
-            "label": "Abrir el constructor de mi clon",
-            "url": "clon.html"
-          },
-          {
-            "label": "Abrir Gemini Notebook",
-            "url": "https://notebook.google.com/"
+            "label": "Guía resuelta de esta actividad",
+            "url": "practica-herramientas.html#actividad-8"
           }
         ],
-        "completion": "Conserve la evidencia de la actividad, explique una decisión y responda la comprobación conceptual. La autoevaluación no certifica competencia profesional.",
-        "textOnly": true
+        "completion": "Tiene un flujo que puede explicar y ejecutar con recursos gratuitos, con controles y responsabilidades definidos.",
+        "textOnly": true,
+        "ethics": {
+          "people": "Equipo investigador y personas sobre quienes puedan recaer las decisiones derivadas.",
+          "risk": "Automatizar sin necesidad, usar fuentes sin permiso o delegar la decisión final.",
+          "before": "Delimite tarea y fuentes, y decida qué pasos pueden resolverse manualmente.",
+          "check": "Cada salida debe tener responsable, criterio de aceptación y alternativa.",
+          "question": "¿Dónde aporta la IA, dónde basta una tarea manual y qué condición obliga a detener el flujo?",
+          "example": "Uso IA para proponer una tabla; verifico manualmente los pasajes. Si la fuente o el permiso no son claros, detengo ese uso. No necesito generar diez versiones para una tarea ya comprobada."
+        },
+        "checkpoint": "Tiene un flujo que puede explicar y ejecutar con recursos gratuitos, con controles y responsabilidades definidos.",
+        "requiresExecution": false
       },
       {
         "id": "v4-1-9",
         "title": "Cierre y plan de transferencia",
         "minutes": 15,
-        "objective": "Valorar lo aprendido y dejar una próxima aplicación verificable.",
-        "reading": "Lectura científica complementaria: examine el alcance del trabajo y su tipo de publicación. Los ejercicios se pueden completar con las orientaciones y el caso abierto del taller.",
+        "objective": "Comprobar su aprendizaje, identificar pendientes y planear una aplicación propia en siete días.",
+        "reading": "Lectura opcional para después de la práctica. Relacione las fuentes de apoyo con un error o un límite que haya observado. No se exige adquirir el texto completo ni completar una consulta institucional para avanzar.",
         "scenes": [
           {
-            "heading": "Comprender para aplicar",
-            "text": "La competencia inicial consiste en elegir una herramienta apropiada, pedir un resultado revisable y reconocer cuándo no debe usarse. Evalúe su trabajo en cuatro criterios: adecuación a la tarea, trazabilidad, control ético y posibilidad de revisión. Asigne 0 si falta, 1 si es parcial y 2 si queda documentado. Una meta formativa es alcanzar seis de ocho puntos sin cero en trazabilidad o ética; no equivale a certificación."
+            "heading": "Idea central",
+            "text": "Terminar un recorrido es una autoevaluación. El sitio comprueba que registró respuestas y decisiones, no que sus conclusiones sean científicamente correctas. La evidencia de aprendizaje está en sus materiales y en su capacidad de explicar y corregir una salida."
+          },
+          {
+            "heading": "Idea central",
+            "text": "La transferencia empieza con una pregunta manejable. Antes de usar datos propios, revise autorización y privacidad; antes de usar un resultado, verifique el original. Si una cuota o cuenta impidió la práctica, conserve ese pendiente explícito."
           }
         ],
         "steps": [
-          "Revise su cuaderno con los cuatro criterios y escriba la evidencia para cada puntuación.",
-          "Si un criterio falta, vuelva a la unidad correspondiente y complete el producto.",
-          "Defina una prueba de uso para los próximos siete días con responsable y resultado esperado.",
-          "Descargue el cuaderno. Abra el taller 2 cuando tenga una tarea y fuentes listas."
+          "Revise sus tres productos: mapa de herramientas, ficha con pasaje comprobado y protocolo con decisiones éticas. Use la lista de cierre de la guía.",
+          "Explique en sus palabras una diferencia entre buscar, generar y verificar; un caso de uso útil; y una afirmación que corrigió o rechazó.",
+          "Compruebe si alguna práctica sigue pendiente de ejecución. Puede avanzar por el material, pero no marque una consulta manual o de referencia como realizada en una IA.",
+          "Fije una tarea para los próximos siete días: pregunta, fuentes autorizadas, herramienta gratuita, persona revisora, fecha y señal de éxito. Descargue y abra su cuaderno final."
         ],
-        "task": "Registre su autoevaluación argumentada y una aplicación concreta para la próxima semana.",
-        "example": "Tengo fuentes y controles, pero no documenté qué excluí. Completo la bitácora antes de probar el asistente con un nuevo tema.",
+        "task": "Escriba qué puede hacer ahora, qué falta por practicar y su plan de siete días con responsable, fecha, fuentes y criterio de éxito.",
+        "example": "Modelo: en [fecha] compararé definiciones de tres fuentes abiertas de mi disciplina. Yo verificaré cada pasaje y un colega revisará una inferencia. Éxito: todas las afirmaciones usadas tienen respaldo localizado y los fallos están corregidos o descartados. Pendiente: [solo lo que realmente falta].",
         "quiz": {
           "question": "¿Qué acredita terminar las unidades?",
           "options": [
@@ -394,16 +497,22 @@
         ],
         "links": [
           {
-            "label": "Abrir el constructor de mi clon",
-            "url": "clon.html"
-          },
-          {
-            "label": "Abrir Gemini Notebook",
-            "url": "https://notebook.google.com/"
+            "label": "Guía resuelta de esta actividad",
+            "url": "practica-herramientas.html#actividad-9"
           }
         ],
-        "completion": "Conserve la evidencia de la actividad, explique una decisión y responda la comprobación conceptual. La autoevaluación no certifica competencia profesional.",
-        "textOnly": true
+        "completion": "Puede mostrar sus productos y explicar sus límites. La plataforma no emite una certificación automática.",
+        "textOnly": true,
+        "ethics": {
+          "people": "Usted, su equipo y quienes usarán el producto de investigación.",
+          "risk": "Confundir completar casillas con competencia o dejar de revisar al pasar a un caso real.",
+          "before": "Revise los pendientes sin convertir un ejemplo resuelto en evidencia de ejecución.",
+          "check": "Compruebe que sus productos permiten localizar una fuente, una corrección y una decisión.",
+          "question": "¿Qué evidencia muestra su aprendizaje y qué límite o pendiente comunicará al llevarlo a su proyecto?",
+          "example": "Mostraré una ficha con pasaje verificado y mi corrección. Comunicaré las consultas pendientes y repetiré los controles al usar fuentes reales; terminar el taller no certifica mis resultados."
+        },
+        "checkpoint": "Puede mostrar sus productos y explicar sus límites. La plataforma no emite una certificación automática.",
+        "requiresExecution": false
       }
     ]
   },

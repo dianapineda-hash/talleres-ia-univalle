@@ -4,6 +4,12 @@ Sitio: https://talleres-ia-univalle.onrender.com/
 
 La edición principal ofrece dos recorridos de 240 minutos, cada uno con ocho unidades de trabajo y una pausa. El primero aborda posibilidades, herramientas y ética algorítmica. El segundo enseña a configurar y comprobar un clon de investigación con recursos gratuitos, sin experiencia previa en IA o programación.
 
+## Taller 1 desde cero
+
+`practica-herramientas.html` acompaña ocho actividades prácticas y una pausa. Comparte S1–S3 con el taller 2: primera consulta, búsquedas reales, lectura con citas, comparación A/B, prueba de sesgos, bitácora, mapa y protocolo. `practice-data.js` contiene instrucciones con fuentes completas y plantillas descargables. Los modelos didácticos están separados de las respuestas que el participante debe obtener y registrar.
+
+`learning-core.js` conserva respuestas antiguas y valida solo presencia de registros, autoevaluación y declaración de ejecución. Cada actividad del taller 1 incorpora una decisión ética que se guarda y exporta. Las consultas pendientes no cuentan como ejecutadas; se puede avanzar por las unidades sin perder trabajo. Los registros antiguos no se borran, pero requieren los campos nuevos antes de volver a marcar la actividad. El taller 2 y la profundización mantienen sus requisitos anteriores. El Markdown exportado es legible, no un importador de progreso.
+
 ## Taller 2 desde cero
 
 `ejemplo-clon.html` presenta un caso completo sobre formación y adopción digital: tres fuentes sintéticas con párrafos identificados, perfil, carga en Gemini Notebook Standard, consultas para copiar, matriz resuelta, informe de referencia, seis pruebas y transferencia a la investigación propia. S4 se usa únicamente para una prueba de instrucciones incrustadas.

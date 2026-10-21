@@ -1,0 +1,11 @@
+import './site.js';
+import {download} from './site.js';
+import {escapeHTML as e} from './clone-core.js';
+import {sources} from './example-data.js?v=clon-paso-a-paso-1';
+import {practicePrompts,practiceTemplates} from './practice-data.js?v=taller1-practico-1';
+
+document.querySelector('#practice-sources').innerHTML=sources.map(s=>`<details class="source-card"><summary>${e(s.title)} · ${s.id==='S3'?'continuación al taller 2':'material del taller 1'}</summary><pre>${e(s.text)}</pre><button data-copy-source="${s.id}" class="secondary">Copiar ${s.id}</button> <button data-download-source="${s.id}" class="secondary">Descargar ${s.id} TXT</button><p class="copy-feedback" role="status"></p></details>`).join('');
+document.querySelectorAll('[data-practice-prompt]').forEach(el=>{const p=practicePrompts[el.dataset.practicePrompt];el.className='prompt-card';el.innerHTML=`<h3>${e(p.title)}</h3><details><summary>Leer el texto completo</summary><pre>${e(p.text)}</pre></details><button data-copy-practice="${el.dataset.practicePrompt}" class="secondary">Copiar ${e(p.title)}</button><p class="copy-feedback" role="status"></p>`;});
+document.querySelectorAll('[data-copy-source],[data-copy-practice]').forEach(b=>b.onclick=async()=>{const value=b.dataset.copySource?sources.find(s=>s.id===b.dataset.copySource).text:practicePrompts[b.dataset.copyPractice].text;const feedback=b.parentElement.querySelector('.copy-feedback');try{await navigator.clipboard.writeText(value);feedback.textContent='Texto completo copiado. Péguelo en la herramienta o en su cuaderno, según la actividad.';}catch{feedback.textContent='Abra el texto completo, selecciónelo y use Copiar en su navegador.';b.parentElement.querySelector('details')?.setAttribute('open','');}});
+document.querySelectorAll('[data-download-source]').forEach(b=>b.onclick=()=>{const s=sources.find(s=>s.id===b.dataset.downloadSource);download(s.file,s.text,'text/plain;charset=utf-8');b.parentElement.querySelector('.copy-feedback').textContent='Descarga solicitada. Busque el archivo en las descargas de su navegador.';});
+document.querySelector('#download-kit').onclick=()=>{download('plantillas-taller-1.txt',practiceTemplates(),'text/plain;charset=utf-8');document.querySelector('#practice-feedback').textContent='Plantillas descargables listas. Abra el TXT en su editor de texto.';};
