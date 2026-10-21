@@ -1,4 +1,4 @@
-import {emptyProfile} from './clone-core.js';
+import {emptyProfile} from './clone-core.js?v=clon-paso-a-paso-1';
 
 export const exampleName='Clon de lectura · Adopción digital';
 export const sources=[

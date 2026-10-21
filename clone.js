@@ -1,7 +1,7 @@
 import './site.js';
 import {download} from './site.js';
-import {exampleProfile} from './example-data.js';
-import {fields,productFields,checks,emptyProfile,normalizeProfile,masterPrompt,score,portable,escapeHTML as e} from './clone-core.js';
+import {exampleProfile} from './example-data.js?v=clon-paso-a-paso-1';
+import {fields,productFields,checks,emptyProfile,normalizeProfile,masterPrompt,score,portable,escapeHTML as e} from './clone-core.js?v=clon-paso-a-paso-1';
 let profile=emptyProfile();const key='iahub-clon-v1';let recovered=false;
 try{const value=localStorage.getItem(key);if(value){profile=normalizeProfile(JSON.parse(value));recovered=true;}}catch{}
 const $=s=>document.querySelector(s);

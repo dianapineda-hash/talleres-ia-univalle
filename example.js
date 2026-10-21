@@ -1,6 +1,6 @@
 import {download} from './site.js';
-import {fields,escapeHTML as e} from './clone-core.js';
-import {sources,hostileSource,exampleProfile,prompts,testCases,matrixRows,matrixHeaders,workedReport,csvMatrix} from './example-data.js';
+import {fields,escapeHTML as e} from './clone-core.js?v=clon-paso-a-paso-1';
+import {sources,hostileSource,exampleProfile,prompts,testCases,matrixRows,matrixHeaders,workedReport,csvMatrix} from './example-data.js?v=clon-paso-a-paso-1';
 const $=s=>document.querySelector(s);
 $('#example-sources').innerHTML=sources.map(s=>`<article class="source-card"><h3>${e(s.title)}</h3><details><summary>Leer el texto completo de ${s.id}</summary><pre>${e(s.text)}</pre></details><button class="secondary" data-download-source="${s.id}">Descargar ${s.id} TXT</button> <button class="secondary" data-copy-source="${s.id}">Copiar ${s.id} completo</button><p class="copy-feedback" role="status"></p></article>`).join('');
 const profile=exampleProfile();$('#example-profile').innerHTML=fields.map(([key,label])=>`<dt>${e(label)}</dt><dd>${e(profile[key]).replaceAll('\n','<br>')}</dd>`).join('');
