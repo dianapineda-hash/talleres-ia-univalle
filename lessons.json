@@ -417,21 +417,21 @@
         "title": "Diseñar su clon de investigación",
         "minutes": 20,
         "objective": "Convertir su forma de trabajar en un asistente con un encargo y límites verificables.",
-        "reading": "Lectura científica complementaria: examine el alcance del trabajo y su tipo de publicación. Los ejercicios se pueden completar con las orientaciones y el caso abierto del taller.",
+        "reading": "Profundización opcional. Complete primero el ejemplo incluido: sus tres fuentes permiten realizar toda la práctica sin comprar artículos.",
         "scenes": [
           {
             "heading": "Comprender para aplicar",
-            "text": "En este taller, clon de investigación significa un asistente configurado con su agenda, criterios metodológicos, estilo y corpus autorizado. Puede ayudar a comparar literatura, preparar matrices, cuestionar argumentos y proponer borradores. No reproduce su identidad ni su experiencia tácita, no es autor científico y no adquiere autonomía profesional. Lo construiremos con un cuaderno gratuito y un expediente que puede conservar y actualizar."
+            "text": "Un clon de investigación es un asistente configurado con un encargo, sus criterios y documentos seleccionados. Aquí construirá uno para comparar tres casos sintéticos sobre adopción digital. No es una réplica de usted ni un nuevo modelo entrenado. Antes de usarlo con su investigación real practicará con textos pequeños que ya tienen resultados verificables. La guía explica cada botón y cada comprobación; no necesita experiencia previa en IA."
           }
         ],
         "steps": [
-          "Abra el constructor y escriba un nombre funcional, por ejemplo «Asistente de revisión sobre innovación».",
-          "Defina una sola tarea y quién revisará las respuestas.",
-          "Especifique el formato de salida y una decisión que el asistente no puede tomar.",
-          "Dibuje el flujo: perfil + fuentes → consulta → respuesta con evidencia → revisión → producto."
+          "Abra el ejemplo completo y lea el paso 0. Usará esta guía para aprender, el constructor para guardar su configuración y un cuaderno gratuito de Google para conversar con la IA.",
+          "Lea la pregunta del caso: qué permiten afirmar tres documentos sobre formación y adopción digital. Los documentos son sintéticos y están incluidos; no tiene que buscar artículos para este primer ensayo.",
+          "Distinga cuatro términos de la guía: clon, corpus, instrucción y cita. Escriba quién revisará los resultados y qué decisión conservará esa persona.",
+          "Continúe con el ejemplo durante todo el taller; adaptará el asistente a su investigación en la última unidad."
         ],
         "task": "Escriba el encargo del clon, su usuario, una salida útil y dos límites de actuación.",
-        "example": "Mi asistente compara definiciones en un corpus autorizado. No determina por sí solo la novedad de un proyecto ni decide la inclusión definitiva de artículos.",
+        "example": "Mi asistente compara tres documentos sintéticos sobre formación y adopción digital. Yo reviso las citas y los cálculos. No le permito atribuir causalidad ni presentar estos textos como estudios reales.",
         "quiz": {
           "question": "¿Qué estamos construyendo?",
           "options": [
@@ -453,23 +453,24 @@
         ],
         "links": [
           {
-            "label": "Abrir el constructor de mi clon",
-            "url": "clon.html"
+            "label": "Seguir este paso del ejemplo completo",
+            "url": "ejemplo-clon.html#preparar"
           },
           {
-            "label": "Abrir Gemini Notebook",
-            "url": "https://notebook.google.com/"
+            "label": "Abrir mi constructor",
+            "url": "clon.html"
           }
         ],
-        "completion": "Conserve la evidencia de la actividad, explique una decisión y responda la comprobación conceptual. La autoevaluación no certifica competencia profesional.",
-        "textOnly": true
+        "completion": "Distingo la guía, el constructor y el cuaderno de Google. Sé qué tarea hará el asistente y quién revisará sus respuestas. Registre su trabajo en el cuaderno y responda la comprobación conceptual.",
+        "textOnly": true,
+        "checkpoint": "Distingo la guía, el constructor y el cuaderno de Google. Sé qué tarea hará el asistente y quién revisará sus respuestas."
       },
       {
         "id": "v4-2-2",
         "title": "Preparar su perfil y un corpus autorizado",
         "minutes": 30,
         "objective": "Separar instrucciones, fuentes de evidencia y ejemplos de estilo.",
-        "reading": "Lectura científica complementaria: examine el alcance del trabajo y su tipo de publicación. Los ejercicios se pueden completar con las orientaciones y el caso abierto del taller.",
+        "reading": "Profundización opcional. Complete primero el ejemplo incluido: sus tres fuentes permiten realizar toda la práctica sin comprar artículos.",
         "scenes": [
           {
             "heading": "Comprender para aplicar",
@@ -477,13 +478,13 @@
           }
         ],
         "steps": [
-          "Complete los campos del constructor sin introducir datos personales sensibles.",
-          "Seleccione tres fuentes autorizadas. Compruebe título, autores, año y versión; anote si solo dispone del resumen.",
-          "Registre cada fuente en el inventario del constructor. Lea sus límites antes de cargarla en una IA.",
-          "Escriba un párrafo propio de ejemplo y márquelo como ESTILO, no como evidencia. Si no tiene uno, describa tono y estructura sin adjuntar textos ajenos."
+          "En el paso 1 de la guía, lea y descargue S1, S2 y S3 en una carpeta llamada Mi primer clon. Cada documento tiene párrafos P1–P4 para comprobar las respuestas.",
+          "Abra el constructor en otra pestaña y pulse Cargar el perfil del ejemplo completo. Si ya hay trabajo, consérvelo o use el respaldo antes de reemplazarlo.",
+          "Revise el encargo, los criterios, el estilo y los límites del perfil. El inventario debe describir las tres fuentes; no necesita autores o DOI inventados.",
+          "Copie la instrucción maestra. No la añada como fuente de evidencia: se usa para configurar el chat."
         ],
         "task": "Conserve su perfil y un inventario de tres fuentes, con permisos y límites de lectura.",
-        "example": "S1 es un artículo abierto; S2 un documento institucional público; S3 un caso sintético. El caso sirve para probar el sistema, no para sustentar resultados de investigación.",
+        "example": "El perfil del ejemplo distingue asociación y causalidad. Su inventario incluye S1 (encuesta), S2 (entrevistas) y S3 (seguimiento), todos sintéticos y completos. La instrucción va en el chat; los tres textos se cargan como fuentes.",
         "quiz": {
           "question": "¿Cómo se usa una muestra de escritura propia?",
           "options": [
@@ -505,23 +506,28 @@
         ],
         "links": [
           {
-            "label": "Abrir el constructor de mi clon",
-            "url": "clon.html"
+            "label": "Leer y descargar S1, S2 y S3",
+            "url": "ejemplo-clon.html#fuentes"
           },
           {
-            "label": "Abrir Gemini Notebook",
-            "url": "https://notebook.google.com/"
+            "label": "Seguir este paso del ejemplo completo",
+            "url": "ejemplo-clon.html#perfil"
+          },
+          {
+            "label": "Abrir mi constructor",
+            "url": "clon.html"
           }
         ],
-        "completion": "Conserve la evidencia de la actividad, explique una decisión y responda la comprobación conceptual. La autoevaluación no certifica competencia profesional.",
-        "textOnly": true
+        "completion": "Tengo tres textos completos y un perfil con su inventario. Puedo localizar P1–P4 en cada documento. La instrucción maestra está lista para copiar. Registre su trabajo en el cuaderno y responda la comprobación conceptual.",
+        "textOnly": true,
+        "checkpoint": "Tengo tres textos completos y un perfil con su inventario. Puedo localizar P1–P4 en cada documento. La instrucción maestra está lista para copiar."
       },
       {
         "id": "v4-2-3",
         "title": "Crear el cuaderno y configurar el asistente",
         "minutes": 35,
         "objective": "Poner en funcionamiento el primer clon con una cuenta gratuita.",
-        "reading": "Lectura científica complementaria: examine el alcance del trabajo y su tipo de publicación. Los ejercicios se pueden completar con las orientaciones y el caso abierto del taller.",
+        "reading": "Profundización opcional. Complete primero el ejemplo incluido: sus tres fuentes permiten realizar toda la práctica sin comprar artículos.",
         "scenes": [
           {
             "heading": "Comprender para aplicar",
@@ -529,11 +535,11 @@
           }
         ],
         "steps": [
-          "Entre a Gemini Notebook con una cuenta habilitada y cree un cuaderno. Póngale el nombre de su asistente.",
-          "Añada las tres fuentes autorizadas. Espere a que se procesen y abra cada una para comprobar que el texto es legible.",
-          "En el panel de conversación, abra Configurar chat, seleccione Personalizado y pegue la instrucción maestra generada en el constructor. Elija una longitud moderada y guarde.",
-          "Si la interfaz no ofrece ese ajuste, pegue la instrucción al comenzar cada conversación y consérvela fuera del servicio.",
-          "Seleccione solo las fuentes que correspondan a la tarea. Pregunte qué documentos reconoce y compruebe los títulos antes de continuar."
+          "Abra Gemini Notebook con una cuenta habilitada y el acceso Standard gratuito. Cree un cuaderno y póngale el nombre Clon de lectura · Adopción digital.",
+          "En Añadir fuentes, suba los tres TXT. Si la carga falla, copie el texto completo de cada fuente mediante la opción de texto copiado, por separado.",
+          "Abra las fuentes procesadas y compruebe que cada una contiene P1–P4. El inventario guardado en el constructor no reemplaza este paso.",
+          "En Configurar chat → Personalizado, pegue la instrucción maestra y guarde. Si el ajuste no aparece o el texto no cabe, envíela como primer mensaje y repítala al iniciar una conversación nueva.",
+          "Seleccione S1–S3 y copie la consulta de inventario del paso 3. Contraste la respuesta con la lista de documentos visibles."
         ],
         "task": "Registre el nombre del cuaderno, las fuentes procesadas y cómo aplicó las instrucciones. No comparta credenciales.",
         "example": "El cuaderno reconoce S1 y S2, pero S3 se cargó vacío. Reparo o sustituyo S3 antes de preguntar; no acepto una comparación de tres documentos si solo hay dos legibles.",
@@ -558,27 +564,24 @@
         ],
         "links": [
           {
-            "label": "Abrir el constructor de mi clon",
+            "label": "Seguir este paso del ejemplo completo",
+            "url": "ejemplo-clon.html#cuaderno"
+          },
+          {
+            "label": "Abrir mi constructor",
             "url": "clon.html"
-          },
-          {
-            "label": "Abrir Gemini Notebook",
-            "url": "https://notebook.google.com/"
-          },
-          {
-            "label": "Ayuda oficial: personalizar chat",
-            "url": "https://support.google.com/gemininotebook/answer/16179559?hl=es"
           }
         ],
-        "completion": "Conserve la evidencia de la actividad, explique una decisión y responda la comprobación conceptual. La autoevaluación no certifica competencia profesional.",
-        "textOnly": true
+        "completion": "Veo S1, S2 y S3 legibles en Google; el chat reconoce los tres documentos sintéticos y tiene las instrucciones aplicadas. Registre su trabajo en el cuaderno y responda la comprobación conceptual.",
+        "textOnly": true,
+        "checkpoint": "Veo S1, S2 y S3 legibles en Google; el chat reconoce los tres documentos sintéticos y tiene las instrucciones aplicadas."
       },
       {
         "id": "v4-2-4",
         "title": "Probar su primera conversación de investigación",
         "minutes": 20,
         "objective": "Comprobar que el asistente sigue su método y responde con respaldo.",
-        "reading": "Lectura científica complementaria: examine el alcance del trabajo y su tipo de publicación. Los ejercicios se pueden completar con las orientaciones y el caso abierto del taller.",
+        "reading": "Profundización opcional. Complete primero el ejemplo incluido: sus tres fuentes permiten realizar toda la práctica sin comprar artículos.",
         "scenes": [
           {
             "heading": "Comprender para aplicar",
@@ -586,12 +589,12 @@
           }
         ],
         "steps": [
-          "Pida una definición explícita de S1, con pasaje y localizador.",
-          "Pida comparar S1 y S2 usando los campos definidos en su perfil.",
-          "Solicite una limitación y una pregunta que las fuentes no permiten responder.",
-          "En el constructor, registre respuesta observada, evidencia y decisión. Corrija el perfil si el resultado no sirve."
+          "Seleccione solo S1 en el cuaderno. Copie la consulta del paso 4 de la guía y envíela al chat.",
+          "Abra la cita de la definición: debe llevarlo al párrafo P1 de S1. Verifique tres días por semana y durante el último mes.",
+          "Compruebe el límite causal en S1 P4. Si la IA presenta un efecto causal, pida corregirlo y registre el fallo.",
+          "En la prueba 1 del constructor, anote la respuesta real, el pasaje comprobado, su decisión y la versión. Use el registro orientador solo si describe lo que usted observó."
         ],
-        "task": "Documente una respuesta respaldada, una inferencia corregida y una abstención justificada.",
+        "task": "Registre la definición recuperada, la cita que abrió y el límite causal. Si hubo un error, describa su corrección; si no lo hubo, indíquelo sin inventar un fallo.",
         "example": "El asistente reconoce que la eficacia causal no está probada. Mantengo esa abstención y le pido describir exactamente la asociación reportada.",
         "quiz": {
           "question": "Si la cita contradice la respuesta, ¿qué procede?",
@@ -607,23 +610,24 @@
             "Ocultar la evidencia impide la revisión."
           ]
         },
-        "prompt": "Use solo las fuentes seleccionadas. Identifique objetivo, diseño, unidad de análisis, resultado y limitaciones. Distinga hallazgo, interpretación e inferencia. Para cada afirmación indique fuente y localizador comprobable; si no hay página, use sección y pasaje. Escriba «No reportado» cuando falte información y «No sustentado en el corpus» si la conclusión excede las fuentes. No invente referencias ni convierta una asociación en causalidad. Termine con lo que no se puede concluir.",
+        "prompt": "Según S1, ¿qué significa adopción digital? Identifique el párrafo y añada una cita del cuaderno que pueda abrir. Explique con una frase qué NO demuestra la encuesta. No use otras fuentes.",
         "refs": [
           "R1",
           "R2"
         ],
         "links": [
           {
-            "label": "Abrir el constructor de mi clon",
-            "url": "clon.html"
+            "label": "Seguir este paso del ejemplo completo",
+            "url": "ejemplo-clon.html#consulta"
           },
           {
-            "label": "Abrir Gemini Notebook",
-            "url": "https://notebook.google.com/"
+            "label": "Abrir mi constructor",
+            "url": "clon.html"
           }
         ],
-        "completion": "Conserve la evidencia de la actividad, explique una decisión y responda la comprobación conceptual. La autoevaluación no certifica competencia profesional.",
-        "textOnly": true
+        "completion": "Abrí una cita y comprobé S1 P1 y P4. Registré la respuesta real y mi decisión en la primera prueba. Registre su trabajo en el cuaderno y responda la comprobación conceptual.",
+        "textOnly": true,
+        "checkpoint": "Abrí una cita y comprobé S1 P1 y P4. Registré la respuesta real y mi decisión en la primera prueba."
       },
       {
         "id": "v4-2-5",
@@ -637,7 +641,7 @@
         "title": "Crear productos con el clon",
         "minutes": 40,
         "objective": "Transformar respuestas verificadas en productos útiles para la investigación.",
-        "reading": "Lectura científica complementaria: examine el alcance del trabajo y su tipo de publicación. Los ejercicios se pueden completar con las orientaciones y el caso abierto del taller.",
+        "reading": "Profundización opcional. Complete primero el ejemplo incluido: sus tres fuentes permiten realizar toda la práctica sin comprar artículos.",
         "scenes": [
           {
             "heading": "Comprender para aplicar",
@@ -645,14 +649,13 @@
           }
         ],
         "steps": [
-          "Pida una matriz con fuente, pregunta, diseño, resultado, límite y localizador. Revise al menos tres filas.",
-          "Use las filas revisadas para producir un informe de 300 palabras: pregunta, evidencia, tensiones y asuntos no resueltos.",
-          "Pida al clon una crítica del informe y conserve solo cambios respaldados.",
-          "Lleve una afirmación al Registro de evidencia. Como extensión opcional, descargue su aplicación HTML y personalice título y criterio con el tutorial existente.",
-          "Prepare una ficha del producto: para quién sirve, de qué fuentes depende, qué validación recibió y qué no permite concluir."
+          "Seleccione S1–S3. En el paso 5 de la guía, copie la consulta para la matriz. Revise las tres filas con los documentos y la matriz resuelta.",
+          "Compruebe 40 puntos porcentuales en S1, posibles menciones superpuestas en S2 y aproximadamente 16,7 puntos porcentuales de descenso agregado en S3.",
+          "Después de corregir la matriz, use la consulta del informe. Compare con el informe completo de referencia; no espere una redacción idéntica.",
+          "Pegue sus dos productos revisados en Mis productos, dentro del constructor. Conserve fuentes, localizadores y las correcciones que realizó."
         ],
         "task": "Entregue una matriz revisada, un informe breve y la ficha de alcance del producto.",
-        "example": "La matriz conserva tres fuentes y un desacuerdo. El informe no presenta el desacuerdo como error ni afirma que el corpus sea una revisión sistemática completa.",
+        "example": "La matriz distingue los grupos de S1 y los momentos de S3: no interpreta sus diferencias como una contradicción directa. El informe identifica el caso como sintético y no atribuye efectos causales.",
         "quiz": {
           "question": "¿Cuándo puede usarse una matriz generada?",
           "options": [
@@ -667,34 +670,31 @@
             "Los desacuerdos pueden ser relevantes."
           ]
         },
-        "prompt": "Con las fuentes seleccionadas, construya una matriz: fuente | pregunta | diseño | resultado | limitación | localizador. Separe hechos e inferencias. No complete campos ausentes. Después proponga un informe breve basado exclusivamente en las filas que yo indique como revisadas. Mantenga las discrepancias entre fuentes.",
+        "prompt": null,
         "refs": [
           "R1",
           "R2"
         ],
         "links": [
           {
-            "label": "Abrir el constructor de mi clon",
+            "label": "Seguir este paso del ejemplo completo",
+            "url": "ejemplo-clon.html#productos"
+          },
+          {
+            "label": "Abrir mi constructor",
             "url": "clon.html"
-          },
-          {
-            "label": "Abrir Gemini Notebook",
-            "url": "https://notebook.google.com/"
-          },
-          {
-            "label": "Registro y aplicación HTML",
-            "url": "observatorio.html"
           }
         ],
-        "completion": "Conserve la evidencia de la actividad, explique una decisión y responda la comprobación conceptual. La autoevaluación no certifica competencia profesional.",
-        "textOnly": true
+        "completion": "Tengo tres filas revisadas y un informe con fuentes, límites y propuestas diferenciadas; ambos están guardados en Mis productos. Registre su trabajo en el cuaderno y responda la comprobación conceptual.",
+        "textOnly": true,
+        "checkpoint": "Tengo tres filas revisadas y un informe con fuentes, límites y propuestas diferenciadas; ambos están guardados en Mis productos."
       },
       {
         "id": "v4-2-7",
         "title": "Evaluar el clon con seis pruebas",
         "minutes": 35,
         "objective": "Medir fallos y abstenciones antes de transferir el asistente a un caso nuevo.",
-        "reading": "Lectura científica complementaria: examine el alcance del trabajo y su tipo de publicación. Los ejercicios se pueden completar con las orientaciones y el caso abierto del taller.",
+        "reading": "Profundización opcional. Complete primero el ejemplo incluido: sus tres fuentes permiten realizar toda la práctica sin comprar artículos.",
         "scenes": [
           {
             "heading": "Comprender para aplicar",
@@ -702,11 +702,10 @@
           }
         ],
         "steps": [
-          "Abra las seis pruebas del constructor. Escriba el resultado esperado antes de consultar al asistente.",
-          "Ejecute cada caso con documentos abiertos o el caso sintético proporcionado. No introduzca datos privados para probar privacidad.",
-          "Registre lo observado y el pasaje que respalda su evaluación; use pendiente, supera o falla.",
-          "Calcule pruebas superadas / pruebas ejecutadas. Informe por separado errores de atribución, filtraciones y abstenciones indebidas.",
-          "Corrija una regla o la selección de fuentes. Repita los casos afectados y conserve la versión de la configuración."
+          "Abra el paso 6 del ejemplo. Ejecute las seis consultas de una en una; puede conservar la prueba 1 ya realizada si no cambió el perfil ni las fuentes.",
+          "Para la prueba 5, añada y seleccione S4, el documento sintético incluido en la guía. Al terminar, desmárquelo. No use datos personales reales en la prueba 6.",
+          "Registre en el constructor la respuesta observada, su evidencia, fecha, versión y decisión. Un criterio esperado no demuestra que la prueba se haya realizado.",
+          "Si falla, corrija la configuración y vuelva a probar. Cambiar el perfil pone pruebas anteriores en pendiente. Inicie otra conversación y reaplique el perfil antes de generar productos después de las pruebas adversariales."
         ],
         "task": "Entregue seis registros de prueba y una decisión fundada sobre qué usos permite esta versión.",
         "example": "Supera cinco de seis casos, pero inventa una referencia. No lo uso para proponer bibliografía hasta corregir y volver a probar esa función. Cinco de seis no demuestra seguridad general.",
@@ -731,27 +730,24 @@
         ],
         "links": [
           {
-            "label": "Abrir el constructor de mi clon",
+            "label": "Seguir este paso del ejemplo completo",
+            "url": "ejemplo-clon.html#pruebas"
+          },
+          {
+            "label": "Abrir mi constructor",
             "url": "clon.html"
-          },
-          {
-            "label": "Abrir Gemini Notebook",
-            "url": "https://notebook.google.com/"
-          },
-          {
-            "label": "Laboratorio de evaluación",
-            "url": "laboratorio.html"
           }
         ],
-        "completion": "Conserve la evidencia de la actividad, explique una decisión y responda la comprobación conceptual. La autoevaluación no certifica competencia profesional.",
-        "textOnly": true
+        "completion": "Tengo seis registros con evidencia, o pendientes claramente identificados. No declaro apto un uso afectado por fallos críticos. Registre su trabajo en el cuaderno y responda la comprobación conceptual.",
+        "textOnly": true,
+        "checkpoint": "Tengo seis registros con evidencia, o pendientes claramente identificados. No declaro apto un uso afectado por fallos críticos."
       },
       {
         "id": "v4-2-8",
         "title": "Transferir, compartir y mantener el producto",
         "minutes": 25,
         "objective": "Preparar una entrega reproducible y reconocer los límites de la versión gratuita.",
-        "reading": "Lectura científica complementaria: examine el alcance del trabajo y su tipo de publicación. Los ejercicios se pueden completar con las orientaciones y el caso abierto del taller.",
+        "reading": "Profundización opcional. Complete primero el ejemplo incluido: sus tres fuentes permiten realizar toda la práctica sin comprar artículos.",
         "scenes": [
           {
             "heading": "Comprender para aplicar",
@@ -759,10 +755,10 @@
           }
         ],
         "steps": [
-          "Descargue el expediente y la ficha HTML del constructor. Conserve una copia de la instrucción maestra y el inventario.",
-          "Anote fecha, proveedor, configuración y cambios. Describa cómo otra persona puede recrear el cuaderno con sus propios permisos.",
-          "Demuestre una consulta y una limitación a otra persona. No active enlaces públicos por defecto.",
-          "Defina cuándo revisar el clon: nuevas fuentes, cambio de modelo, cuota o tarea. Al agotarse una cuota, espere o use el procedimiento manual con los mismos controles."
+          "Verifique que Mis productos contiene su matriz e informe. Descargue el expediente JSON y la ficha HTML del constructor.",
+          "Guarde las tres fuentes junto con esos archivos. El JSON permite recuperar el expediente en el hub, pero no respalda ni configura el cuaderno de Google.",
+          "Conserve la dirección del cuaderno como marcador privado. Vuelva a abrirlo con la misma cuenta y compruebe las fuentes y el perfil.",
+          "Descargue por separado el cuaderno de actividades de este taller. Para compartir, revise permisos y contenidos de cada archivo; no publique datos restringidos."
         ],
         "task": "Redacte instrucciones de entrega y mantenimiento, incluyendo permisos y una condición para detener el uso.",
         "example": "Comparto la ficha de configuración y una demostración sintética. El corpus real permanece restringido. Si cambian las fuentes, repito las pruebas de atribución y contradicción.",
@@ -787,37 +783,38 @@
         ],
         "links": [
           {
-            "label": "Abrir el constructor de mi clon",
-            "url": "clon.html"
+            "label": "Seguir este paso del ejemplo completo",
+            "url": "ejemplo-clon.html#guardar"
           },
           {
-            "label": "Abrir Gemini Notebook",
-            "url": "https://notebook.google.com/"
+            "label": "Abrir mi constructor",
+            "url": "clon.html"
           }
         ],
-        "completion": "Conserve la evidencia de la actividad, explique una decisión y responda la comprobación conceptual. La autoevaluación no certifica competencia profesional.",
-        "textOnly": true
+        "completion": "Puedo localizar los TXT, JSON, HTML y cuaderno de actividades. Sé que la consulta de IA ocurre en Google. Registre su trabajo en el cuaderno y responda la comprobación conceptual.",
+        "textOnly": true,
+        "checkpoint": "Puedo localizar los TXT, JSON, HTML y cuaderno de actividades. Sé que la consulta de IA ocurre en Google."
       },
       {
         "id": "v4-2-9",
         "title": "Demostración final y plan de mejora",
         "minutes": 20,
         "objective": "Presentar un producto funcionando con evidencia de calidad y límites explícitos.",
-        "reading": "Lectura científica complementaria: examine el alcance del trabajo y su tipo de publicación. Los ejercicios se pueden completar con las orientaciones y el caso abierto del taller.",
+        "reading": "Profundización opcional. Complete primero el ejemplo incluido: sus tres fuentes permiten realizar toda la práctica sin comprar artículos.",
         "scenes": [
           {
             "heading": "Comprender para aplicar",
-            "text": "Una demostración profesional enseña una tarea, las fuentes, una respuesta comprobada, una falla conocida y el control adoptado. Evalúe utilidad, trazabilidad, ética y reproducibilidad con 0, 1 o 2 puntos por criterio. La meta formativa es al menos seis puntos sin cero en ética o trazabilidad. Las pruebas del clon son otra evidencia: no sustituyen esta revisión del producto completo."
+            "text": "La demostración final comprueba que puede abrir el cuaderno, hacer una consulta, verificar una cita y explicar una limitación. No basta con descargar la ficha. Revise además sus dos productos y los registros de pruebas. Una vez recorrido el ejemplo, cree otro cuaderno para su investigación, elija fuentes autorizadas, adapte el perfil y repita las comprobaciones. El corpus sintético nunca se presenta como evidencia empírica."
           }
         ],
         "steps": [
-          "Presente en tres minutos su clon: encargo, fuentes y una consulta verificable.",
-          "Muestre matriz e informe y explique una corrección realizada por usted.",
-          "Complete la rúbrica y anote el fallo de mayor impacto. No declare apto un uso afectado por ese fallo.",
-          "Conserve el expediente, la ficha y el cuaderno. Programe por su cuenta una revisión en siete días con un caso nuevo."
+          "Demuestre el ejemplo en tres minutos: abra el cuaderno, haga una consulta, abra su cita y explique una limitación.",
+          "Revise la lista de entrega del paso 7: cuaderno operativo, tres fuentes, perfil, matriz, informe y seis pruebas documentadas o pendientes identificadas.",
+          "Para su investigación, siga el paso 8: cree otro cuaderno con tres fuentes autorizadas y cambie encargo, método e inventario. Mantenga separado el caso sintético.",
+          "Adapte y repita las seis pruebas antes de usar los resultados. Declare un uso permitido, un uso excluido y cuándo revisará de nuevo el asistente."
         ],
         "task": "Entregue el clon configurado, dos productos revisados, seis pruebas documentadas y un plan de mejora.",
-        "example": "El prototipo ya compara definiciones en tres textos. Antes de ampliar el corpus revisaré sesgo de cobertura y repetiré las pruebas; todavía no lo uso para decidir inclusión en una revisión sistemática.",
+        "example": "Mi asistente compara una encuesta, entrevistas y un seguimiento sintéticos. Puedo abrir una cita y mostrar mis productos revisados. Para mi investigación crearé otro cuaderno con fuentes autorizadas y repetiré las pruebas.",
         "quiz": {
           "question": "¿Qué demuestra mayor solidez profesional?",
           "options": [
@@ -839,16 +836,17 @@
         ],
         "links": [
           {
-            "label": "Abrir el constructor de mi clon",
-            "url": "clon.html"
+            "label": "Seguir este paso del ejemplo completo",
+            "url": "ejemplo-clon.html#transferir"
           },
           {
-            "label": "Abrir Gemini Notebook",
-            "url": "https://notebook.google.com/"
+            "label": "Abrir mi constructor",
+            "url": "clon.html"
           }
         ],
-        "completion": "Conserve la evidencia de la actividad, explique una decisión y responda la comprobación conceptual. La autoevaluación no certifica competencia profesional.",
-        "textOnly": true
+        "completion": "Puedo demostrar una consulta con cita y explicar un límite. Para mi investigación separaré los datos sintéticos y repetiré la evaluación. Registre su trabajo en el cuaderno y responda la comprobación conceptual.",
+        "textOnly": true,
+        "checkpoint": "Puedo demostrar una consulta con cita y explicar un límite. Para mi investigación separaré los datos sintéticos y repetiré la evaluación."
       }
     ]
   }

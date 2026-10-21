@@ -1,59 +1,31 @@
-# Talleres autogestionables de IA para investigadores
+# Talleres de IA para investigadores
 
 Sitio: https://talleres-ia-univalle.onrender.com/
 
-Cada taller tiene cinco unidades de aprendizaje y una pausa. Las duraciones de trabajo suman 240 minutos por taller, pero el participante puede detenerse y continuar otro día.
+La edición principal ofrece dos recorridos de 240 minutos, cada uno con ocho unidades de trabajo y una pausa. El primero aborda posibilidades, herramientas y ética algorítmica. El segundo enseña a configurar y comprobar un clon de investigación con recursos gratuitos, sin experiencia previa en IA o programación.
 
-## Experiencia del participante
+## Taller 2 desde cero
 
-- Diez videos MP4 originales con láminas explicativas y narración sintética en español de Colombia. Cada video dura aproximadamente un minuto y medio.
-- Diez audios MP3 con la misma explicación: son formatos alternativos, no contenidos que deban consumirse dos veces.
-- Subtítulos WebVTT y transcripción completa.
-- Lecturas científicas enlazadas por DOI, prácticas individuales y ejemplos orientadores.
-- Cuaderno con guardado local, exportación Markdown y autoevaluación con retroalimentación por opción.
-- Navegación anterior/siguiente y recuperación del avance. No se certifica aprendizaje ni se evalúa automáticamente la calidad de respuestas abiertas.
+`ejemplo-clon.html` presenta un caso completo sobre formación y adopción digital: tres fuentes sintéticas con párrafos identificados, perfil, carga en Gemini Notebook Standard, consultas para copiar, matriz resuelta, informe de referencia, seis pruebas y transferencia a la investigación propia. S4 se usa únicamente para una prueba de instrucciones incrustadas.
 
-La guía de la versión presencial se conserva en facilitador-1.html y facilitador-2.html, fuera del recorrido principal.
+`example-data.js` es la fuente común del caso y del perfil que carga el constructor. Las fuentes originales del caso autorizan su uso en el taller. Todos sus datos son ficticios; los productos resueltos son modelos didácticos, no resultados de una ejecución de IA. `example.js` muestra los materiales y permite copiarlos y descargarlos como TXT y CSV.
 
-## Archivos principales
+`clon.html` prepara instrucciones, registra pruebas y conserva los productos revisados. No ejecuta IA ni envía datos a Google. La configuración operativa se realiza en un cuaderno del proveedor. La ficha HTML es legible sin conexión; el JSON permite recuperar el expediente local, no la cuenta del proveedor ni sus documentos.
 
-`taller-1.html` y `taller-2.html` abren `learn.js`. El contenido pedagógico está en `lessons.json`. Los recursos multimedia están en `media/`. Los guiones son textos originales del taller, no lecturas integrales de los artículos. Los videos no son grabaciones de la interfaz de Acrobat.
+`clone-core.js` mantiene el formato de expediente v1 compatible con respaldos anteriores. Los productos son opcionales para importaciones antiguas. Las pruebas importadas vuelven a pendiente y modificar el perfil invalida estados previos. Cargar un ejemplo sobre trabajo existente requiere una acción explícita que descarga primero un respaldo. Los resultados y pruebas son registros humanos, no evaluaciones automáticas.
 
-`observatorio.html` conserva la aplicación con fuentes, instrucciones para Acrobat, revisión humana y exportación CSV/JSON. No hay API de IA ni conexión automática con Adobe. El HTML que descarga es un prototipo reducido para aprender a modificar código; no replica todas las funciones del observatorio.
+## Contenido y almacenamiento
 
-## Fuentes y acceso
+`taller-1.html` y `taller-2.html` usan `learn.js` y `lessons.json`. El taller 2 enlaza cada unidad a su paso en el ejemplo; las lecturas complementarias están plegadas y no son necesarias para completar la práctica. Las guías de facilitación acompañan la edición principal.
 
-Los artículos tienen DOI y consultas preparadas para Web of Science. Los registros individuales en WoS requieren comprobación con acceso institucional; no se han atribuido números UT no verificados. Los libros son complementarios y no se afirma su indexación en BKCI. No se redistribuyen PDF editoriales.
+El cuaderno de actividades se guarda en `autogestion-v4-*`; el constructor usa `iahub-clon-v1`. Descargue ambos respaldos antes de cambiar de equipo. No hay backend de participantes ni analítica. El avance y las pruebas no certifican competencia profesional.
 
-Acrobat AI requiere acceso habilitado en la cuenta. La alternativa documental gratuita se documenta en la biblioteca, sujeta a límites del proveedor. Los ejercicios de lectura pueden continuar manualmente si no hay acceso a IA.
+`herramientas.html` presenta ocho herramientas y complementos con fuentes oficiales. La ruta principal no exige Acrobat, WoS, artículos de pago, suscripciones ni API. Las cuentas habilitadas y cuotas de los proveedores condicionan el acceso; el trabajo manual no se presenta como una consulta de IA ejecutada.
 
-## Privacidad y almacenamiento
-
-Las respuestas se guardan en localStorage de cada navegador. No hay analítica ni backend de participantes. Descargar el cuaderno antes de cambiar de equipo. El observatorio permite respaldos separados. Al recuperar datos externos, sus afirmaciones vuelven a pendiente de revisión.
+`avanzado-1.html` y `avanzado-2.html` conservan `lessons-avanzadas.json` y los audiovisuales anteriores como profundización opcional. El laboratorio y el observatorio mantienen sus funciones de registro y evaluación; no ejecutan modelos de IA.
 
 ## Desarrollo y publicación
 
-Node 18 o superior. Sin dependencias de ejecución: `npm test` y `npm run build`. Servir `dist` mediante HTTP. Render ejecuta las pruebas y construye el sitio desde `main`.
+Node 18 o superior, sin dependencias de ejecución. `npm test` comprueba estructura, duración, recursos, importación, exportación segura, persistencia del esquema y coherencia del caso. `npm run build` prepara `dist`. Render compila desde `main`. La navegación, copia, descarga y persistencia se verifican también en el navegador.
 
-Diecisiete pruebas comprueban estructura, duración de recorridos, medios presentes, importaciones y manejo seguro de datos. La navegación y reproducción se comprueban adicionalmente en navegador.
-
-Material para investigadores de la Universidad del Valle. No implica aval institucional. El logosímbolo se conserva localmente, sin modificación, desde el archivo del portal oficial; conserva sus derechos institucionales. Se mantiene Arial y el rojo institucional en títulos principales.
-
-## Revisión avanzada
-
-Dirigida a docentes con doctorado y posdoctorado. Diez unidades reescritas con decisiones de diseño, hipótesis rivales, contraste de novedad y evaluación de aplicaciones. Recursos R7–R10: fiabilidad, OpenScholar, BrainBench y TRIPOD-LLM (adaptación explícita fuera de salud).
-
-`laboratorio.html` incorpora seis expedientes ficticios, puntuación de Brier y banco A/B con particiones de desarrollo/reserva. Calcula exactitud, cobertura y riesgo selectivo; distingue abstenciones y casos no ejecutados. Contratos versionados localmente, informe JSON y aplicación HTML portable. No ejecuta modelos, no protege el ocultamiento de la reserva y no permite inferir superioridad poblacional con los casos de demostración.
-
-Las nuevas respuestas se guardan en autogestion-v3; las antiguas no se reinterpretan como respuestas al nuevo currículo. Identidad documentada en IDENTIDAD.md con páginas del manual.
-
-
-## Ruta gratuita · 21 de octubre de 2026
-
-La edición principal utiliza `lessons.json`: Taller 1, posibilidades, herramientas y ética algorítmica; Taller 2, construcción de un clon de investigación con un corpus autorizado. Ambos suman 240 minutos e incluyen pausa. `herramientas.html` presenta ocho herramientas y complementos con condiciones oficiales. `clon.html` genera instrucciones y un expediente local; no ejecuta IA ni envía datos a un proveedor. La configuración real se realiza en Gemini Notebook Standard.
-
-`clone-core.js` define perfil, instrucciones, pruebas y ficha portable. El almacenamiento es local y la exportación JSON permite recuperación; las pruebas importadas vuelven a pendiente. Modificar el perfil invalida las decisiones previas. Los estados son registros humanos, no evaluación automática.
-
-`avanzado-1.html` y `avanzado-2.html` conservan los recorridos y audiovisuales anteriores mediante `lessons-avanzadas.json`, como profundización opcional. Las guías de facilitación corresponden a los programas nuevos. La ruta principal no requiere Acrobat, WoS, suscripciones ni API de pago. Las lecturas científicas son complementarias.
-
-Validación: `npm test` verifica contenido, seguridad de exportación, recuperación y métricas; `npm run build` prepara las páginas estáticas y conserva los recursos existentes.
+Se conserva la identidad visual existente. Material para investigadores de la Universidad del Valle; no implica aval institucional. Las condiciones del proveedor y las instrucciones de su interfaz están enlazadas a ayuda oficial, consultada el 21 de octubre de 2026.
