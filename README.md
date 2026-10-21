@@ -46,3 +46,14 @@ Dirigida a docentes con doctorado y posdoctorado. Diez unidades reescritas con d
 `laboratorio.html` incorpora seis expedientes ficticios, puntuación de Brier y banco A/B con particiones de desarrollo/reserva. Calcula exactitud, cobertura y riesgo selectivo; distingue abstenciones y casos no ejecutados. Contratos versionados localmente, informe JSON y aplicación HTML portable. No ejecuta modelos, no protege el ocultamiento de la reserva y no permite inferir superioridad poblacional con los casos de demostración.
 
 Las nuevas respuestas se guardan en autogestion-v3; las antiguas no se reinterpretan como respuestas al nuevo currículo. Identidad documentada en IDENTIDAD.md con páginas del manual.
+
+
+## Ruta gratuita · 21 de octubre de 2026
+
+La edición principal utiliza `lessons.json`: Taller 1, posibilidades, herramientas y ética algorítmica; Taller 2, construcción de un clon de investigación con un corpus autorizado. Ambos suman 240 minutos e incluyen pausa. `herramientas.html` presenta ocho herramientas y complementos con condiciones oficiales. `clon.html` genera instrucciones y un expediente local; no ejecuta IA ni envía datos a un proveedor. La configuración real se realiza en Gemini Notebook Standard.
+
+`clone-core.js` define perfil, instrucciones, pruebas y ficha portable. El almacenamiento es local y la exportación JSON permite recuperación; las pruebas importadas vuelven a pendiente. Modificar el perfil invalida las decisiones previas. Los estados son registros humanos, no evaluación automática.
+
+`avanzado-1.html` y `avanzado-2.html` conservan los recorridos y audiovisuales anteriores mediante `lessons-avanzadas.json`, como profundización opcional. Las guías de facilitación corresponden a los programas nuevos. La ruta principal no requiere Acrobat, WoS, suscripciones ni API de pago. Las lecturas científicas son complementarias.
+
+Validación: `npm test` verifica contenido, seguridad de exportación, recuperación y métricas; `npm run build` prepara las páginas estáticas y conserva los recursos existentes.

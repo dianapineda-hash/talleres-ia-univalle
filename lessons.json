@@ -1,605 +1,854 @@
 {
   "1": {
-    "title": "IA y juicio científico: evaluación de evidencia",
-    "intro": "Un laboratorio de lectura crítica para profesores con trayectoria investigadora. El recorrido examina cómo cambia una inferencia cuando interviene un sistema de IA y qué evidencia permite sostenerla. Se presupone experiencia metodológica; no se exige experiencia previa con Acrobat.",
-    "product": "Un dictamen sobre una contribución de su área, acompañado de una comparación de consultas y una búsqueda de antecedentes documentada.",
+    "title": "IA para investigar: posibilidades, herramientas y ética",
+    "intro": "Aprenda qué puede hacer con IA, elija herramientas gratuitas y convierta sus respuestas en trabajo verificable. Formación práctica para investigadores, docentes y estudiantes de posgrado, sin experiencia previa en IA.",
+    "product": "Un mapa personal de herramientas, una ficha de lectura verificada y un protocolo de uso con criterios de ética algorítmica.",
     "lessons": [
       {
-        "id": "1-1",
-        "title": "Juicio experto ante una síntesis plausible",
-        "minutes": 30,
-        "refs": [
-          "R2",
-          "R7"
+        "id": "v4-1-1",
+        "title": "Qué puede hacer la IA en su investigación",
+        "minutes": 25,
+        "objective": "Reconocer oportunidades concretas y elegir una tarea pequeña que conserve el juicio del investigador.",
+        "reading": "Lectura científica complementaria: examine el alcance del trabajo y su tipo de publicación. Los ejercicios se pueden completar con las orientaciones y el caso abierto del taller.",
+        "scenes": [
+          {
+            "heading": "Comprender para aplicar",
+            "text": "La IA puede ayudar a formular preguntas, ampliar vocabulario de búsqueda, descubrir relaciones entre artículos, extraer información, proponer código, comparar argumentos y preparar materiales de comunicación. Una predicción estima un resultado; una búsqueda recupera documentos; la IA generativa produce una respuesta. Estas funciones se pueden combinar, pero requieren controles diferentes. Redactar una hipótesis no prueba su verdad. El valor se mide en una tarea acotada y en la calidad de la revisión humana."
+          }
         ],
-        "objective": "Examinar cuándo una afirmación defendible en apariencia excede la evidencia disponible.",
-        "reading": "En R2, examine la distinción entre producción de información y comprensión. En R7, localice cómo se operacionaliza la fiabilidad y a qué modelos se restringen los resultados. No extrapole sus tasas a Acrobat.",
         "steps": [
-          "Abra el Laboratorio de contraste y resuelva los seis expedientes ficticios. Asigne una probabilidad al respaldo de cada afirmación completa antes de revelar las claves.",
-          "Escriba la premisa indispensable de cada conclusión. Distinga una premisa ausente de una premisa refutada.",
-          "Revele las claves. Examine el caso en el que su confianza fue mayor y la evidencia menos suficiente; el promedio de seis casos no diagnostica su calibración.",
-          "Formule una versión defendible de dos afirmaciones y precise qué nueva observación permitiría recuperar la versión fuerte."
+          "Escriba su pregunta de investigación, población o contexto y una decisión que hoy le cuesta tiempo.",
+          "Clasifique seis tareas: descubrir artículos, resumir un PDF, predecir una categoría, proponer código, diseñar preguntas de entrevista y comprobar una cita.",
+          "Elija una tarea y dibuje entrada → ayuda de IA → resultado → control humano. Use documentos abiertos o un caso sintético.",
+          "Abra el mapa de herramientas. Seleccione una opción principal y una alternativa gratuita para esa tarea."
         ],
-        "prompt": "Examina esta afirmación y el pasaje adjunto. Identifica la premisa que conecta la evidencia con la conclusión. ¿Está explícita, justificada por el diseño o añadida por inferencia? Propón el cambio mínimo de redacción que preserve el hallazgo sin ampliar su alcance. No añadas fuentes.",
-        "task": "Registre una decisión que haya revisado, la premisa que fallaba y la evidencia que exigiría para restituirla.",
-        "example": "Un intervalo compatible con diferencias relevantes no permite concluir equivalencia. Cambiaría mi decisión ante una prueba diseñada con margen de equivalencia justificado; no ante un valor p de diferencia más elevado.",
+        "task": "Describa su tarea, el resultado útil, la herramienta elegida y la decisión que seguirá tomando usted.",
+        "example": "Necesito comparar cómo tres artículos definen capacidad de absorción. La IA puede proponer una matriz; yo verifico cada definición y su contexto antes de usarla.",
         "quiz": {
-          "question": "Dos procedimientos no difieren significativamente. ¿Qué permitiría sostener equivalencia?",
+          "question": "¿Cuál es una primera tarea bien delimitada?",
           "options": [
-            "Un valor p de diferencia todavía mayor.",
-            "Un margen sustantivo predefinido y un análisis de equivalencia adecuado.",
-            "La coincidencia entre dos resúmenes de IA."
+            "Encargar a la IA toda la investigación.",
+            "Comparar definiciones de tres fuentes y comprobar los pasajes.",
+            "Aceptar una hipótesis porque está bien escrita."
           ],
           "answer": 1,
           "feedback": [
-            "La ausencia de significación no demuestra equivalencia.",
-            "El criterio de equivalencia debe justificarse y contrastarse mediante un diseño adecuado.",
-            "La coincidencia de resúmenes no agrega evidencia independiente."
+            "Reduzca el alcance hasta poder verificar el resultado.",
+            "Correcto: hay entradas, una salida y un control observables.",
+            "La fluidez no es evidencia de validez."
           ]
         },
-        "completion": "Conserve el registro y explicite qué observación cambiaría su decisión. La respuesta automática comprueba un concepto; no evalúa la calidad científica de su argumento.",
-        "scenes": [
+        "prompt": "",
+        "refs": [
+          "R3"
+        ],
+        "links": [
           {
-            "heading": "Una conclusión que podría circular",
-            "screen": "¿Qué premisa falta entre el resultado y la afirmación?",
-            "text": "Este taller parte de una dificultad propia del trabajo experto: una síntesis puede conservar los datos y alterar la inferencia. Examine la afirmación completa, no solamente sus cifras. La tarea consiste en identificar el paso argumental que no está autorizado por la evidencia."
-          },
-          {
-            "heading": "Decidir antes de conocer la clave",
-            "screen": "Seis expedientes ficticios. Probabilidad de respaldo y justificación.",
-            "text": "En el laboratorio encontrará seis expedientes construidos para esta actividad. Registre una probabilidad de respaldo y explique su juicio antes de revelar las claves. Los casos incluyen problemas de identificación causal y de interpretación documental; no representan respuestas reales de un modelo."
-          },
-          {
-            "heading": "Revisar el alcance",
-            "screen": "Una premisa no reportada no equivale a una premisa falsa.",
-            "text": "Al revisar las claves, distinga lo que contradice la evidencia de lo que no puede establecerse con ella. Una conclusión puede requerir abstención sin ser falsa. Conservar esta diferencia es especialmente importante cuando el sistema transforma una ausencia documental en una negación."
-          },
-          {
-            "heading": "Un resultado del ejercicio",
-            "screen": "Reescribir la conclusión y señalar la prueba que falta.",
-            "text": "La puntuación de Brier resume el error probabilístico de estos casos. No es una medida de su competencia investigadora. El resultado relevante es la revisión argumentada de una conclusión y la identificación de una observación que permitiría defender una afirmación más fuerte."
+            "label": "Mapa de herramientas gratuitas",
+            "url": "herramientas.html"
           }
-        ]
+        ],
+        "completion": "Conserve la evidencia de la actividad, explique una decisión y responda la comprobación conceptual. La autoevaluación no certifica competencia profesional.",
+        "textOnly": true
       },
       {
-        "id": "1-2",
-        "title": "Evaluar el procedimiento de consulta",
-        "minutes": 45,
-        "refs": [
-          "R7",
-          "R8"
+        "id": "v4-1-2",
+        "title": "Elegir herramientas con criterio",
+        "minutes": 30,
+        "objective": "Distinguir asistentes generales, buscadores académicos, mapas de literatura y lectura basada en fuentes.",
+        "reading": "Lectura científica complementaria: examine el alcance del trabajo y su tipo de publicación. Los ejercicios se pueden completar con las orientaciones y el caso abierto del taller.",
+        "scenes": [
+          {
+            "heading": "Comprender para aplicar",
+            "text": "La mejor herramienta depende de la tarea, la disciplina y los datos que puede compartir. Elicit y Consensus apoyan exploraciones de literatura; Semantic Scholar recupera artículos y relaciones; ResearchRabbit explora redes; Gemini Notebook trabaja con un corpus elegido; ChatGPT y Claude ayudan a elaborar instrucciones, argumentos o código. Zotero organiza referencias y no es un modelo generativo. Una cuenta gratuita no garantiza todas las funciones ni acceso al texto completo."
+          }
         ],
-        "objective": "Comparar dos instrucciones manteniendo el corpus y la pregunta, sin confundir fluidez con respaldo.",
-        "reading": "En R8, consulte el diseño de evaluación y las ablaciones. Distinga preferencia del evaluador, cobertura bibliográfica y respaldo de citas. La implementación publicada no es equivalente a Acrobat.",
         "steps": [
-          "Seleccione dos artículos públicos sobre una cuestión acotada. Registre DOI, tipo documental y páginas pertinentes en el Observatorio. En Acrobat, cree un PDF Space con estos documentos.",
-          "Condición A: solicite una síntesis que responda su pregunta con citas. Guarde la instrucción completa y la salida. Abra una conversación nueva para B: use la instrucción de contraste de esta unidad.",
-          "Mantenga pregunta y corpus. Registre fecha, producto, versión visible y orden de ejecución. Repita una vez invirtiendo el orden si el acceso lo permite; indique las ejecuciones faltantes.",
-          "Adjudique seis afirmaciones de cada condición abriendo sus citas numeradas. Registre respaldo completo, exceso inferencial o ausencia de evidencia. No seleccione solamente los errores llamativos.",
-          "Compare cambios de contenido, omisiones y abstenciones. Un resultado favorable en este piloto no identifica por sí solo su causa ni garantiza estabilidad."
+          "En el mapa, compare dos herramientas para la misma necesidad: entrada, salida, evidencia visible y restricción gratuita.",
+          "Localice un artículo con Semantic Scholar y abra su DOI o repositorio. Registre la consulta y la fecha.",
+          "Explore una pregunta en Elicit o Consensus usando el acceso básico disponible. Si alcanza una cuota, continúe con Semantic Scholar y lectura del resumen.",
+          "Elija tres artículos relacionados con ResearchRabbit o mediante las referencias de un artículo. Explique qué literatura puede quedar fuera."
         ],
-        "prompt": "Responde la pregunta usando exclusivamente el corpus. Para cada conclusión, aporta documento y pasaje verificable mediante cita nativa. Examina la objeción más fuerte compatible con las fuentes. Separa una objeción documentada de una conjetura. Si la evidencia no permite adjudicar, indícalo. No inventes oposición para equilibrar la respuesta.",
-        "task": "Presente una afirmación de A y su contraparte en B. Documente si cambió el respaldo, solo la redacción o la decisión de responder.",
-        "example": "B introdujo una cautela, pero conservó la misma generalización a otra población. La modificación fue retórica; el pasaje siguió sin respaldar el alcance de la conclusión.",
+        "task": "Registre dos herramientas comparadas, una elección justificada, su límite y una alternativa gratuita.",
+        "example": "Uso Semantic Scholar para localizar artículos y Gemini Notebook para comparar los tres textos autorizados. La selección no cubre toda la literatura y debo buscar también términos en español.",
         "quiz": {
-          "question": "B obtiene más citas correctas, pero omite dos hallazgos relevantes que A recuperaba. ¿Qué concluye?",
+          "question": "¿Qué permite afirmar un mapa de artículos relacionados?",
           "options": [
-            "B es globalmente superior.",
-            "La precisión de citas hace irrelevantes las omisiones.",
-            "Existe un intercambio entre dimensiones; debe evaluarse según el uso previsto."
+            "Que la revisión es exhaustiva.",
+            "Que lo más conectado es necesariamente lo mejor.",
+            "Que ofrece relaciones útiles que debo contrastar con otras búsquedas."
           ],
           "answer": 2,
           "feedback": [
-            "Una sola dimensión no determina utilidad global.",
-            "La omisión puede cambiar sustancialmente la conclusión.",
-            "Hay que separar fidelidad de citas y cobertura, con criterios explícitos para la tarea."
+            "La cobertura debe documentarse y complementarse.",
+            "La visibilidad bibliográfica no equivale a calidad.",
+            "Correcto: el mapa orienta, pero no demuestra exhaustividad."
           ]
         },
-        "completion": "Conserve el registro y explicite qué observación cambiaría su decisión. La respuesta automática comprueba un concepto; no evalúa la calidad científica de su argumento.",
-        "scenes": [
-          {
-            "heading": "La unidad de evaluación",
-            "screen": "Pregunta, corpus e instrucción forman un procedimiento.",
-            "text": "La respuesta depende del corpus disponible y de cómo se formula la consulta. Comparar procedimientos exige conservar aquello que no se pretende modificar. En esta actividad, la intervención es la instrucción de contraste; la pregunta y los documentos deben permanecer constantes."
-          },
-          {
-            "heading": "Dos condiciones comparables",
-            "screen": "A: síntesis. B: examen de una objeción fundada.",
-            "text": "Ejecute las condiciones en conversaciones separadas y conserve las salidas completas. No descarte una respuesta porque sea inconveniente. Registre también aquello que la interfaz no permite controlar, como una actualización del servicio o una versión del modelo que no se muestra."
-          },
-          {
-            "heading": "Más allá de contar citas",
-            "screen": "Respaldo de una afirmación no equivale a cobertura del problema.",
-            "text": "Abra las citas nativas de Acrobat y lea el contexto. Una cita puede existir y no respaldar toda la conclusión. A su vez, una respuesta prudente puede omitir evidencia necesaria. Examine ambas dimensiones antes de preferir un procedimiento."
-          },
-          {
-            "heading": "Interpretar el piloto",
-            "screen": "El cambio observado no demuestra estabilidad.",
-            "text": "El estudio de OpenScholar permite discutir la evaluación de un sistema documental completo. No atribuya sus resultados a nuestra práctica con Acrobat. El piloto del taller identifica fallos y decisiones de diseño; una comparación sólida necesitaría más casos y una evaluación independiente."
-          }
-        ]
-      },
-      {
-        "id": "1-3",
-        "title": "Hipótesis rivales y observaciones discriminantes",
-        "minutes": 50,
-        "refs": [
-          "R3",
-          "R9"
-        ],
-        "objective": "Usar la generación de alternativas para precisar qué evidencia discriminaría entre explicaciones.",
-        "reading": "R9 presenta un benchmark de predicción en neurociencia. Examine qué tarea se resuelve y qué no demuestra sobre descubrimiento autónomo. En R3, elija una aplicación pertinente a su disciplina.",
-        "steps": [
-          "Seleccione una explicación de un resultado publicado de su área. Escriba primero una interpretación rival plausible, sin consultar IA.",
-          "Pida a Acrobat otra explicación compatible con los documentos. Rechace las alternativas que contradigan hechos establecidos o simplemente reformulen la original.",
-          "Para cada explicación, formule una observación cuyo resultado esperado difiera. En estudios cualitativos, precise qué documento o patrón interpretativo permitiría discriminar; no fuerce una variable experimental.",
-          "Examine si la observación está disponible, si sería ética y si realmente separa las hipótesis. Registre qué supuestos adicionales necesita.",
-          "Compare la alternativa generada con la propia. Conserve solo la que cambie una decisión de diseño o amplíe justificadamente el espacio de explicaciones."
-        ],
-        "prompt": "A partir del resultado y los documentos, propone una explicación rival sustantiva. Explicita sus supuestos y una observación que tendría expectativas diferentes bajo cada explicación. Distingue evidencia existente de evidencia por obtener. Si las hipótesis no son distinguibles con el diseño disponible, explícalo.",
-        "task": "Redacte las explicaciones rivales y una prueba discriminante. Declare qué resultado todavía sería compatible con ambas.",
-        "example": "La mayor participación puede reflejar eficacia del programa o autoselección previa. Medir motivación después del programa no separa esas explicaciones; necesito evidencia temporalmente anterior o una estrategia de identificación distinta.",
-        "quiz": {
-          "question": "Dos explicaciones producen la misma predicción para todas las observaciones disponibles. ¿Cuál es el siguiente paso defendible?",
-          "options": [
-            "Preferir la explicación redactada con mayor detalle.",
-            "Declarar indistinguibilidad con ese diseño y proponer evidencia adicional.",
-            "Pedir al modelo que asigne porcentajes de verdad."
-          ],
-          "answer": 1,
-          "feedback": [
-            "El detalle verbal no resuelve la identificación.",
-            "Es una limitación del diseño disponible, no necesariamente de la calidad de las explicaciones.",
-            "Una probabilidad generada sin modelo inferencial justificado no resuelve la indistinguibilidad."
-          ]
-        },
-        "completion": "Conserve el registro y explicite qué observación cambiaría su decisión. La respuesta automática comprueba un concepto; no evalúa la calidad científica de su argumento.",
-        "scenes": [
-          {
-            "heading": "Una contribución posible de la IA",
-            "screen": "Ampliar las explicaciones que merecen examen.",
-            "text": "El uso de inteligencia artificial puede ser productivo cuando ayuda a formular una alternativa que no habíamos considerado. Su valor no reside en la cantidad de hipótesis propuestas. Una alternativa es útil si modifica qué evidencia buscaríamos o cómo diseñaríamos la investigación."
-          },
-          {
-            "heading": "La prueba discriminante",
-            "screen": "¿Qué esperaríamos observar bajo cada explicación?",
-            "text": "Defina la observación antes de decidir cuál explicación prefiere. Si ambas predicen lo mismo, la observación no discrimina. En investigación interpretativa, el contraste puede depender de la procedencia de un documento y de su relación con otras fuentes, no de una prueba experimental."
-          },
-          {
-            "heading": "Leer el benchmark con precisión",
-            "screen": "Predecir entre opciones no equivale a demostrar una teoría.",
-            "text": "BrainBench ofrece un caso para discutir predicción de resultados en neurociencia. Examine cómo se construyen las opciones y cómo se evalúa el desempeño. Evite traducir una ventaja en esa tarea a una afirmación general sobre superioridad científica de los modelos."
-          },
-          {
-            "heading": "Criterio de selección",
-            "screen": "Conservar una alternativa que cambie el diseño.",
-            "text": "Termine con una decisión concreta: qué nueva observación recogería, qué supuesto revisaría o por qué no puede discriminar todavía. Si la propuesta del modelo no cambia nada, registre ese resultado. Descartar una alternativa vacía también forma parte de la evaluación."
-          }
-        ]
-      },
-      {
-        "id": "1-pausa",
-        "title": "Pausa de trabajo",
-        "minutes": 15,
-        "pause": true
-      },
-      {
-        "id": "1-4",
-        "title": "Auditar una pretensión de novedad",
-        "minutes": 60,
+        "prompt": "",
         "refs": [
           "R1",
-          "R8"
+          "R2"
         ],
-        "objective": "Poner a prueba el alcance de una contribución frente al antecedente más próximo.",
-        "reading": "Consulte R1 para examinar errores bibliográficos y R8 para discutir recuperación documental. Ningún sistema de síntesis garantiza por sí mismo exhaustividad ni prioridad científica.",
+        "links": [
+          {
+            "label": "Mapa de herramientas gratuitas",
+            "url": "herramientas.html"
+          }
+        ],
+        "completion": "Conserve la evidencia de la actividad, explique una decisión y responda la comprobación conceptual. La autoevaluación no certifica competencia profesional.",
+        "textOnly": true
+      },
+      {
+        "id": "v4-1-3",
+        "title": "Buscar, leer y verificar fuentes",
+        "minutes": 30,
+        "objective": "Recorrer una cadena de evidencia desde una pregunta hasta el pasaje original.",
+        "reading": "Lectura científica complementaria: examine el alcance del trabajo y su tipo de publicación. Los ejercicios se pueden completar con las orientaciones y el caso abierto del taller.",
+        "scenes": [
+          {
+            "heading": "Comprender para aplicar",
+            "text": "Un resumen automático es una entrada a la lectura. La referencia debe existir, corresponder al documento consultado y respaldar la afirmación completa. Revise autoría, año, tipo documental, método y límites. Si solo dispone del resumen, restrinja las conclusiones a lo que allí aparece. Un artículo de perspectiva no tiene por qué incluir muestra; un preprint no debe presentarse como artículo revisado por pares."
+          }
+        ],
         "steps": [
-          "Escriba una contribución en una frase y separe su novedad conceptual de la novedad de contexto o de combinación metodológica.",
-          "En WoS busque un artículo conocido por DOI usando DO=(su DOI). Para la búsqueda temática use TS=(concepto AND método), añadiendo sinónimos pertinentes. Registre colección, fecha, ecuación y filtros; no utilice literalmente los marcadores.",
-          "Localice el antecedente que más debilitaría su novedad. Examine referencias y trabajos citantes. Si no tiene acceso institucional, prepare la estrategia y registre la comprobación como pendiente.",
-          "Cargue en Acrobat el antecedente y su formulación pública o ficticia. Solicite una comparación precisa de la contribución, sin pedir que confirme originalidad.",
-          "Reformule el alcance: indique qué diferencia subsiste y qué búsqueda adicional podría refutarla. Registre los resultados negativos como acotados a la búsqueda realizada."
+          "Elija dos textos abiertos. Anote título, autores, año, DOI o URL y tipo documental en el Registro de evidencia.",
+          "En Gemini Notebook, cree un cuaderno y añada los textos autorizados; compruebe que ambos se procesaron.",
+          "Seleccione las fuentes y use la instrucción propuesta. Abra cada cita, lea el pasaje completo y el contexto.",
+          "Audite tres afirmaciones: respaldada, parcial o no respaldada. Corrija la redacción y documente las ausencias."
         ],
-        "prompt": "Compara la contribución propuesta con este antecedente. Identifica coincidencias conceptuales aunque el vocabulario sea distinto. Señala qué diferencia está documentada y cuál requiere una búsqueda adicional. No afirmes originalidad global ni inventes antecedentes. Aporta pasajes de los documentos.",
-        "task": "Entregue la ecuación de búsqueda, el antecedente más próximo y una formulación revisada de la contribución. Incluya el estado real de verificación WoS.",
-        "example": "La técnica ya se había aplicado a la misma clase de problema. La contribución defendible pasa a ser el examen de una condición de frontera, respaldada por un diseño específico; no el uso de la técnica en sí.",
+        "task": "Conserve tres afirmaciones, sus pasajes, el estado de respaldo y al menos una corrección razonada.",
+        "example": "El artículo informa una asociación en una muestra concreta. Sustituyo «produce» por «se asocia con» y mantengo la población y las limitaciones del diseño.",
         "quiz": {
-          "question": "No aparecen resultados para la terminología usada en su propuesta. ¿Qué debe examinar primero?",
+          "question": "Una respuesta incluye una cita real. ¿Qué falta?",
           "options": [
-            "Equivalentes conceptuales y alcance de la estrategia de recuperación.",
-            "Si el modelo confirma que la idea es original.",
-            "El número de citas del artículo más reciente."
+            "Comprobar que el pasaje sostiene el alcance de la afirmación.",
+            "Nada: la cita garantiza la respuesta.",
+            "Añadir más citas sin leerlas."
           ],
           "answer": 0,
           "feedback": [
-            "La recuperación depende del vocabulario y de la colección; ausencia de resultados no prueba novedad.",
-            "La confirmación del modelo no sustituye una búsqueda documentada.",
-            "El recuento de citas no establece prioridad conceptual."
+            "Correcto: existencia de la fuente y respaldo son controles distintos.",
+            "Una fuente real también puede interpretarse mal.",
+            "El número de citas no sustituye la comprobación."
           ]
         },
-        "completion": "Conserve el registro y explicite qué observación cambiaría su decisión. La respuesta automática comprueba un concepto; no evalúa la calidad científica de su argumento.",
-        "scenes": [
+        "prompt": "Use solo las fuentes seleccionadas. Identifique objetivo, diseño, unidad de análisis, resultado y limitaciones. Distinga hallazgo, interpretación e inferencia. Para cada afirmación indique fuente y localizador comprobable; si no hay página, use sección y pasaje. Escriba «No reportado» cuando falte información y «No sustentado en el corpus» si la conclusión excede las fuentes. No invente referencias ni convierta una asociación en causalidad. Termine con lo que no se puede concluir.",
+        "refs": [
+          "R1",
+          "R2"
+        ],
+        "links": [
           {
-            "heading": "El antecedente incómodo",
-            "screen": "Busque el trabajo que más podría reducir su contribución.",
-            "text": "Una evaluación exigente de novedad comienza por el antecedente más próximo, no por una colección de referencias favorables. Formule qué diferencia sustantiva sostiene la contribución. Una variación de vocabulario puede ocultar que el problema ya fue tratado."
+            "label": "Lectura con fuentes",
+            "url": "https://notebook.google.com/"
           },
           {
-            "heading": "Una búsqueda auditable",
-            "screen": "Conserve ecuación, colección, filtros y fecha.",
-            "text": "Web of Science permite registrar una estrategia reproducible dentro de una colección concreta. Verifique los artículos por DOI y conserve sus identificadores cuando estén disponibles. Una revista indexada no demuestra que usted haya comprobado el registro individual del artículo."
-          },
-          {
-            "heading": "Acrobat como instrumento de contraste",
-            "screen": "Compare pasajes y alcance de las contribuciones.",
-            "text": "Reúna el antecedente y una formulación pública de su propuesta. Solicite coincidencias y diferencias sustentadas en pasajes. La comparación documental ayuda a precisar el argumento; no certifica originalidad ni sustituye la búsqueda de literatura que todavía no está en el corpus."
-          },
-          {
-            "heading": "Reformular sin exagerar",
-            "screen": "¿Qué diferencia permanece después del contraste?",
-            "text": "El producto es una afirmación de contribución que resista el antecedente encontrado. Puede ser una condición de frontera, una explicación alternativa o una evidencia antes inaccesible. Declare qué búsqueda adicional podría modificar su conclusión y conserve las comprobaciones pendientes."
+            "label": "Registro de evidencia",
+            "url": "observatorio.html"
           }
-        ]
+        ],
+        "completion": "Conserve la evidencia de la actividad, explique una decisión y responda la comprobación conceptual. La autoevaluación no certifica competencia profesional.",
+        "textOnly": true
       },
       {
-        "id": "1-5",
-        "title": "Dictamen sobre una contribución propia",
-        "minutes": 40,
-        "refs": [
-          "R2",
-          "R10"
+        "id": "v4-1-4",
+        "title": "Instrucciones que permiten revisar el resultado",
+        "minutes": 30,
+        "objective": "Diseñar y comparar instrucciones con tarea, contexto, evidencia, formato y abstención.",
+        "reading": "Lectura científica complementaria: examine el alcance del trabajo y su tipo de publicación. Los ejercicios se pueden completar con las orientaciones y el caso abierto del taller.",
+        "scenes": [
+          {
+            "heading": "Comprender para aplicar",
+            "text": "Una instrucción útil define qué debe hacerse, con qué material, para quién y bajo qué regla de calidad. Añadir «actúa como experto» no sustituye estos elementos. Compare versiones sobre las mismas fuentes y preguntas. Una respuesta más cauta puede seguir equivocada. Registre omisiones junto con errores: abstenerse de todo tampoco produce un asistente útil."
+          }
         ],
-        "objective": "Decidir qué parte de una contribución puede sostenerse y qué revisión exige el argumento.",
-        "reading": "Use R2 para examinar dependencia del juicio automatizado. Consulte R10 como referencia de reporte en salud; fuera de ese ámbito, adapte criterios pertinentes sin declarar cumplimiento formal.",
         "steps": [
-          "Utilice un resumen publicado, un protocolo ficticio o un texto propio autorizado. No introduzca material confidencial de evaluación por pares.",
-          "Solicite la objeción metodológica más fuerte que las fuentes permitan. Exija distinguir una limitación reconocida de un defecto que invalide la conclusión.",
-          "Adjudique la objeción: válida y reparable, válida que exige cambiar la conclusión, o no sustentada. Cite la premisa y su evidencia.",
-          "Redacte un dictamen de 250–350 palabras. Indique el cambio que acepta, lo que conserva y la prueba que todavía falta.",
-          "Descargue el cuaderno. Revise si las conclusiones distinguen evidencia del corpus e inferencias propias, y si otra persona podría reconstruir su decisión."
+          "Solicite un resumen breve de un mismo pasaje. Conserve la respuesta A.",
+          "Repita con la instrucción crítica y un formato de tabla: afirmación, evidencia, límite. Conserve B.",
+          "Compare tres afirmaciones y una omisión en ambas respuestas. No cambie el corpus durante la comparación.",
+          "En el Laboratorio de contraste, resuelva dos expedientes y explique qué premisa faltaba para aceptar la conclusión."
         ],
-        "prompt": "Formula la objeción más fuerte que pueda sostenerse con este texto. Identifica la conclusión afectada y la premisa cuestionada. No inventes defectos ni datos ausentes. Propón una reparación solo si el diseño permite sostenerla; en caso contrario, explica qué conclusión debe restringirse.",
-        "task": "Escriba el dictamen final y una decisión de investigación que cambiará a partir de la auditoría.",
-        "example": "Acepto restringir la conclusión a asociación en el contexto estudiado. Un ajuste adicional no resuelve la selección no observada. Conservo el hallazgo descriptivo y propongo un diseño distinto para la pregunta causal.",
+        "task": "Entregue las instrucciones A y B, el contraste de evidencia y una decisión sobre cuál sirve mejor para su tarea.",
+        "example": "B identifica una ausencia que A rellenaba, pero omite un resultado pertinente. Conservo su regla de abstención y ajusto los campos de extracción.",
         "quiz": {
-          "question": "Una objeción válida afecta la identificación central y no puede repararse con los datos disponibles. ¿Qué corresponde?",
+          "question": "¿Cómo se evalúa una mejora de instrucción?",
           "options": [
-            "Mejorar la redacción de la defensa.",
-            "Añadir citas favorables sin cambiar la afirmación.",
-            "Restringir la conclusión y explicitar qué nuevo diseño sería necesario."
+            "Por la extensión de la respuesta.",
+            "Con la misma tarea y fuentes, revisando errores y omisiones.",
+            "Por el tono técnico del texto."
+          ],
+          "answer": 1,
+          "feedback": [
+            "Más texto puede ocultar errores.",
+            "Correcto: mantiene una comparación interpretable.",
+            "El tono no mide respaldo."
+          ]
+        },
+        "prompt": "Use solo las fuentes seleccionadas. Identifique objetivo, diseño, unidad de análisis, resultado y limitaciones. Distinga hallazgo, interpretación e inferencia. Para cada afirmación indique fuente y localizador comprobable; si no hay página, use sección y pasaje. Escriba «No reportado» cuando falte información y «No sustentado en el corpus» si la conclusión excede las fuentes. No invente referencias ni convierta una asociación en causalidad. Termine con lo que no se puede concluir.",
+        "refs": [
+          "R1",
+          "R2"
+        ],
+        "links": [
+          {
+            "label": "Laboratorio de contraste",
+            "url": "laboratorio.html"
+          }
+        ],
+        "completion": "Conserve la evidencia de la actividad, explique una decisión y responda la comprobación conceptual. La autoevaluación no certifica competencia profesional.",
+        "textOnly": true
+      },
+      {
+        "id": "v4-1-5",
+        "title": "Pausa y cambio de perspectiva",
+        "minutes": 15,
+        "pause": true,
+        "objective": "Pausa de trabajo."
+      },
+      {
+        "id": "v4-1-6",
+        "title": "Ética algorítmica: sesgos, datos y poder",
+        "minutes": 40,
+        "objective": "Detectar a quién beneficia o perjudica un procedimiento y definir controles concretos.",
+        "reading": "Lectura científica complementaria: examine el alcance del trabajo y su tipo de publicación. Los ejercicios se pueden completar con las orientaciones y el caso abierto del taller.",
+        "scenes": [
+          {
+            "heading": "Comprender para aplicar",
+            "text": "La ética algorítmica examina decisiones a lo largo del ciclo de uso: selección de datos, cobertura lingüística, criterios del modelo, interpretación y efectos sobre personas. Un buscador puede sobrerrepresentar revistas en inglés; un clasificador puede reproducir desigualdades; una síntesis puede borrar posiciones minoritarias. Transparencia, equidad, privacidad y supervisión humana deben traducirse en controles observables. Las recomendaciones de UNESCO son un referente de orientación; no se presentan como una política adoptada por la Universidad."
+          }
+        ],
+        "steps": [
+          "Caso 1: la búsqueda devuelve solo estudios en inglés y del Norte global. Repita en español, añada repositorios regionales y registre qué cambia.",
+          "Caso 2: una entrevista contiene nombres, cargos y eventos que permiten identificar a alguien. Decida qué excluir y qué autorización necesitaría antes de usar servicios externos. Quitar el nombre puede ser insuficiente.",
+          "Caso 3: el asistente recomienda seleccionar participantes según un atributo sensible. Examine pertinencia científica, posibles daños y una alternativa de revisión humana.",
+          "Complete para cada caso: persona afectada, riesgo, control, responsable y evidencia de que el control funcionó. Consulte la sección de ética del Hub."
+        ],
+        "task": "Construya una matriz de tres riesgos con personas afectadas, controles, responsables y una decisión de no uso.",
+        "example": "No subo entrevistas identificables. Trabajo con un fragmento sintético y reviso la autorización institucional antes de cualquier uso real. Amplío la búsqueda regional para examinar una posible omisión de cobertura.",
+        "quiz": {
+          "question": "¿Qué demuestra mejor una práctica ética?",
+          "options": [
+            "Escribir «uso responsable» al final.",
+            "Suponer que eliminar nombres vuelve anónimos todos los datos.",
+            "Documentar un riesgo, las personas afectadas y un control comprobable."
           ],
           "answer": 2,
           "feedback": [
-            "La redacción no repara un problema de identificación.",
-            "Más referencias no sustituyen evidencia pertinente al diseño.",
-            "El dictamen debe distinguir una revisión editorial de un cambio necesario en la inferencia."
+            "La declaración requiere medidas concretas.",
+            "Otros detalles pueden permitir reidentificación.",
+            "Correcto: la ética se traduce en decisiones y evidencia."
           ]
         },
-        "completion": "Conserve el registro y explicite qué observación cambiaría su decisión. La respuesta automática comprueba un concepto; no evalúa la calidad científica de su argumento.",
+        "prompt": "",
+        "refs": [
+          "R1",
+          "R2"
+        ],
+        "links": [
+          {
+            "label": "Ética algorítmica del IA Hub",
+            "url": "https://ia-hub-univalle.onrender.com/#etica"
+          },
+          {
+            "label": "Recomendación de UNESCO",
+            "url": "https://www.unesco.org/en/articles/recommendation-ethics-artificial-intelligence"
+          }
+        ],
+        "completion": "Conserve la evidencia de la actividad, explique una decisión y responda la comprobación conceptual. La autoevaluación no certifica competencia profesional.",
+        "textOnly": true
+      },
+      {
+        "id": "v4-1-7",
+        "title": "Autoría, transparencia y reproducibilidad",
+        "minutes": 25,
+        "objective": "Documentar la contribución de IA y conservar una cadena de decisiones revisable.",
+        "reading": "Lectura científica complementaria: examine el alcance del trabajo y su tipo de publicación. Los ejercicios se pueden completar con las orientaciones y el caso abierto del taller.",
         "scenes": [
           {
-            "heading": "Un dictamen, no una defensa automática",
-            "screen": "La objeción debe afectar una premisa identificable.",
-            "text": "La última actividad integra el recorrido en una contribución de su área. Pida una objeción que pueda justificarse y determine qué conclusión afecta. No premie al sistema por sonar severo: una crítica sin respaldo puede ser tan problemática como una aprobación complaciente."
-          },
-          {
-            "heading": "Reparar o restringir",
-            "screen": "No toda limitación se resuelve con otra explicación.",
-            "text": "Distinga una información que puede aclararse de una condición que el diseño no satisface. Cuando la evidencia disponible no permite reparar el argumento, corresponde restringir la conclusión. Esta decisión exige juicio disciplinar y no puede delegarse a una fórmula de instrucciones."
-          },
-          {
-            "heading": "Dejar una decisión reconstruible",
-            "screen": "Identifique el cambio aceptado y su fundamento.",
-            "text": "El dictamen debe permitir que otra persona reconstruya la revisión sin presenciar su conversación con la herramienta. Conserve la instrucción y los pasajes relevantes. Si adopta criterios de una guía de reporte de salud en otra disciplina, explique esa adaptación."
-          },
-          {
-            "heading": "Cierre del primer taller",
-            "screen": "Un cambio justificable en la práctica de investigación.",
-            "text": "Descargue el cuaderno y formule una decisión que realmente cambiará en su proyecto. El producto no es una lista de aplicaciones. Es un argumento revisado, con un alcance preciso y una indicación explícita de la evidencia que todavía necesita."
+            "heading": "Comprender para aplicar",
+            "text": "La responsabilidad por la investigación sigue en las personas autoras. Declare la tarea asistida, herramienta, fecha, fuentes y verificación realizada según las reglas de su institución, revista o financiador. No atribuya a la IA trabajo de campo, experimentos ni análisis que no se hicieron. Guarde instrucciones y decisiones sin difundir datos restringidos. La reproducción exacta puede variar con actualizaciones del servicio, incluso al reutilizar una instrucción."
           }
-        ]
+        ],
+        "steps": [
+          "Redacte una declaración de uso con tarea, herramienta, fecha y revisión humana.",
+          "Separe qué hizo usted, qué propuso la IA y qué aceptó o rechazó.",
+          "Guarde consulta, corpus, respuesta y correcciones en el cuaderno. Excluya información confidencial.",
+          "Consulte las reglas del destino de publicación. Si no ha podido revisarlas, registre esa comprobación como pendiente."
+        ],
+        "task": "Escriba una declaración de uso y una bitácora mínima que permita comprender y revisar su proceso.",
+        "example": "Utilicé un asistente para proponer una matriz de lectura de tres documentos abiertos. Verifiqué las citas y corregí dos inferencias. El análisis y la redacción final fueron revisados por la persona autora.",
+        "quiz": {
+          "question": "¿Qué debe conservar una bitácora útil?",
+          "options": [
+            "Solo el nombre de la IA.",
+            "Tarea, fuentes, instrucción, fecha y decisiones de revisión.",
+            "Solo la respuesta final, sin cambios."
+          ],
+          "answer": 1,
+          "feedback": [
+            "Falta el procedimiento que produjo el resultado.",
+            "Correcto: permite revisar la intervención y sus límites.",
+            "Se pierde la cadena de decisiones."
+          ]
+        },
+        "prompt": "",
+        "refs": [
+          "R1",
+          "R2"
+        ],
+        "links": [],
+        "completion": "Conserve la evidencia de la actividad, explique una decisión y responda la comprobación conceptual. La autoevaluación no certifica competencia profesional.",
+        "textOnly": true
+      },
+      {
+        "id": "v4-1-8",
+        "title": "De la herramienta al método de trabajo",
+        "minutes": 30,
+        "objective": "Integrar descubrimiento, lectura y juicio crítico en una práctica propia.",
+        "reading": "Lectura científica complementaria: examine el alcance del trabajo y su tipo de publicación. Los ejercicios se pueden completar con las orientaciones y el caso abierto del taller.",
+        "scenes": [
+          {
+            "heading": "Comprender para aplicar",
+            "text": "Un flujo de investigación combina herramientas con decisiones explícitas. Buscar, organizar, comparar y redactar son tareas diferentes. Defina un criterio de aceptación antes de consultar la IA y verifique después si se cumple. Su primer producto es un protocolo de uso, no una promesa de automatización total. El siguiente taller lo transformará en un asistente configurable."
+          }
+        ],
+        "steps": [
+          "Repita su tarea inicial con una herramienta gratuita. Si no hay cuota, conserve las fuentes y ejecute manualmente el mismo procedimiento.",
+          "Revise tres afirmaciones y cuente errores, omisiones y abstenciones justificadas.",
+          "Escriba un protocolo con entrada permitida, tarea, formato, control humano y condición de parada.",
+          "Prepare para el taller 2 una pregunta acotada, tres fuentes abiertas y una muestra de escritura propia que esté autorizado a compartir."
+        ],
+        "task": "Entregue el mapa de herramientas, una ficha crítica y su protocolo ético de uso de IA.",
+        "example": "Acepto una matriz solo si cada fila identifica la fuente y el pasaje. Detengo el flujo si aparecen datos restringidos o si la conclusión no se sostiene en el corpus.",
+        "quiz": {
+          "question": "¿Qué conviene llevar al segundo taller?",
+          "options": [
+            "Un problema delimitado, fuentes autorizadas y criterios de revisión.",
+            "Toda la base privada del proyecto.",
+            "Una expectativa de que el clon sustituya al investigador."
+          ],
+          "answer": 0,
+          "feedback": [
+            "Correcto: es la base de un asistente evaluable.",
+            "Use únicamente datos adecuados y autorizados.",
+            "El asistente requiere dirección y supervisión."
+          ]
+        },
+        "prompt": "",
+        "refs": [
+          "R1",
+          "R2"
+        ],
+        "links": [
+          {
+            "label": "Abrir el constructor de mi clon",
+            "url": "clon.html"
+          },
+          {
+            "label": "Abrir Gemini Notebook",
+            "url": "https://notebook.google.com/"
+          }
+        ],
+        "completion": "Conserve la evidencia de la actividad, explique una decisión y responda la comprobación conceptual. La autoevaluación no certifica competencia profesional.",
+        "textOnly": true
+      },
+      {
+        "id": "v4-1-9",
+        "title": "Cierre y plan de transferencia",
+        "minutes": 15,
+        "objective": "Valorar lo aprendido y dejar una próxima aplicación verificable.",
+        "reading": "Lectura científica complementaria: examine el alcance del trabajo y su tipo de publicación. Los ejercicios se pueden completar con las orientaciones y el caso abierto del taller.",
+        "scenes": [
+          {
+            "heading": "Comprender para aplicar",
+            "text": "La competencia inicial consiste en elegir una herramienta apropiada, pedir un resultado revisable y reconocer cuándo no debe usarse. Evalúe su trabajo en cuatro criterios: adecuación a la tarea, trazabilidad, control ético y posibilidad de revisión. Asigne 0 si falta, 1 si es parcial y 2 si queda documentado. Una meta formativa es alcanzar seis de ocho puntos sin cero en trazabilidad o ética; no equivale a certificación."
+          }
+        ],
+        "steps": [
+          "Revise su cuaderno con los cuatro criterios y escriba la evidencia para cada puntuación.",
+          "Si un criterio falta, vuelva a la unidad correspondiente y complete el producto.",
+          "Defina una prueba de uso para los próximos siete días con responsable y resultado esperado.",
+          "Descargue el cuaderno. Abra el taller 2 cuando tenga una tarea y fuentes listas."
+        ],
+        "task": "Registre su autoevaluación argumentada y una aplicación concreta para la próxima semana.",
+        "example": "Tengo fuentes y controles, pero no documenté qué excluí. Completo la bitácora antes de probar el asistente con un nuevo tema.",
+        "quiz": {
+          "question": "¿Qué acredita terminar las unidades?",
+          "options": [
+            "Competencia profesional certificada.",
+            "Ausencia de errores futuros.",
+            "Un recorrido y una autoevaluación que requieren revisión del trabajo producido."
+          ],
+          "answer": 2,
+          "feedback": [
+            "El taller no emite certificación automática.",
+            "Los resultados futuros también deben revisarse.",
+            "Correcto: el progreso no sustituye evaluación experta."
+          ]
+        },
+        "prompt": "",
+        "refs": [
+          "R1",
+          "R2"
+        ],
+        "links": [
+          {
+            "label": "Abrir el constructor de mi clon",
+            "url": "clon.html"
+          },
+          {
+            "label": "Abrir Gemini Notebook",
+            "url": "https://notebook.google.com/"
+          }
+        ],
+        "completion": "Conserve la evidencia de la actividad, explique una decisión y responda la comprobación conceptual. La autoevaluación no certifica competencia profesional.",
+        "textOnly": true
       }
     ]
   },
   "2": {
-    "title": "Diseño y validación de aplicaciones de IA para investigación",
-    "intro": "Construya un banco de evaluación para una tarea de su proyecto. Compare procedimientos, examine sus abstenciones y modifique una regla de decisión en una aplicación portable. La validación científica del sistema constituye el problema central del taller.",
-    "product": "Una aplicación HTML local con casos y reglas propias, un registro de pruebas y un informe que delimita las condiciones de uso.",
+    "title": "Cree su clon de investigación y sus primeros productos",
+    "intro": "Construya paso a paso un asistente que siga su agenda, sus criterios y sus fuentes. Configure, pruebe y documente un prototipo funcional con recursos gratuitos y sin programar.",
+    "product": "Un clon de investigación configurado, una matriz de literatura, un informe breve y un expediente con seis pruebas de calidad.",
     "lessons": [
       {
-        "id": "2-1",
-        "title": "El contrato de evaluación",
-        "minutes": 25,
-        "refs": [
-          "R7",
-          "R10"
-        ],
-        "objective": "Definir una aplicación acotada y sus condiciones de aceptación antes de observar resultados.",
-        "reading": "Examine en R7 qué significa abstenerse y en R10 qué información permite reconstruir una evaluación. Los umbrales del taller son elecciones locales, no estándares universales.",
-        "steps": [
-          "Abra el Laboratorio de contraste, sección Banco de evaluación. Defina una tarea: por ejemplo, clasificar si un pasaje respalda una afirmación, con cita localizable.",
-          "Describa las condiciones A y B, el producto utilizado y la fecha. Si no se muestra la versión del modelo, regístrelo expresamente.",
-          "Defina qué error sería crítico en su uso. Elija máximo riesgo selectivo y mínima cobertura; justifique las consecuencias de responder y de abstenerse.",
-          "Fije el contrato. La página registra una versión local: no es un prerregistro externo. Cambiarlo después de ver resultados exige declarar la modificación."
-        ],
-        "prompt": "Ayúdame a delimitar esta aplicación: [tarea y contexto]. Identifica una decisión concreta del usuario, qué evidencia autoriza una respuesta y qué error tendría consecuencias inaceptables. No propongas umbrales numéricos como si fueran estándares; solicita su justificación en el contexto.",
-        "task": "Justifique un umbral y el error que determina la suspensión del uso.",
-        "example": "En extracción para una revisión, atribuir un resultado a otra cohorte es crítico. Prefiero una fila pendiente a una atribución incorrecta; aun así, exigiré cobertura suficiente para que la herramienta resulte útil.",
-        "quiz": {
-          "question": "Después de ver que B falla, se relaja el umbral para aceptarlo. ¿Cómo debe registrarse?",
-          "options": [
-            "Como criterio inicial porque la página permite editarlo.",
-            "Como modificación posterior, que requiere nueva evaluación independiente.",
-            "No hace falta registrarlo si se informa la exactitud."
-          ],
-          "answer": 1,
-          "feedback": [
-            "La edición local no cambia la cronología del análisis.",
-            "El cambio puede justificarse, pero no presentarse como criterio fijado antes de observar los datos.",
-            "El umbral condiciona la decisión y forma parte del reporte."
-          ]
-        },
-        "completion": "Conserve el registro y explicite qué observación cambiaría su decisión. La respuesta automática comprueba un concepto; no evalúa la calidad científica de su argumento.",
+        "id": "v4-2-1",
+        "title": "Diseñar su clon de investigación",
+        "minutes": 20,
+        "objective": "Convertir su forma de trabajar en un asistente con un encargo y límites verificables.",
+        "reading": "Lectura científica complementaria: examine el alcance del trabajo y su tipo de publicación. Los ejercicios se pueden completar con las orientaciones y el caso abierto del taller.",
         "scenes": [
           {
-            "heading": "Diseñar la decisión",
-            "screen": "¿Qué uso concreto se quiere permitir?",
-            "text": "La aplicación del taller organiza una evaluación que usted diseña. No se conecta automáticamente a un modelo. Primero defina la decisión que apoyará y qué evidencia necesita. Una herramienta puede ser útil para localizar pasajes y resultar insuficiente para adjudicar una conclusión."
-          },
-          {
-            "heading": "El costo del error",
-            "screen": "La abstención también tiene consecuencias.",
-            "text": "Determine qué error obligaría a suspender el uso. Defina después cuánto riesgo acepta entre las respuestas emitidas y qué cobertura mínima necesita. Una aplicación que siempre se abstiene evita algunas equivocaciones, pero puede no resolver la tarea para la que fue creada."
-          },
-          {
-            "heading": "Fijar el contrato",
-            "screen": "Los criterios preceden a los resultados.",
-            "text": "Registre las condiciones de comparación y fije el contrato en la página. Los valores iniciales son ejemplos, no recomendaciones validadas. Cada modificación crea una versión local; si se produce después de observar resultados, debe declararse como cambio del análisis."
-          },
-          {
-            "heading": "Alcance del registro",
-            "screen": "Una copia local no es un prerregistro externo.",
-            "text": "Conserve el archivo descargable junto con las instrucciones y los documentos utilizados. El historial facilita reconstruir decisiones, pero puede editarse y no acredita un registro público previo. Esa diferencia debe quedar explícita cuando se presente el piloto."
+            "heading": "Comprender para aplicar",
+            "text": "En este taller, clon de investigación significa un asistente configurado con su agenda, criterios metodológicos, estilo y corpus autorizado. Puede ayudar a comparar literatura, preparar matrices, cuestionar argumentos y proponer borradores. No reproduce su identidad ni su experiencia tácita, no es autor científico y no adquiere autonomía profesional. Lo construiremos con un cuaderno gratuito y un expediente que puede conservar y actualizar."
           }
-        ]
-      },
-      {
-        "id": "2-2",
-        "title": "Construir un conjunto de referencia",
-        "minutes": 45,
-        "refs": [
-          "R1",
-          "R10"
         ],
-        "objective": "Definir casos cuya respuesta esperada pueda adjudicarse antes de examinar las salidas del sistema.",
-        "reading": "Consulte el reporte de datos y evaluación en R10. Use R1 para discutir por qué una referencia plausible requiere comprobación individual.",
         "steps": [
-          "Descargue la plantilla JSON del banco. Sustituya los casos ficticios por ocho casos propios: cuatro de desarrollo y cuatro de reserva. Este tamaño es didáctico y no justifica uso operativo.",
-          "Para cada caso, registre pregunta o afirmación, documento, pasaje y etiqueta esperada: Respaldada, No respaldada o Abstención. La última significa que la evidencia no permite adjudicar.",
-          "Incluya un caso con atribución a la fuente equivocada y otro donde falte la información necesaria. Defina si un error no abstento sería crítico.",
-          "Adjudique las referencias antes de consultar A y B. Si trabaja solo, registre las decisiones ahora y vuelva a examinarlas al final; una revisión independiente posterior sigue siendo necesaria.",
-          "Importe la plantilla validada. El banco muestra la reserva: sirve para aprender el procedimiento, no para garantizar ocultamiento."
+          "Abra el constructor y escriba un nombre funcional, por ejemplo «Asistente de revisión sobre innovación».",
+          "Defina una sola tarea y quién revisará las respuestas.",
+          "Especifique el formato de salida y una decisión que el asistente no puede tomar.",
+          "Dibuje el flujo: perfil + fuentes → consulta → respuesta con evidencia → revisión → producto."
         ],
-        "prompt": "Propón casos límite para esta tarea sin inventar respuestas de referencia. Para cada propuesta indica qué documento y pasaje tendría que adjudicar una persona experta. Incluye casos de evidencia insuficiente. No completes etiquetas que no estén sustentadas por una fuente disponible.",
-        "task": "Describa el caso más ambiguo, su etiqueta de referencia y el criterio que permitiría resolver un desacuerdo.",
-        "example": "La ausencia del tamaño de muestra en el pasaje no respalda la afirmación de que el estudio no tuvo muestra. La referencia es Abstención hasta revisar el documento pertinente.",
+        "task": "Escriba el encargo del clon, su usuario, una salida útil y dos límites de actuación.",
+        "example": "Mi asistente compara definiciones en un corpus autorizado. No determina por sí solo la novedad de un proyecto ni decide la inclusión definitiva de artículos.",
         "quiz": {
-          "question": "El pasaje no contiene información para decidir si la afirmación es cierta. ¿Qué etiqueta corresponde en este banco?",
+          "question": "¿Qué estamos construyendo?",
           "options": [
-            "No respaldada, porque toda ausencia equivale a falsedad.",
-            "Respaldada, si la afirmación es plausible.",
-            "Abstención, conservando la razón de insuficiencia."
-          ],
-          "answer": 2,
-          "feedback": [
-            "En este protocolo, No respaldada expresa una adjudicación negativa sustentada, no mera ausencia.",
-            "La plausibilidad no sustituye evidencia del caso.",
-            "El protocolo distingue evidencia insuficiente de una conclusión negativa adjudicada."
-          ]
-        },
-        "completion": "Conserve el registro y explicite qué observación cambiaría su decisión. La respuesta automática comprueba un concepto; no evalúa la calidad científica de su argumento.",
-        "scenes": [
-          {
-            "heading": "La referencia requiere trabajo científico",
-            "screen": "Una etiqueta sin evidencia no constituye un patrón de comparación.",
-            "text": "Construya los casos a partir de documentos autorizados y conserve los pasajes que permiten adjudicarlos. La referencia no debe copiar la respuesta del modelo. Si no puede resolver un caso con la información disponible, registre la insuficiencia en lugar de forzar una etiqueta."
-          },
-          {
-            "heading": "Separar desarrollo y reserva",
-            "screen": "No utilice la reserva para ajustar la instrucción.",
-            "text": "Los casos de desarrollo permiten corregir el procedimiento. La reserva se consulta después de fijar la versión que se evaluará. En esta página ambos conjuntos son visibles: la separación depende de su disciplina de trabajo y no es una protección técnica contra contaminación."
-          },
-          {
-            "heading": "Incluir fallos relevantes",
-            "screen": "Una fuente equivocada puede cambiar toda la conclusión.",
-            "text": "Construya casos que representen errores importantes para su disciplina. Una cifra correcta atribuida a otra muestra puede ser más grave que una omisión. La marca de error crítico debe justificarse antes de observar qué condición obtiene mejores resultados."
-          },
-          {
-            "heading": "Un banco pequeño tiene límites",
-            "screen": "Ocho casos enseñan el procedimiento; no validan un despliegue.",
-            "text": "El conjunto del taller permite comprobar la aplicación y detectar fallos. No estima de manera fiable el desempeño en una población de consultas. Conserve los desacuerdos de adjudicación y planifique una referencia independiente antes de usar el sistema en decisiones de investigación."
-          }
-        ]
-      },
-      {
-        "id": "2-3",
-        "title": "Comparar respuestas y abstenciones",
-        "minutes": 50,
-        "refs": [
-          "R7",
-          "R8"
-        ],
-        "objective": "Interpretar diferencias entre condiciones sin ocultar los denominadores ni las respuestas faltantes.",
-        "reading": "En R7 examine la relación entre error y abstención. En R8 distinga cambios en recuperación y generación; esta práctica compara instrucciones, no reproduce el estudio publicado.",
-        "steps": [
-          "Ejecute A y B sobre los casos de desarrollo usando el mismo corpus en Acrobat. Conserve las respuestas literales y sus citas; registre como Sin ejecutar cualquier caso que no haya podido consultar.",
-          "Clasifique cada salida según lo que efectivamente responde. No corrija la respuesta antes de registrarla. Añada el pasaje y su adjudicación a la nota del caso.",
-          "Calcule resultados. Lea exactitud, cobertura y riesgo selectivo con sus denominadores. Compare también los casos concretos, porque los promedios pueden ocultar errores críticos.",
-          "Identifique si el fallo proviene de un documento no recuperado, de una inferencia que excede el pasaje o de una referencia mal adjudicada.",
-          "Modifique una sola característica de B si encuentra una razón sustentada. Registre una nueva versión antes de evaluar la reserva."
-        ],
-        "prompt": "Clasifica la afirmación con base en los documentos: Respaldada, No respaldada o Abstención. Usa No respaldada solo cuando exista evidencia para una adjudicación negativa; usa Abstención cuando falte evidencia para decidir. Cita el pasaje y conserva el alcance de la afirmación. No respondas con conocimiento externo.",
-        "task": "Interprete un cambio en cobertura y riesgo. Señale qué error queda oculto si solo informa exactitud.",
-        "example": "B respondió menos casos y redujo errores entre los respondidos. No puedo atribuirle mayor utilidad sin valorar las abstenciones; además, uno de sus errores sigue siendo crítico.",
-        "quiz": {
-          "question": "Una condición se abstiene en todos los casos. ¿Cuál es su riesgo selectivo?",
-          "options": [
-            "Cero, porque no emitió errores.",
-            "No estimable, porque no hay respuestas en el denominador.",
-            "Cien por ciento, porque no resultó útil."
-          ],
-          "answer": 1,
-          "feedback": [
-            "Un denominador vacío no autoriza una tasa de cero.",
-            "Debe informarse junto con cobertura cero; exactitud puede tener otro valor según las referencias.",
-            "La utilidad y la tasa de error selectivo no son la misma medida."
-          ]
-        },
-        "completion": "Conserve el registro y explicite qué observación cambiaría su decisión. La respuesta automática comprueba un concepto; no evalúa la calidad científica de su argumento.",
-        "scenes": [
-          {
-            "heading": "Contar lo que ocurrió",
-            "screen": "No corrija la salida antes de evaluarla.",
-            "text": "Registre cada respuesta completa antes de clasificarla. Una corrección humana posterior puede producir un buen resultado final, pero no representa el desempeño original del sistema. Si no ejecutó un caso, conserve el estado pendiente en lugar de tratarlo como abstención."
-          },
-          {
-            "heading": "Leer los denominadores",
-            "screen": "Riesgo selectivo: errores entre respuestas no abstentas.",
-            "text": "La exactitud compara etiquetas con la referencia. La cobertura indica qué proporción recibió una respuesta distinta de abstención. El riesgo selectivo usa solamente esas respuestas. Si el sistema no respondió ninguna, el riesgo no es cero: no puede estimarse."
-          },
-          {
-            "heading": "Localizar el fallo",
-            "screen": "Recuperación deficiente y sobreinterpretación exigen reparaciones distintas.",
-            "text": "Examine el pasaje que recibió el sistema. Si faltaba el documento pertinente, mejorar la redacción de la respuesta no resuelve la recuperación. Si el pasaje estaba disponible y fue sobreinterpretado, la revisión debe centrarse en la inferencia y en las condiciones de abstención."
-          },
-          {
-            "heading": "Una comparación todavía descriptiva",
-            "screen": "Los mismos casos facilitan examinar qué cambió.",
-            "text": "Compare las condiciones caso por caso antes de interpretar los promedios. No declare superioridad estadística con este pequeño banco seleccionado. Una mejora aparente puede depender de los ejemplos elegidos y desaparecer al cambiar de población o de tarea."
-          }
-        ]
-      },
-      {
-        "id": "2-pausa",
-        "title": "Pausa de trabajo",
-        "minutes": 15,
-        "pause": true
-      },
-      {
-        "id": "2-4",
-        "title": "Construir una aplicación de evaluación propia",
-        "minutes": 60,
-        "refs": [
-          "R7",
-          "R10"
-        ],
-        "objective": "Modificar una regla de decisión y comprobar su efecto en una aplicación HTML autónoma.",
-        "reading": "Use los criterios de reporte de R10 que resulten pertinentes. La aplicación construida evalúa etiquetas adjudicadas; no ejecuta un modelo ni confirma automáticamente la validez de las fuentes.",
-        "steps": [
-          "Con un contrato fijado y casos cargados, pulse Descargar mi banco como aplicación HTML. Abra el archivo local y compruebe que conserva sus casos y permite cambiar las etiquetas de A y B.",
-          "Abra una copia del HTML con un editor de texto. Localice const CONFIG y la función gate. Identifique en qué orden se comprueban casos faltantes, tamaño mínimo y umbrales.",
-          "Cambie una regla sustantiva: por ejemplo, establezca que cualquier error crítico impida continuar incluso si el banco es todavía insuficiente. Mueva esa comprobación antes de la comprobación de tamaño; conserve el mensaje de insuficiencia para los demás casos.",
-          "Pruebe un caso crítico equivocado con menos casos que minN: el resultado debe expresar el veto crítico. Después elimine ese error y confirme que reaparece Evidencia insuficiente. Pruebe también cobertura cero.",
-          "Guarde las versiones inicial y modificada con un registro de resultados esperados y observados. Si solicita ayuda de IA, comparta solo código sin documentos ni registros privados y revise cada cambio."
-        ],
-        "prompt": "Revisa esta función gate de una aplicación local. Quiero que cualquier error crítico tenga prioridad sobre el tamaño insuficiente, manteniendo la comprobación de riesgo no estimable. Modifica solo esa regla. Explica cómo cambia la decisión en un banco pequeño con un error crítico y propone pruebas de frontera. No añadas servicios externos.",
-        "task": "Documente la regla modificada, dos pruebas de frontera y una limitación que el código no puede resolver.",
-        "example": "Antes: cuatro casos y un error crítico producían Evidencia insuficiente. Después: el veto crítico tiene prioridad. Al corregir el error, vuelve la insuficiencia. El cambio de código no resuelve si la referencia humana era válida.",
-        "quiz": {
-          "question": "Cambiar el umbral hasta que la aplicación acepte los casos observados produce…",
-          "options": [
-            "Una validación independiente.",
-            "Una adaptación al banco observado que exige otra reserva.",
-            "Una mejora demostrada de la capacidad del modelo."
-          ],
-          "answer": 1,
-          "feedback": [
-            "Los casos usados para adaptar la regla dejan de ser independientes de esa decisión.",
-            "El ajuste forma parte del desarrollo; debe evaluarse después con casos no utilizados.",
-            "Se modificó una política local, no el modelo."
-          ]
-        },
-        "completion": "Conserve el registro y explicite qué observación cambiaría su decisión. La respuesta automática comprueba un concepto; no evalúa la calidad científica de su argumento.",
-        "scenes": [
-          {
-            "heading": "La herramienta que se construye",
-            "screen": "Un evaluador portable con reglas explícitas.",
-            "text": "El archivo descargable contiene los casos y la política de evaluación. Funciona localmente sin una clave de programación ni una conexión al modelo. Las respuestas se obtienen fuera de la aplicación y se registran después de adjudicarlas con los documentos."
-          },
-          {
-            "heading": "Modificar una decisión real",
-            "screen": "El orden de las reglas también expresa una política.",
-            "text": "Localice la función que decide si se cumplen los criterios. En la versión inicial se comprueba primero si hay evidencia suficiente. Su ejercicio consiste en dar prioridad a un error crítico. Ese cambio altera la decisión, no solamente la apariencia de la página."
-          },
-          {
-            "heading": "Probar la frontera",
-            "screen": "Un error crítico con pocos casos debe activar el veto.",
-            "text": "Construya un caso que distinga las dos versiones. Use pocos casos y un error crítico, observe la decisión y elimine después el error. Compruebe también qué ocurre cuando todas las respuestas son abstenciones. Conserve lo esperado y lo observado en cada prueba."
-          },
-          {
-            "heading": "El código no adjudica la ciencia",
-            "screen": "Una regla correcta puede operar sobre una referencia equivocada.",
-            "text": "La aplicación hace explícita una política y calcula métricas, pero no determina si sus etiquetas están científicamente justificadas. El informe debe conservar esa separación. Antes de compartir el HTML, revise los casos incluidos: el archivo exportado contiene los datos de su banco."
-          }
-        ]
-      },
-      {
-        "id": "2-5",
-        "title": "Pruebas de tensión y decisión de uso",
-        "minutes": 45,
-        "refs": [
-          "R8",
-          "R10"
-        ],
-        "objective": "Examinar estabilidad ante una perturbación pertinente y producir un informe de evaluación reproducible.",
-        "reading": "Consulte cómo R8 examina componentes del sistema. Use R10 para revisar qué detalles faltan en su reporte, señalando su ámbito original de salud.",
-        "steps": [
-          "Fije la última versión y ejecute la reserva. Si ya la utilizó para ajustar instrucciones o reglas, reclasifíquela como desarrollo y proponga nuevos casos.",
-          "Seleccione una perturbación: retire un pasaje indispensable o incorpore un documento con resultado discrepante. No cambie ambas cosas al mismo tiempo.",
-          "Escriba el comportamiento esperado antes de ejecutar. La ausencia del pasaje debería modificar la posibilidad de responder; una discrepancia debería hacerse explícita, no resolverse por mayoría de documentos.",
-          "Conserve las salidas y sus citas. Identifique si el cambio observado corresponde a la perturbación, reconociendo que la variabilidad del servicio requiere repeticiones adicionales.",
-          "Descargue el informe y redacte una decisión: continuar desarrollo, restringir el uso a una tarea o diseñar validación independiente. Declare tamaño, selección de casos y cambios posteriores al contrato."
-        ],
-        "prompt": "Examina los documentos disponibles para esta afirmación. Si falta el pasaje necesario, abstente y especifica qué evidencia falta. Si hay resultados discrepantes, conserva la discrepancia e identifica diferencias de diseño o contexto que estén documentadas. No resuelvas por número de documentos ni inventes una explicación conciliadora.",
-        "task": "Presente un informe breve con la perturbación, el resultado observado y la decisión de uso. Incluya el próximo estudio necesario para sostener esa decisión.",
-        "example": "Al retirar el pasaje indispensable, el sistema mantuvo la conclusión con una cita irrelevante. Suspendo esa función de adjudicación y conservo únicamente la búsqueda asistida de pasajes mientras evalúo una regla de abstención.",
-        "quiz": {
-          "question": "La aplicación supera ocho casos seleccionados por su creador. ¿Qué conclusión puede sostener?",
-          "options": [
-            "Superó ese banco; falta evaluar representatividad y desempeño independiente.",
-            "Está validada para la disciplina completa.",
-            "La revisión humana ya no aporta valor."
+            "Un asistente configurado que requiere revisión.",
+            "Una réplica exacta de la persona.",
+            "Un investigador autónomo que puede firmar resultados."
           ],
           "answer": 0,
           "feedback": [
-            "El reporte debe conservar el alcance real del conjunto evaluado.",
-            "La selección y el tamaño impiden esa generalización.",
-            "El ejercicio depende de adjudicación experta y no elimina esa necesidad."
+            "Correcto: el perfil orienta la ayuda, no transfiere responsabilidad.",
+            "No reproduce identidad, memoria completa ni juicio experto.",
+            "La autoría y las decisiones permanecen en las personas."
           ]
         },
-        "completion": "Conserve el registro y explicite qué observación cambiaría su decisión. La respuesta automática comprueba un concepto; no evalúa la calidad científica de su argumento.",
+        "prompt": "",
+        "refs": [
+          "R1",
+          "R2"
+        ],
+        "links": [
+          {
+            "label": "Abrir el constructor de mi clon",
+            "url": "clon.html"
+          },
+          {
+            "label": "Abrir Gemini Notebook",
+            "url": "https://notebook.google.com/"
+          }
+        ],
+        "completion": "Conserve la evidencia de la actividad, explique una decisión y responda la comprobación conceptual. La autoevaluación no certifica competencia profesional.",
+        "textOnly": true
+      },
+      {
+        "id": "v4-2-2",
+        "title": "Preparar su perfil y un corpus autorizado",
+        "minutes": 30,
+        "objective": "Separar instrucciones, fuentes de evidencia y ejemplos de estilo.",
+        "reading": "Lectura científica complementaria: examine el alcance del trabajo y su tipo de publicación. Los ejercicios se pueden completar con las orientaciones y el caso abierto del taller.",
         "scenes": [
           {
-            "heading": "Una perturbación pertinente",
-            "screen": "¿Qué debería cambiar si se retira evidencia indispensable?",
-            "text": "La prueba final examina si la respuesta depende de la evidencia que declara utilizar. Retire un pasaje necesario y formule de antemano el comportamiento esperado. Si la conclusión permanece intacta con otra cita irrelevante, habrá identificado un fallo que merece investigación."
-          },
-          {
-            "heading": "Conservar las discrepancias",
-            "screen": "Una síntesis no debe borrar resultados incompatibles.",
-            "text": "Otra prueba posible consiste en incorporar evidencia discrepante. Examine si el sistema conserva el desacuerdo y distingue diferencias documentadas de explicaciones conjeturales. El número de documentos favorables no sustituye una evaluación de sus diseños y de su dependencia."
-          },
-          {
-            "heading": "Una decisión proporcional",
-            "screen": "El piloto puede justificar una restricción de uso.",
-            "text": "Interprete el resultado según la tarea y las consecuencias del error. Superar el banco no autoriza una generalización a toda la disciplina. Un resultado útil puede consistir en restringir la aplicación a localizar pasajes y reservar la adjudicación para revisión experta."
-          },
-          {
-            "heading": "Un informe reconstruible",
-            "screen": "Conserve el contrato, sus modificaciones y los casos evaluados.",
-            "text": "Descargue el informe y acompañe las métricas con los documentos y las salidas originales que pueda conservar legalmente. Declare las limitaciones del banco y qué evaluación independiente necesita. El producto final es una aplicación examinable y un protocolo de validación todavía perfectible."
+            "heading": "Comprender para aplicar",
+            "text": "El perfil describe preguntas, conceptos, método, criterios de calidad y estilo de respuesta. Las fuentes aportan evidencia; un ejemplo de redacción solo orienta la forma. Mantenga esta separación para que una preferencia personal no aparezca como hallazgo. Use tres textos abiertos o propios autorizados y un inventario: S1, S2, S3, referencia, URL o DOI, tipo, fecha, permiso y localizador. No necesita WoS ni una suscripción para completar la actividad."
           }
-        ]
+        ],
+        "steps": [
+          "Complete los campos del constructor sin introducir datos personales sensibles.",
+          "Seleccione tres fuentes autorizadas. Compruebe título, autores, año y versión; anote si solo dispone del resumen.",
+          "Registre cada fuente en el inventario del constructor. Lea sus límites antes de cargarla en una IA.",
+          "Escriba un párrafo propio de ejemplo y márquelo como ESTILO, no como evidencia. Si no tiene uno, describa tono y estructura sin adjuntar textos ajenos."
+        ],
+        "task": "Conserve su perfil y un inventario de tres fuentes, con permisos y límites de lectura.",
+        "example": "S1 es un artículo abierto; S2 un documento institucional público; S3 un caso sintético. El caso sirve para probar el sistema, no para sustentar resultados de investigación.",
+        "quiz": {
+          "question": "¿Cómo se usa una muestra de escritura propia?",
+          "options": [
+            "Como prueba científica de cualquier afirmación.",
+            "Como orientación de estilo, separada de las fuentes.",
+            "Para atribuir al asistente la identidad del autor."
+          ],
+          "answer": 1,
+          "feedback": [
+            "El estilo no respalda resultados.",
+            "Correcto: forma y evidencia cumplen funciones diferentes.",
+            "El asistente debe identificarse como tal."
+          ]
+        },
+        "prompt": "",
+        "refs": [
+          "R1",
+          "R2"
+        ],
+        "links": [
+          {
+            "label": "Abrir el constructor de mi clon",
+            "url": "clon.html"
+          },
+          {
+            "label": "Abrir Gemini Notebook",
+            "url": "https://notebook.google.com/"
+          }
+        ],
+        "completion": "Conserve la evidencia de la actividad, explique una decisión y responda la comprobación conceptual. La autoevaluación no certifica competencia profesional.",
+        "textOnly": true
+      },
+      {
+        "id": "v4-2-3",
+        "title": "Crear el cuaderno y configurar el asistente",
+        "minutes": 35,
+        "objective": "Poner en funcionamiento el primer clon con una cuenta gratuita.",
+        "reading": "Lectura científica complementaria: examine el alcance del trabajo y su tipo de publicación. Los ejercicios se pueden completar con las orientaciones y el caso abierto del taller.",
+        "scenes": [
+          {
+            "heading": "Comprender para aplicar",
+            "text": "Gemini Notebook, antes NotebookLM, ofrece una modalidad Standard sin suscripción y permite personalizar el chat. El ejercicio usa un corpus pequeño y consultas breves. Las cuotas y la disponibilidad dependen del proveedor y de la cuenta. No necesita API, tarjeta ni un GPT personalizado. La configuración orienta al modelo; las pruebas comprobarán si la sigue."
+          }
+        ],
+        "steps": [
+          "Entre a Gemini Notebook con una cuenta habilitada y cree un cuaderno. Póngale el nombre de su asistente.",
+          "Añada las tres fuentes autorizadas. Espere a que se procesen y abra cada una para comprobar que el texto es legible.",
+          "En el panel de conversación, abra Configurar chat, seleccione Personalizado y pegue la instrucción maestra generada en el constructor. Elija una longitud moderada y guarde.",
+          "Si la interfaz no ofrece ese ajuste, pegue la instrucción al comenzar cada conversación y consérvela fuera del servicio.",
+          "Seleccione solo las fuentes que correspondan a la tarea. Pregunte qué documentos reconoce y compruebe los títulos antes de continuar."
+        ],
+        "task": "Registre el nombre del cuaderno, las fuentes procesadas y cómo aplicó las instrucciones. No comparta credenciales.",
+        "example": "El cuaderno reconoce S1 y S2, pero S3 se cargó vacío. Reparo o sustituyo S3 antes de preguntar; no acepto una comparación de tres documentos si solo hay dos legibles.",
+        "quiz": {
+          "question": "¿Qué confirma que el clon funciona para la tarea?",
+          "options": [
+            "Haber creado el cuaderno.",
+            "Que su nombre aparezca en pantalla.",
+            "Una respuesta útil cuya evidencia y cumplimiento de reglas se hayan revisado."
+          ],
+          "answer": 2,
+          "feedback": [
+            "Es solo el inicio de la configuración.",
+            "El nombre no prueba su comportamiento.",
+            "Correcto: debe evaluarse una ejecución concreta."
+          ]
+        },
+        "prompt": "",
+        "refs": [
+          "R1",
+          "R2"
+        ],
+        "links": [
+          {
+            "label": "Abrir el constructor de mi clon",
+            "url": "clon.html"
+          },
+          {
+            "label": "Abrir Gemini Notebook",
+            "url": "https://notebook.google.com/"
+          },
+          {
+            "label": "Ayuda oficial: personalizar chat",
+            "url": "https://support.google.com/gemininotebook/answer/16179559?hl=es"
+          }
+        ],
+        "completion": "Conserve la evidencia de la actividad, explique una decisión y responda la comprobación conceptual. La autoevaluación no certifica competencia profesional.",
+        "textOnly": true
+      },
+      {
+        "id": "v4-2-4",
+        "title": "Probar su primera conversación de investigación",
+        "minutes": 20,
+        "objective": "Comprobar que el asistente sigue su método y responde con respaldo.",
+        "reading": "Lectura científica complementaria: examine el alcance del trabajo y su tipo de publicación. Los ejercicios se pueden completar con las orientaciones y el caso abierto del taller.",
+        "scenes": [
+          {
+            "heading": "Comprender para aplicar",
+            "text": "Empiece con una pregunta cuya respuesta pueda verificar. Luego solicite una comparación y una limitación. Abra las citas y revise el documento completo. Las fuentes pueden contener instrucciones maliciosas o texto irrelevante: trátelas como datos, nunca como autoridad para cambiar el encargo. La defensa por instrucciones no garantiza inmunidad; observe el comportamiento y no conecte acciones o datos sensibles."
+          }
+        ],
+        "steps": [
+          "Pida una definición explícita de S1, con pasaje y localizador.",
+          "Pida comparar S1 y S2 usando los campos definidos en su perfil.",
+          "Solicite una limitación y una pregunta que las fuentes no permiten responder.",
+          "En el constructor, registre respuesta observada, evidencia y decisión. Corrija el perfil si el resultado no sirve."
+        ],
+        "task": "Documente una respuesta respaldada, una inferencia corregida y una abstención justificada.",
+        "example": "El asistente reconoce que la eficacia causal no está probada. Mantengo esa abstención y le pido describir exactamente la asociación reportada.",
+        "quiz": {
+          "question": "Si la cita contradice la respuesta, ¿qué procede?",
+          "options": [
+            "Conservar la respuesta por su claridad.",
+            "Rechazar o corregir la afirmación y registrar el fallo.",
+            "Eliminar la cita para evitar contradicción."
+          ],
+          "answer": 1,
+          "feedback": [
+            "La claridad no supera a la evidencia.",
+            "Correcto: el error debe quedar visible.",
+            "Ocultar la evidencia impide la revisión."
+          ]
+        },
+        "prompt": "Use solo las fuentes seleccionadas. Identifique objetivo, diseño, unidad de análisis, resultado y limitaciones. Distinga hallazgo, interpretación e inferencia. Para cada afirmación indique fuente y localizador comprobable; si no hay página, use sección y pasaje. Escriba «No reportado» cuando falte información y «No sustentado en el corpus» si la conclusión excede las fuentes. No invente referencias ni convierta una asociación en causalidad. Termine con lo que no se puede concluir.",
+        "refs": [
+          "R1",
+          "R2"
+        ],
+        "links": [
+          {
+            "label": "Abrir el constructor de mi clon",
+            "url": "clon.html"
+          },
+          {
+            "label": "Abrir Gemini Notebook",
+            "url": "https://notebook.google.com/"
+          }
+        ],
+        "completion": "Conserve la evidencia de la actividad, explique una decisión y responda la comprobación conceptual. La autoevaluación no certifica competencia profesional.",
+        "textOnly": true
+      },
+      {
+        "id": "v4-2-5",
+        "title": "Pausa y respaldo",
+        "minutes": 15,
+        "pause": true,
+        "objective": "Pausa de trabajo."
+      },
+      {
+        "id": "v4-2-6",
+        "title": "Crear productos con el clon",
+        "minutes": 40,
+        "objective": "Transformar respuestas verificadas en productos útiles para la investigación.",
+        "reading": "Lectura científica complementaria: examine el alcance del trabajo y su tipo de publicación. Los ejercicios se pueden completar con las orientaciones y el caso abierto del taller.",
+        "scenes": [
+          {
+            "heading": "Comprender para aplicar",
+            "text": "El producto principal es su asistente configurado y evaluado. A partir de él construirá una matriz de literatura y un informe breve con evidencia. Como extensiones puede crear un guion de entrevista para revisión ética, una ficha de lectura, un esquema de artículo o una aplicación HTML de registro. El producto debe conservar fuentes, incertidumbres y decisiones humanas. Un guion aún no es un instrumento validado y un borrador aún no es un resultado publicado."
+          }
+        ],
+        "steps": [
+          "Pida una matriz con fuente, pregunta, diseño, resultado, límite y localizador. Revise al menos tres filas.",
+          "Use las filas revisadas para producir un informe de 300 palabras: pregunta, evidencia, tensiones y asuntos no resueltos.",
+          "Pida al clon una crítica del informe y conserve solo cambios respaldados.",
+          "Lleve una afirmación al Registro de evidencia. Como extensión opcional, descargue su aplicación HTML y personalice título y criterio con el tutorial existente.",
+          "Prepare una ficha del producto: para quién sirve, de qué fuentes depende, qué validación recibió y qué no permite concluir."
+        ],
+        "task": "Entregue una matriz revisada, un informe breve y la ficha de alcance del producto.",
+        "example": "La matriz conserva tres fuentes y un desacuerdo. El informe no presenta el desacuerdo como error ni afirma que el corpus sea una revisión sistemática completa.",
+        "quiz": {
+          "question": "¿Cuándo puede usarse una matriz generada?",
+          "options": [
+            "Después de revisar contenido, referencias y límites para el uso previsto.",
+            "En cuanto esté bien formateada.",
+            "Cuando todas las filas parezcan coincidir."
+          ],
+          "answer": 0,
+          "feedback": [
+            "Correcto: el formato facilita el trabajo, pero la revisión lo sustenta.",
+            "El diseño no garantiza calidad de evidencia.",
+            "Los desacuerdos pueden ser relevantes."
+          ]
+        },
+        "prompt": "Con las fuentes seleccionadas, construya una matriz: fuente | pregunta | diseño | resultado | limitación | localizador. Separe hechos e inferencias. No complete campos ausentes. Después proponga un informe breve basado exclusivamente en las filas que yo indique como revisadas. Mantenga las discrepancias entre fuentes.",
+        "refs": [
+          "R1",
+          "R2"
+        ],
+        "links": [
+          {
+            "label": "Abrir el constructor de mi clon",
+            "url": "clon.html"
+          },
+          {
+            "label": "Abrir Gemini Notebook",
+            "url": "https://notebook.google.com/"
+          },
+          {
+            "label": "Registro y aplicación HTML",
+            "url": "observatorio.html"
+          }
+        ],
+        "completion": "Conserve la evidencia de la actividad, explique una decisión y responda la comprobación conceptual. La autoevaluación no certifica competencia profesional.",
+        "textOnly": true
+      },
+      {
+        "id": "v4-2-7",
+        "title": "Evaluar el clon con seis pruebas",
+        "minutes": 35,
+        "objective": "Medir fallos y abstenciones antes de transferir el asistente a un caso nuevo.",
+        "reading": "Lectura científica complementaria: examine el alcance del trabajo y su tipo de publicación. Los ejercicios se pueden completar con las orientaciones y el caso abierto del taller.",
+        "scenes": [
+          {
+            "heading": "Comprender para aplicar",
+            "text": "Una instrucción no es una garantía de comportamiento. Pruebe seis situaciones: recuperación correcta, ausencia de evidencia, contradicción entre fuentes, intento de inventar una referencia, instrucción hostil en el documento y exposición de datos. Defina la respuesta esperada antes de ejecutar cada prueba. Registre también respuestas útiles: un sistema que se abstiene de todo puede ser seguro para un caso y ser inútil para el propósito."
+          }
+        ],
+        "steps": [
+          "Abra las seis pruebas del constructor. Escriba el resultado esperado antes de consultar al asistente.",
+          "Ejecute cada caso con documentos abiertos o el caso sintético proporcionado. No introduzca datos privados para probar privacidad.",
+          "Registre lo observado y el pasaje que respalda su evaluación; use pendiente, supera o falla.",
+          "Calcule pruebas superadas / pruebas ejecutadas. Informe por separado errores de atribución, filtraciones y abstenciones indebidas.",
+          "Corrija una regla o la selección de fuentes. Repita los casos afectados y conserve la versión de la configuración."
+        ],
+        "task": "Entregue seis registros de prueba y una decisión fundada sobre qué usos permite esta versión.",
+        "example": "Supera cinco de seis casos, pero inventa una referencia. No lo uso para proponer bibliografía hasta corregir y volver a probar esa función. Cinco de seis no demuestra seguridad general.",
+        "quiz": {
+          "question": "El clon supera seis pruebas pequeñas. ¿Qué concluye?",
+          "options": [
+            "Que nunca fallará.",
+            "Que funcionó en esos casos; necesita nuevas pruebas al cambiar de uso o corpus.",
+            "Que ya puede actuar sin supervisión."
+          ],
+          "answer": 1,
+          "feedback": [
+            "La evaluación no cubre todos los escenarios.",
+            "Correcto: el alcance de la evidencia debe mantenerse explícito.",
+            "La responsabilidad humana se conserva."
+          ]
+        },
+        "prompt": "",
+        "refs": [
+          "R1",
+          "R2"
+        ],
+        "links": [
+          {
+            "label": "Abrir el constructor de mi clon",
+            "url": "clon.html"
+          },
+          {
+            "label": "Abrir Gemini Notebook",
+            "url": "https://notebook.google.com/"
+          },
+          {
+            "label": "Laboratorio de evaluación",
+            "url": "laboratorio.html"
+          }
+        ],
+        "completion": "Conserve la evidencia de la actividad, explique una decisión y responda la comprobación conceptual. La autoevaluación no certifica competencia profesional.",
+        "textOnly": true
+      },
+      {
+        "id": "v4-2-8",
+        "title": "Transferir, compartir y mantener el producto",
+        "minutes": 25,
+        "objective": "Preparar una entrega reproducible y reconocer los límites de la versión gratuita.",
+        "reading": "Lectura científica complementaria: examine el alcance del trabajo y su tipo de publicación. Los ejercicios se pueden completar con las orientaciones y el caso abierto del taller.",
+        "scenes": [
+          {
+            "heading": "Comprender para aplicar",
+            "text": "El clon vive en su cuenta del proveedor; el constructor del Hub conserva una ficha local y genera instrucciones, no ejecuta un modelo. Guardar un expediente no sincroniza el cuaderno. Compartir un cuaderno puede dar acceso a sus fuentes: revise permisos y use solo material autorizado. La ruta mínima se entrega mediante expediente y demostración, sin publicar el corpus. No ofrece vigilancia automática, acciones en su nombre ni entrenamiento de un nuevo modelo."
+          }
+        ],
+        "steps": [
+          "Descargue el expediente y la ficha HTML del constructor. Conserve una copia de la instrucción maestra y el inventario.",
+          "Anote fecha, proveedor, configuración y cambios. Describa cómo otra persona puede recrear el cuaderno con sus propios permisos.",
+          "Demuestre una consulta y una limitación a otra persona. No active enlaces públicos por defecto.",
+          "Defina cuándo revisar el clon: nuevas fuentes, cambio de modelo, cuota o tarea. Al agotarse una cuota, espere o use el procedimiento manual con los mismos controles."
+        ],
+        "task": "Redacte instrucciones de entrega y mantenimiento, incluyendo permisos y una condición para detener el uso.",
+        "example": "Comparto la ficha de configuración y una demostración sintética. El corpus real permanece restringido. Si cambian las fuentes, repito las pruebas de atribución y contradicción.",
+        "quiz": {
+          "question": "¿La ficha HTML descargada ejecuta IA?",
+          "options": [
+            "Sí, contiene el modelo.",
+            "Sí, se conecta automáticamente a mi cuenta.",
+            "No: documenta la configuración; la consulta ocurre en el proveedor elegido."
+          ],
+          "answer": 2,
+          "feedback": [
+            "No incorpora un modelo.",
+            "No contiene credenciales ni conexión a su cuenta.",
+            "Correcto: la ficha hace transferible el método y la configuración."
+          ]
+        },
+        "prompt": "",
+        "refs": [
+          "R1",
+          "R2"
+        ],
+        "links": [
+          {
+            "label": "Abrir el constructor de mi clon",
+            "url": "clon.html"
+          },
+          {
+            "label": "Abrir Gemini Notebook",
+            "url": "https://notebook.google.com/"
+          }
+        ],
+        "completion": "Conserve la evidencia de la actividad, explique una decisión y responda la comprobación conceptual. La autoevaluación no certifica competencia profesional.",
+        "textOnly": true
+      },
+      {
+        "id": "v4-2-9",
+        "title": "Demostración final y plan de mejora",
+        "minutes": 20,
+        "objective": "Presentar un producto funcionando con evidencia de calidad y límites explícitos.",
+        "reading": "Lectura científica complementaria: examine el alcance del trabajo y su tipo de publicación. Los ejercicios se pueden completar con las orientaciones y el caso abierto del taller.",
+        "scenes": [
+          {
+            "heading": "Comprender para aplicar",
+            "text": "Una demostración profesional enseña una tarea, las fuentes, una respuesta comprobada, una falla conocida y el control adoptado. Evalúe utilidad, trazabilidad, ética y reproducibilidad con 0, 1 o 2 puntos por criterio. La meta formativa es al menos seis puntos sin cero en ética o trazabilidad. Las pruebas del clon son otra evidencia: no sustituyen esta revisión del producto completo."
+          }
+        ],
+        "steps": [
+          "Presente en tres minutos su clon: encargo, fuentes y una consulta verificable.",
+          "Muestre matriz e informe y explique una corrección realizada por usted.",
+          "Complete la rúbrica y anote el fallo de mayor impacto. No declare apto un uso afectado por ese fallo.",
+          "Conserve el expediente, la ficha y el cuaderno. Programe por su cuenta una revisión en siete días con un caso nuevo."
+        ],
+        "task": "Entregue el clon configurado, dos productos revisados, seis pruebas documentadas y un plan de mejora.",
+        "example": "El prototipo ya compara definiciones en tres textos. Antes de ampliar el corpus revisaré sesgo de cobertura y repetiré las pruebas; todavía no lo uso para decidir inclusión en una revisión sistemática.",
+        "quiz": {
+          "question": "¿Qué demuestra mayor solidez profesional?",
+          "options": [
+            "Ocultar los fallos para impresionar.",
+            "Mostrar utilidad, evidencia de pruebas y límites de uso.",
+            "Prometer investigación autónoma completa."
+          ],
+          "answer": 1,
+          "feedback": [
+            "Los fallos son información necesaria para decidir el uso.",
+            "Correcto: la calidad se apoya en evidencia y criterio.",
+            "La promesa excede el producto construido."
+          ]
+        },
+        "prompt": "",
+        "refs": [
+          "R1",
+          "R2"
+        ],
+        "links": [
+          {
+            "label": "Abrir el constructor de mi clon",
+            "url": "clon.html"
+          },
+          {
+            "label": "Abrir Gemini Notebook",
+            "url": "https://notebook.google.com/"
+          }
+        ],
+        "completion": "Conserve la evidencia de la actividad, explique una decisión y responda la comprobación conceptual. La autoevaluación no certifica competencia profesional.",
+        "textOnly": true
       }
     ]
   }

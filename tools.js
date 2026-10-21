@@ -1,0 +1,7 @@
+import './site.js';
+import {tools} from './tools-data.js';
+import {escapeHTML as e} from './clone-core.js';
+const normalize=x=>x.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'');
+document.querySelector('#tool-cards').innerHTML=tools.map((t,i)=>`<article class="card tool-card" data-tool="${i}"><span class="tag">${e(t.tag)}</span><h2>${e(t.name)}</h2><p class="section-label">${e(t.kind)}</p><p>${e(t.use)}</p><dl><dt>Práctica breve</dt><dd>${e(t.practice)}</dd><dt>Acceso gratuito</dt><dd>${e(t.free)}</dd><dt>Control del investigador</dt><dd>${e(t.limit)}</dd></dl><p class="tool-links"><a href="${t.url}" target="_blank" rel="noopener">Abrir herramienta ↗</a> · <a href="${t.source}" target="_blank" rel="noopener">Condiciones oficiales</a>${t.help?` · <a href="${t.help}" target="_blank" rel="noopener">Guía de uso</a>`:''}</p></article>`).join('');
+function filter(){const q=normalize(document.querySelector('#tool-search').value),kind=document.querySelector('#tool-kind').value;let count=0;document.querySelectorAll('[data-tool]').forEach(el=>{const t=tools[+el.dataset.tool];el.hidden=!(normalize(Object.values(t).join(' ')).includes(q)&&(!kind||kind===t.kind));if(!el.hidden)count++;});document.querySelector('#tool-count').textContent=count?`${count} ${count===1?"resultado disponible":"herramientas y complementos disponibles"} para esta consulta.`:'No hay resultados. Cambie la búsqueda o seleccione todas las tareas.';}
+document.querySelector('#tool-search').oninput=filter;document.querySelector('#tool-kind').onchange=filter;filter();
