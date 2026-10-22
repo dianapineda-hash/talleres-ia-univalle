@@ -1,8 +1,8 @@
 {
   "1": {
-    "title": "IA para investigar: posibilidades, herramientas y ética",
-    "intro": "Aprenda desde cero a buscar literatura, leer fuentes y revisar textos con herramientas gratuitas de IA. Practique con un caso incluido y tome una decisión de ética algorítmica en cada actividad.",
-    "product": "Un mapa personal de herramientas, una ficha de lectura comprobada y un protocolo de uso, con instrucciones, respuestas reales y decisiones éticas guardadas en su cuaderno.",
+    "title": "Uso de inteligencia artificial en la investigación",
+    "intro": "Aprenda a incorporar herramientas gratuitas de IA al trabajo de investigación. El caso incluido permite practicar la búsqueda de literatura y la lectura crítica; cada actividad exige revisar los resultados y registrar una decisión ética.",
+    "product": "Un protocolo de uso de IA apoyado en un mapa personal de herramientas y una ficha de lectura comprobada. El cuaderno conserva las consultas realizadas y las decisiones éticas del proceso.",
     "lessons": [
       {
         "id": "v4-1-1",
@@ -24,7 +24,7 @@
           "Abra la guía de esta actividad y lea S1. Cree una carpeta llamada «Mi taller de IA» para las descargas. Reserve 5 minutos para entrar, 10 para consultar y 10 para verificar y registrar.",
           "Elija ChatGPT Free o Claude Free. Abra el enlace de la guía, entre o cree una cuenta gratuita si se lo solicita y abra una conversación nueva. No necesita activar una prueba de pago, adjuntar archivos ni crear un asistente personalizado.",
           "En la guía, pulse «Copiar primera consulta con S1». Péguela en el cuadro donde se escribe un mensaje y envíela. El botón de copiar incluye tanto la instrucción como el documento completo.",
-          "Compare la respuesta con S1 P1 y P4: debe conservar tres días por semana, último mes y ausencia de causalidad demostrada. Si falta algo, pida corregirlo usando esos párrafos.",
+          "Compare la respuesta con S1 P1 y P4. Compruebe que el uso corresponde a tres días por semana durante el último mes y que no se atribuye causalidad. Si falta algo, pida corregirlo usando esos párrafos.",
           "Guarde aquí herramienta, fecha, instrucción usada, respuesta y una corrección o confirmación. Indique si realmente ejecutó la consulta. Si falta acceso, deje la práctica pendiente y continúe la preparación."
         ],
         "task": "Registre su primera consulta: herramienta y fecha; respuesta recibida; pasaje comprobado; corrección que hizo y decisión que conserva usted.",
@@ -39,7 +39,7 @@
           "answer": 1,
           "feedback": [
             "Reduzca el alcance hasta poder verificar el resultado.",
-            "Correcto: hay entradas, una salida y un control observables.",
+            "Correcto. La tarea define qué información utilizará y cómo comprobará el resultado.",
             "La fluidez no es evidencia de validez."
           ]
         },
@@ -131,7 +131,7 @@
       },
       {
         "id": "v4-1-3",
-        "title": "Buscar, leer y verificar fuentes",
+        "title": "Comprobar la información de las fuentes",
         "minutes": 30,
         "objective": "Usar un cuaderno gratuito con una fuente y abrir una cita para verificar una respuesta.",
         "reading": "Lectura opcional para después de la práctica. Relacione las fuentes de apoyo con un error o un límite que haya observado. No se exige adquirir el texto completo ni completar una consulta institucional para avanzar.",
@@ -264,7 +264,7 @@
       },
       {
         "id": "v4-1-6",
-        "title": "Ética algorítmica: sesgos, datos y poder",
+        "title": "Decisiones éticas en el uso de IA",
         "minutes": 40,
         "objective": "Detectar una inferencia discriminatoria y decidir qué datos, recomendaciones y usos son admisibles.",
         "reading": "Lectura opcional para después de la práctica. Relacione las fuentes de apoyo con un error o un límite que haya observado. No se exige adquirir el texto completo ni completar una consulta institucional para avanzar.",
@@ -328,14 +328,14 @@
       },
       {
         "id": "v4-1-7",
-        "title": "Autoría, transparencia y reproducibilidad",
+        "title": "Documentar el uso de IA en la investigación",
         "minutes": 25,
         "objective": "Documentar el uso de IA de forma que otra persona pueda revisar su trabajo y sus correcciones.",
         "reading": "Lectura opcional para después de la práctica. Relacione las fuentes de apoyo con un error o un límite que haya observado. No se exige adquirir el texto completo ni completar una consulta institucional para avanzar.",
         "scenes": [
           {
             "heading": "Idea central",
-            "text": "La persona investigadora responde por las afirmaciones, citas y decisiones que presenta. Conservar la instrucción no garantiza repetir exactamente una salida: versiones, contexto y variación del sistema pueden cambiarla. La bitácora permite auditar el proceso."
+            "text": "La persona investigadora responde por las afirmaciones, citas y decisiones que presenta. Conservar la instrucción no garantiza repetir exactamente una salida. El resultado puede cambiar según la versión del sistema o el contexto de la consulta, además de su variación propia. La bitácora permite auditar el proceso."
           },
           {
             "heading": "Idea central",
@@ -347,10 +347,10 @@
           "Conserve la instrucción exacta, la respuesta original y la versión que corrigió. En el cuaderno incluya qué afirmaciones cotejó y con qué párrafos.",
           "Adapte la declaración completa de la guía a su experiencia. No diga que usó herramientas que solo exploró en el mapa. Si no ha ejecutado una consulta, declare esa parte pendiente.",
           "Descargue el cuaderno y ábralo en un editor de texto. Compruebe que conserva respuestas, estado de ejecución y decisiones éticas. Guárdelo en su carpeta; el archivo no restaura automáticamente el avance en otro navegador.",
-          "Revise antes de compartir: retire datos personales, enlaces a cuadernos privados y cualquier información sin permiso. Identifique S1–S3 como sintéticos en todo producto del caso."
+          "Antes de compartir, retire los datos personales y cualquier información sin permiso. Compruebe también que no incluye enlaces a cuadernos privados. Identifique S1–S3 como sintéticos en todo producto del caso."
         ],
         "task": "Escriba su bitácora y una declaración de uso ajustada a lo que realmente hizo. Registre dónde guardó el cuaderno y qué revisó antes de compartir.",
-        "example": "Modelo para adaptar solo si se realizó: utilicé [herramienta, plan y fecha; modelo si visible] para extraer y revisar información de S1, caso sintético v1. Conservé instrucciones y respuestas; comprobé P1–P4 y corregí la inferencia causal. La selección, interpretación y revisión final son de la persona investigadora. No se usaron datos reales de participantes.",
+        "example": "Modelo para adaptar solo si se realizó: utilicé [herramienta, plan y fecha; modelo si visible] para extraer y revisar información de S1, caso sintético v1. Conservé instrucciones y respuestas; comprobé P1–P4 y corregí la inferencia causal. La persona investigadora seleccionó la información y asumió la responsabilidad de su interpretación y revisión final. No se usaron datos reales de participantes.",
         "quiz": {
           "question": "¿Qué debe conservar una bitácora útil?",
           "options": [
@@ -469,7 +469,7 @@
           }
         ],
         "steps": [
-          "Revise sus tres productos: mapa de herramientas, ficha con pasaje comprobado y protocolo con decisiones éticas. Use la lista de cierre de la guía.",
+          "Revise el mapa de herramientas y la ficha de lectura con su pasaje comprobado. Verifique después que el protocolo incorpora las decisiones éticas del ejercicio. Use la lista de cierre de la guía.",
           "Explique en sus palabras una diferencia entre buscar, generar y verificar; un caso de uso útil; y una afirmación que corrigió o rechazó.",
           "Compruebe si alguna práctica sigue pendiente de ejecución. Puede avanzar por el material, pero no marque una consulta manual o de referencia como realizada en una IA.",
           "Fije una tarea para los próximos siete días: pregunta, fuentes autorizadas, herramienta gratuita, persona revisora, fecha y señal de éxito. Descargue y abra su cuaderno final."
@@ -518,7 +518,7 @@
   },
   "2": {
     "title": "Cree su clon de investigación y sus primeros productos",
-    "intro": "Construya paso a paso un asistente que siga su agenda, sus criterios y sus fuentes. Configure, pruebe y documente un prototipo funcional con recursos gratuitos y sin programar.",
+    "intro": "Construya paso a paso un asistente que apoye su forma de investigar a partir de fuentes autorizadas. Aprenda a comprobar su funcionamiento y a conservar el trabajo con recursos gratuitos, sin programar.",
     "product": "Un clon de investigación configurado, una matriz de literatura, un informe breve y un expediente con seis pruebas de calidad.",
     "lessons": [
       {
@@ -853,7 +853,7 @@
       },
       {
         "id": "v4-2-8",
-        "title": "Transferir, compartir y mantener el producto",
+        "title": "Preparar el clon para su uso continuado",
         "minutes": 25,
         "objective": "Preparar una entrega reproducible y reconocer los límites de la versión gratuita.",
         "reading": "Profundización opcional. Complete primero el ejemplo incluido: sus tres fuentes permiten realizar toda la práctica sin comprar artículos.",
