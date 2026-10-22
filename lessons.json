@@ -266,12 +266,12 @@
         "id": "v4-1-6",
         "title": "Decisiones éticas en el uso de IA",
         "minutes": 40,
-        "objective": "Detectar una inferencia discriminatoria y decidir qué datos, recomendaciones y usos son admisibles.",
+        "objective": "Detectar una inferencia discriminatoria y justificar las condiciones en las que una recomendación puede utilizarse, según los datos disponibles.",
         "reading": "Lectura opcional para después de la práctica. Relacione las fuentes de apoyo con un error o un límite que haya observado. No se exige adquirir el texto completo ni completar una consulta institucional para avanzar.",
         "scenes": [
           {
             "heading": "Idea central",
-            "text": "La ética algorítmica examina cómo datos, objetivos y sistemas distribuyen beneficios, errores y poder. En investigación importa quién aparece en las fuentes, quién queda fuera, quién revisa y quién puede cuestionar una conclusión. Es una práctica durante todo el proceso."
+            "text": "La ética algorítmica examina las consecuencias de las decisiones tomadas al diseñar y utilizar un sistema. Permite identificar quién recibe sus beneficios y quién soporta sus errores o pierde capacidad de decisión. En investigación importa quién aparece en las fuentes, quién queda fuera, quién revisa y quién puede cuestionar una conclusión. Es una práctica durante todo el proceso."
           },
           {
             "heading": "Idea central",
@@ -293,7 +293,7 @@
           "options": [
             "Escribir «uso responsable» al final.",
             "Suponer que eliminar nombres vuelve anónimos todos los datos.",
-            "Documentar un riesgo, las personas afectadas y un control comprobable."
+            "Documentar cómo se controla un riesgo y a quién protege esa medida."
           ],
           "answer": 2,
           "feedback": [
@@ -313,17 +313,17 @@
             "url": "practica-herramientas.html#actividad-6"
           }
         ],
-        "completion": "Tiene una prueba registrada y una decisión con personas afectadas, evidencia y control; no basta con escribir «uso responsable».",
+        "completion": "Ha registrado la prueba y justificado una decisión con evidencia. El registro identifica a las personas afectadas y explica cómo se controlará el riesgo; escribir «uso responsable» no demuestra ese trabajo.",
         "textOnly": true,
         "ethics": {
-          "people": "Participantes, comunidades representadas de forma incompleta y grupos que podrían ser estereotipados.",
-          "risk": "Inferir atributos no medidos, excluir por estereotipos o reidentificar una entrevista.",
+          "people": "Considere a quienes participaron y a las comunidades cuya representación es incompleta o podría dar lugar a estereotipos.",
+          "risk": "Atribuir características que el estudio no midió puede producir exclusión. También existe el riesgo de reconocer a una persona a partir de su entrevista.",
           "before": "Use solo S2 sintético; examine qué variables faltan antes de formular conclusiones.",
           "check": "Rechace inferencias por edad o género; no publique decisiones automáticas sobre personas.",
           "question": "¿A quién podría perjudicar la respuesta, qué evidencia falta y qué corrigió o detuvo?",
           "example": "Una atribución de menor capacidad perjudicaría al grupo mencionado sin datos que la sustenten. La rechazo, conservo solo las barreras reportadas y detengo la carga de la entrevista real."
         },
-        "checkpoint": "Tiene una prueba registrada y una decisión con personas afectadas, evidencia y control; no basta con escribir «uso responsable».",
+        "checkpoint": "Ha registrado la prueba y justificado una decisión con evidencia. El registro identifica a las personas afectadas y explica cómo se controlará el riesgo; escribir «uso responsable» no demuestra ese trabajo.",
         "requiresExecution": true
       },
       {
