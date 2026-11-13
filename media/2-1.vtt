@@ -1,37 +1,40 @@
 WEBVTT
 
-00:00:00.000 --> 00:00:06.552
-La aplicación del taller organiza una evaluación que usted diseña. No se conecta automáticamente a un
+00:00:00.000 --> 00:00:04.664
+La aplicación del taller organiza una evaluación que usted diseña. No se conecta
 
-00:00:06.552 --> 00:00:13.104
-modelo. Primero defina la decisión que apoyará y qué evidencia necesita. Una herramienta puede ser útil
+00:00:04.664 --> 00:00:09.686
+automáticamente a un modelo. Primero defina la decisión que apoyará y qué evidencia necesita.
 
-00:00:13.104 --> 00:00:19.656
-para localizar pasajes y resultar insuficiente para adjudicar una conclusión.
+00:00:09.686 --> 00:00:14.349
+Una herramienta puede ser útil para localizar pasajes y resultar insuficiente para adjudicar
 
-00:00:19.656 --> 00:00:25.816
-Determine qué error obligaría a suspender el uso. Defina después cuánto riesgo acepta entre las
+00:00:14.349 --> 00:00:15.067
+una conclusión.
 
-00:00:25.816 --> 00:00:31.976
-respuestas emitidas y qué cobertura mínima necesita. Una aplicación que siempre se abstiene evita algunas
+00:00:15.067 --> 00:00:20.128
+Determine qué error obligaría a suspender el uso. Defina después cuánto riesgo acepta entre
 
-00:00:31.976 --> 00:00:38.136
-equivocaciones, pero puede no resolver la tarea para la que fue creada.
+00:00:20.128 --> 00:00:24.828
+las respuestas emitidas y qué cobertura mínima necesita. Una aplicación que siempre se
 
-00:00:38.136 --> 00:00:44.704
-Registre las condiciones de comparación y fije el contrato en la página. Los valores iniciales son
+00:00:24.828 --> 00:00:30.250
+abstiene evita algunas equivocaciones, pero puede no resolver la tarea para la que fue creada.
 
-00:00:44.704 --> 00:00:51.272
-ejemplos, no recomendaciones validadas. Cada modificación crea una versión local; si se produce después
+00:00:30.250 --> 00:00:36.710
+Registre las condiciones de comparación y fije el contrato en la página. Los valores iniciales
 
-00:00:51.272 --> 00:00:57.840
-de observar resultados, debe declararse como cambio del análisis.
+00:00:36.710 --> 00:00:42.308
+son ejemplos, no recomendaciones validadas. Cada modificación crea una versión local; si se
 
-00:00:57.840 --> 00:01:03.936
-Conserve el archivo descargable junto con las instrucciones y los documentos utilizados. El historial
+00:00:42.308 --> 00:00:47.046
+produce después de observar resultados, debe declararse como cambio del análisis.
 
-00:01:03.936 --> 00:01:10.032
-facilita reconstruir decisiones, pero puede editarse y no acredita un registro público previo. Esa
+00:00:47.046 --> 00:00:52.214
+Conserve el archivo descargable junto con las instrucciones y los documentos utilizados. El
 
-00:01:10.032 --> 00:01:16.128
-diferencia debe quedar explícita cuando se presente el piloto.
+00:00:52.214 --> 00:00:56.985
+historial facilita reconstruir decisiones, pero puede editarse y no acredita un registro
+
+00:00:56.985 --> 00:01:01.755
+público previo. Esa diferencia debe quedar explícita cuando se presente el piloto.

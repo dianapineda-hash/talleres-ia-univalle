@@ -1,37 +1,40 @@
 WEBVTT
 
-00:00:00.000 --> 00:00:05.736
-El archivo descargable contiene los casos y la política de evaluación. Funciona localmente sin una clave
+00:00:00.000 --> 00:00:04.719
+El archivo descargable contiene los casos y la política de evaluación. Funciona localmente sin
 
-00:00:05.736 --> 00:00:11.472
-de programación ni una conexión al modelo. Las respuestas se obtienen fuera de la aplicación y se
+00:00:04.719 --> 00:00:10.113
+una clave de programación ni una conexión al modelo. Las respuestas se obtienen fuera de la
 
-00:00:11.472 --> 00:00:17.208
-registran después de adjudicarlas con los documentos.
+00:00:10.113 --> 00:00:13.484
+aplicación y se registran después de adjudicarlas con los documentos.
 
-00:00:17.208 --> 00:00:23.536
-Localice la función que decide si se cumplen los criterios. En la versión inicial se comprueba primero si
+00:00:13.484 --> 00:00:19.070
+Localice la función que decide si se cumplen los criterios. En la versión inicial se comprueba
 
-00:00:23.536 --> 00:00:29.864
-hay evidencia suficiente. Su ejercicio consiste en dar prioridad a un error crítico. Ese cambio altera la
+00:00:19.070 --> 00:00:23.958
+primero si hay evidencia suficiente. Su ejercicio consiste en dar prioridad a un error
 
-00:00:29.864 --> 00:00:36.192
-decisión, no solamente la apariencia de la página.
+00:00:23.958 --> 00:00:28.497
+crítico. Ese cambio altera la decisión, no solamente la apariencia de la página.
 
-00:00:36.192 --> 00:00:42.376
-Construya un caso que distinga las dos versiones. Use pocos casos y un error crítico, observe la decisión
+00:00:28.497 --> 00:00:34.244
+Construya un caso que distinga las dos versiones. Use pocos casos y un error crítico, observe
 
-00:00:42.376 --> 00:00:48.560
-y elimine después el error. Compruebe también qué ocurre cuando todas las respuestas son abstenciones.
+00:00:34.244 --> 00:00:39.272
+la decisión y elimine después el error. Compruebe también qué ocurre cuando todas las
 
-00:00:48.560 --> 00:00:54.744
-Conserve lo esperado y lo observado en cada prueba.
+00:00:39.272 --> 00:00:43.583
+respuestas son abstenciones. Conserve lo esperado y lo observado en cada prueba.
 
-00:00:54.744 --> 00:01:01.824
-La aplicación hace explícita una política y calcula métricas, pero no determina si sus etiquetas están
+00:00:43.583 --> 00:00:49.375
+La aplicación hace explícita una política y calcula métricas, pero no determina si sus
 
-00:01:01.824 --> 00:01:08.904
-científicamente justificadas. El informe debe conservar esa separación. Antes de compartir el HTML,
+00:00:49.375 --> 00:00:53.927
+etiquetas están científicamente justificadas. El informe debe conservar esa separación. Antes
 
-00:01:08.904 --> 00:01:15.984
-revise los casos incluidos: el archivo exportado contiene los datos de su banco.
+00:00:53.927 --> 00:01:00.133
+de compartir el HTML, revise los casos incluidos: el archivo exportado contiene los datos de
+
+00:01:00.133 --> 00:01:00.961
+su banco.

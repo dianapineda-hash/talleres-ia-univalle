@@ -1,37 +1,40 @@
 WEBVTT
 
-00:00:00.000 --> 00:00:06.320
-Registre cada respuesta completa antes de clasificarla. Una corrección humana posterior puede producir un
+00:00:00.000 --> 00:00:04.503
+Registre cada respuesta completa antes de clasificarla. Una corrección humana posterior puede
 
-00:00:06.320 --> 00:00:12.640
-buen resultado final, pero no representa el desempeño original del sistema. Si no ejecutó un caso,
+00:00:04.503 --> 00:00:10.131
+producir un buen resultado final, pero no representa el desempeño original del sistema. Si no
 
-00:00:12.640 --> 00:00:18.960
-conserve el estado pendiente en lugar de tratarlo como abstención.
+00:00:10.131 --> 00:00:15.009
+ejecutó un caso, conserve el estado pendiente en lugar de tratarlo como abstención.
 
-00:00:18.960 --> 00:00:25.576
-La exactitud compara etiquetas con la referencia. La cobertura indica qué proporción recibió una
+00:00:15.009 --> 00:00:20.333
+La exactitud compara etiquetas con la referencia. La cobertura indica qué proporción recibió
 
-00:00:25.576 --> 00:00:32.192
-respuesta distinta de abstención. El riesgo selectivo usa solamente esas respuestas. Si el sistema no
+00:00:20.333 --> 00:00:26.066
+una respuesta distinta de abstención. El riesgo selectivo usa solamente esas respuestas. Si el
 
-00:00:32.192 --> 00:00:38.808
-respondió ninguna, el riesgo no es cero: no puede estimarse.
+00:00:26.066 --> 00:00:30.980
+sistema no respondió ninguna, el riesgo no es cero: no puede estimarse.
 
-00:00:38.808 --> 00:00:45.232
-Examine el pasaje que recibió el sistema. Si faltaba el documento pertinente, mejorar la redacción de la
+00:00:30.980 --> 00:00:36.291
+Examine el pasaje que recibió el sistema. Si faltaba el documento pertinente, mejorar la
 
-00:00:45.232 --> 00:00:51.656
-respuesta no resuelve la recuperación. Si el pasaje estaba disponible y fue sobreinterpretado, la
+00:00:36.291 --> 00:00:41.981
+redacción de la respuesta no resuelve la recuperación. Si el pasaje estaba disponible y fue
 
-00:00:51.656 --> 00:00:58.080
-revisión debe centrarse en la inferencia y en las condiciones de abstención.
+00:00:41.981 --> 00:00:46.913
+sobreinterpretado, la revisión debe centrarse en la inferencia y en las condiciones de
 
-00:00:58.080 --> 00:01:03.800
-Compare las condiciones caso por caso antes de interpretar los promedios. No declare superioridad
+00:00:46.913 --> 00:00:47.292
+abstención.
 
-00:01:03.800 --> 00:01:09.520
-estadística con este pequeño banco seleccionado. Una mejora aparente puede depender de los ejemplos
+00:00:47.292 --> 00:00:51.977
+Compare las condiciones caso por caso antes de interpretar los promedios. No declare
 
-00:01:09.520 --> 00:01:15.240
-elegidos y desaparecer al cambiar de población o de tarea.
+00:00:51.977 --> 00:00:55.941
+superioridad estadística con este pequeño banco seleccionado. Una mejora aparente puede
+
+00:00:55.941 --> 00:01:00.987
+depender de los ejemplos elegidos y desaparecer al cambiar de población o de tarea.

@@ -1,37 +1,46 @@
 WEBVTT
 
-00:00:00.000 --> 00:00:06.368
-La prueba final examina si la respuesta depende de la evidencia que declara utilizar. Retire un pasaje
+00:00:00.000 --> 00:00:05.548
+La prueba final examina si la respuesta depende de la evidencia que declara utilizar. Retire
 
-00:00:06.368 --> 00:00:12.736
-necesario y formule de antemano el comportamiento esperado. Si la conclusión permanece intacta con otra
+00:00:05.548 --> 00:00:10.356
+un pasaje necesario y formule de antemano el comportamiento esperado. Si la conclusión
 
-00:00:12.736 --> 00:00:19.104
-cita irrelevante, habrá identificado un fallo que merece investigación.
+00:00:10.356 --> 00:00:14.794
+permanece intacta con otra cita irrelevante, habrá identificado un fallo que merece
 
-00:00:19.104 --> 00:00:25.376
-Otra prueba posible consiste en incorporar evidencia discrepante. Examine si el sistema conserva el
+00:00:14.794 --> 00:00:15.164
+investigación.
 
-00:00:25.376 --> 00:00:31.648
-desacuerdo y distingue diferencias documentadas de explicaciones conjeturales. El número de documentos
+00:00:15.164 --> 00:00:20.055
+Otra prueba posible consiste en incorporar evidencia discrepante. Examine si el sistema
 
-00:00:31.648 --> 00:00:37.920
-favorables no sustituye una evaluación de sus diseños y de su dependencia.
+00:00:20.055 --> 00:00:24.540
+conserva el desacuerdo y distingue diferencias documentadas de explicaciones conjeturales. El
 
-00:00:37.920 --> 00:00:44.048
-Interprete el resultado según la tarea y las consecuencias del error. Superar el banco no autoriza una
+00:00:24.540 --> 00:00:30.247
+número de documentos favorables no sustituye una evaluación de sus diseños y de su
 
-00:00:44.048 --> 00:00:50.176
-generalización a toda la disciplina. Un resultado útil puede consistir en restringir la aplicación a
+00:00:30.247 --> 00:00:30.654
+dependencia.
 
-00:00:50.176 --> 00:00:56.304
-localizar pasajes y reservar la adjudicación para revisión experta.
+00:00:30.654 --> 00:00:36.361
+Interprete el resultado según la tarea y las consecuencias del error. Superar el banco no
 
-00:00:56.304 --> 00:01:02.832
-Descargue el informe y acompañe las métricas con los documentos y las salidas originales que pueda
+00:00:36.361 --> 00:00:41.306
+autoriza una generalización a toda la disciplina. Un resultado útil puede consistir en
 
-00:01:02.832 --> 00:01:09.360
-conservar legalmente. Declare las limitaciones del banco y qué evaluación independiente necesita. El
+00:00:41.306 --> 00:00:46.251
+restringir la aplicación a localizar pasajes y reservar la adjudicación para revisión experta.
 
-00:01:09.360 --> 00:01:15.888
-producto final es una aplicación examinable y un protocolo de validación todavía perfectible.
+00:00:46.251 --> 00:00:51.921
+Descargue el informe y acompañe las métricas con los documentos y las salidas originales que
+
+00:00:51.921 --> 00:00:56.457
+pueda conservar legalmente. Declare las limitaciones del banco y qué evaluación independiente
+
+00:00:56.457 --> 00:01:01.749
+necesita. El producto final es una aplicación examinable y un protocolo de validación todavía
+
+00:01:01.749 --> 00:01:02.127
+perfectible.

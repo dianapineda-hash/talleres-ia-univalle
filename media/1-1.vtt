@@ -1,37 +1,40 @@
 WEBVTT
 
-00:00:00.000 --> 00:00:06.440
-Este taller parte de una dificultad propia del trabajo experto: una síntesis puede conservar los datos y
+00:00:00.000 --> 00:00:05.010
+Este taller parte de una dificultad propia del trabajo experto: una síntesis puede conservar
 
-00:00:06.440 --> 00:00:12.880
-alterar la inferencia. Examine la afirmación completa, no solamente sus cifras. La tarea consiste en
+00:00:05.010 --> 00:00:10.379
+los datos y alterar la inferencia. Examine la afirmación completa, no solamente sus cifras. La
 
-00:00:12.880 --> 00:00:19.320
-identificar el paso argumental que no está autorizado por la evidencia.
+00:00:10.379 --> 00:00:15.389
+tarea consiste en identificar el paso argumental que no está autorizado por la evidencia.
 
-00:00:19.320 --> 00:00:26.072
-En el laboratorio encontrará seis expedientes construidos para esta actividad. Registre una probabilidad
+00:00:15.389 --> 00:00:20.174
+En el laboratorio encontrará seis expedientes construidos para esta actividad. Registre una
 
-00:00:26.072 --> 00:00:32.824
-de respaldo y explique su juicio antes de revelar las claves. Los casos incluyen problemas de
+00:00:20.174 --> 00:00:26.155
+probabilidad de respaldo y explique su juicio antes de revelar las claves. Los casos incluyen
 
-00:00:32.824 --> 00:00:39.576
-identificación causal y de interpretación documental; no representan respuestas reales de un modelo.
+00:00:26.155 --> 00:00:30.542
+problemas de identificación causal y de interpretación documental; no representan respuestas
 
-00:00:39.576 --> 00:00:45.880
-Al revisar las claves, distinga lo que contradice la evidencia de lo que no puede establecerse con ella.
+00:00:30.542 --> 00:00:32.137
+reales de un modelo.
 
-00:00:45.880 --> 00:00:52.184
-Una conclusión puede requerir abstención sin ser falsa. Conservar esta diferencia es especialmente
+00:00:32.137 --> 00:00:38.222
+Al revisar las claves, distinga lo que contradice la evidencia de lo que no puede establecerse
 
-00:00:52.184 --> 00:00:58.488
-importante cuando el sistema transforma una ausencia documental en una negación.
+00:00:38.222 --> 00:00:43.546
+con ella. Una conclusión puede requerir abstención sin ser falsa. Conservar esta diferencia es
 
-00:00:58.488 --> 00:01:04.496
-La puntuación de Brier resume el error probabilístico de estos casos. No es una medida de su competencia
+00:00:43.546 --> 00:00:48.110
+especialmente importante cuando el sistema transforma una ausencia documental en una negación.
 
-00:01:04.496 --> 00:01:10.504
-investigadora. El resultado relevante es la revisión argumentada de una conclusión y la identificación de
+00:00:48.110 --> 00:00:53.989
+La puntuación de Brier resume el error probabilístico de estos casos. No es una medida de su
 
-00:01:10.504 --> 00:01:16.512
-una observación que permitiría defender una afirmación más fuerte.
+00:00:53.989 --> 00:00:58.139
+competencia investigadora. El resultado relevante es la revisión argumentada de una conclusión
+
+00:00:58.139 --> 00:01:02.634
+y la identificación de una observación que permitiría defender una afirmación más fuerte.

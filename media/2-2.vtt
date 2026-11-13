@@ -1,37 +1,40 @@
 WEBVTT
 
-00:00:00.000 --> 00:00:06.240
-Construya los casos a partir de documentos autorizados y conserve los pasajes que permiten adjudicarlos.
+00:00:00.000 --> 00:00:04.828
+Construya los casos a partir de documentos autorizados y conserve los pasajes que permiten
 
-00:00:06.240 --> 00:00:12.480
-La referencia no debe copiar la respuesta del modelo. Si no puede resolver un caso con la información
+00:00:04.828 --> 00:00:10.000
+adjudicarlos. La referencia no debe copiar la respuesta del modelo. Si no puede resolver un
 
-00:00:12.480 --> 00:00:18.720
-disponible, registre la insuficiencia en lugar de forzar una etiqueta.
+00:00:10.000 --> 00:00:14.828
+caso con la información disponible, registre la insuficiencia en lugar de forzar una etiqueta.
 
-00:00:18.720 --> 00:00:24.992
-Los casos de desarrollo permiten corregir el procedimiento. La reserva se consulta después de fijar la
+00:00:14.828 --> 00:00:19.845
+Los casos de desarrollo permiten corregir el procedimiento. La reserva se consulta después de
 
-00:00:24.992 --> 00:00:31.264
-versión que se evaluará. En esta página ambos conjuntos son visibles: la separación depende de su
+00:00:19.845 --> 00:00:25.220
+fijar la versión que se evaluará. En esta página ambos conjuntos son visibles: la separación
 
-00:00:31.264 --> 00:00:37.536
-disciplina de trabajo y no es una protección técnica contra contaminación.
+00:00:25.220 --> 00:00:30.236
+depende de su disciplina de trabajo y no es una protección técnica contra contaminación.
 
-00:00:37.536 --> 00:00:43.296
-Construya casos que representen errores importantes para su disciplina. Una cifra correcta atribuida a
+00:00:30.236 --> 00:00:34.791
+Construya casos que representen errores importantes para su disciplina. Una cifra correcta
 
-00:00:43.296 --> 00:00:49.056
-otra muestra puede ser más grave que una omisión. La marca de error crítico debe justificarse antes de
+00:00:34.791 --> 00:00:41.244
+atribuida a otra muestra puede ser más grave que una omisión. La marca de error crítico debe
 
-00:00:49.056 --> 00:00:54.816
-observar qué condición obtiene mejores resultados.
+00:00:41.244 --> 00:00:44.660
+justificarse antes de observar qué condición obtiene mejores resultados.
 
-00:00:54.816 --> 00:01:01.120
-El conjunto del taller permite comprobar la aplicación y detectar fallos. No estima de manera fiable el
+00:00:44.660 --> 00:00:50.130
+El conjunto del taller permite comprobar la aplicación y detectar fallos. No estima de manera
 
-00:01:01.120 --> 00:01:07.424
-desempeño en una población de consultas. Conserve los desacuerdos de adjudicación y planifique una
+00:00:50.130 --> 00:00:55.235
+fiable el desempeño en una población de consultas. Conserve los desacuerdos de adjudicación y
 
-00:01:07.424 --> 00:01:13.728
-referencia independiente antes de usar el sistema en decisiones de investigación.
+00:00:55.235 --> 00:00:59.611
+planifique una referencia independiente antes de usar el sistema en decisiones de
+
+00:00:59.611 --> 00:00:59.976
+investigación.
