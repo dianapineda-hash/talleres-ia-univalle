@@ -1,3 +1,17 @@
+# Ruta de administración de empresas
+
+Revisión del 25 de noviembre de 2026. Las entradas index.html, taller-1.html y taller-2.html utilizan aula.js y aula-contenido.js. Conservan los nombres de los talleres. Cada recorrido comprende seis actividades y una pausa; suma 240 minutos.
+
+Los casos se resuelven dentro de la página. No hay campos de escritura ni envío de archivos. La ruta no utiliza almacenamiento del navegador, cookies, analítica o peticiones para transmitir respuestas. Las elecciones cambian la explicación visible y se descartan al cambiar de actividad o recargar. El fragmento de URL identifica la actividad, no una respuesta.
+
+Cada actividad incluye un video con reproducción por elección del participante y dos lecturas. Los videos y los servicios de consulta externos aplican sus políticas. El alojamiento puede conservar registros de acceso. La indexación individual de los artículos en WoS permanece pendiente de consulta institucional.
+
+Las fuentes del sitio y las herramientas de versiones previas se conservan para mantenimiento. La navegación de la ruta actual no depende de sus formularios ni de sus mecanismos de guardado.
+
+Comprobaciones: node --test core.test.js learning.test.js bench.test.js clone.test.js aula.test.js. Construcción: node build.mjs. Las pruebas de aula revisan duración, recursos por actividad y ausencia de persistencia en la ruta.
+
+## Documentación de la edición previa
+
 # Talleres de IA para investigadores
 
 Sitio: https://talleres-ia-univalle.onrender.com/
