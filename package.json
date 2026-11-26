@@ -1,1 +1,16 @@
-{"name":"talleres-ia-univalle","private":true,"type":"module","scripts":{"test":"node --test core.test.js learning.test.js bench.test.js clone.test.js aula.test.js","build":"node build.mjs"}}
+{
+  "name": "talleres-ia-univalle",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test core.test.js learning.test.js bench.test.js clone.test.js aula.test.js administracion.test.js workshop-app.test.mjs",
+    "build": "node build.mjs",
+    "start": "node server.mjs"
+  },
+  "engines": {
+    "node": ">=24 <25"
+  },
+  "dependencies": {
+    "@neondatabase/serverless": "1.2.1"
+  }
+}

@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: aula-ia-univalle
+    runtime: node
+    plan: free
+    region: oregon
+    branch: codex/aula-con-acceso
+    buildCommand: npm ci --ignore-scripts && npm test
+    startCommand: npm start
+    healthCheckPath: /healthz
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: WORKSHOP_ORIGIN
+        value: https://aula-ia-univalle.onrender.com
+      - key: WORKSHOP_DATABASE_URL
+        sync: false

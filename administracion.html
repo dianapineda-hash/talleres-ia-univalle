@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Administración del aula · IA Hub</title>
+  <link rel="stylesheet" href="aula.css">
+  <link rel="stylesheet" href="acceso.css">
+</head>
+<body data-page="admin">
+  <header>
+    <img src="media/logo-univalle.jpg" alt="Universidad del Valle" width="424" height="51">
+    <nav aria-label="Navegación"><a href="https://ia-hub-univalle.onrender.com/#talleres">IA Hub</a><a href="index.html">Entrar a los talleres</a><a href="acceso.html?password=1">Cambiar contraseña</a></nav>
+  </header>
+  <main>
+    <div class="admin-heading"><div><p class="eyebrow">Talleres de IA para la investigación</p><h1>Administración del aula</h1><p id="admin-user"></p></div><button id="admin-logout" class="secondary" type="button">Cerrar sesión</button></div>
+    <p id="admin-status" class="status" role="status" aria-live="polite">Comprobando el acceso…</p>
+    <div id="admin-content" hidden>
+      <section class="admin-panel admin-controls">
+        <h2>Crear una cuenta de estudiante</h2>
+        <p>La cuenta permite retomar los talleres y consultar su avance. La primera entrada requiere cambiar la contraseña temporal.</p>
+        <form id="student-form">
+          <label for="student-name">Nombre del estudiante</label><input id="student-name" name="name" required minlength="2" maxlength="150" autocomplete="off">
+          <label for="student-username">Usuario de acceso</label><input id="student-username" name="username" required minlength="3" maxlength="60" pattern="[A-Za-z0-9][A-Za-z0-9._\-]{2,59}" aria-describedby="username-help" autocapitalize="none" spellcheck="false" autocomplete="off">
+          <p id="username-help" class="aside">Entre 3 y 60 caracteres: letras sin tildes o números. Puede incluir punto, guion y guion bajo.</p>
+          <button type="submit">Crear cuenta</button>
+        </form>
+      </section>
+      <section id="credential-panel" class="credential-box" hidden aria-labelledby="credential-heading">
+        <h2 id="credential-heading">Contraseña temporal</h2>
+        <p id="credential-user"></p><output id="credential-value"></output>
+        <p>Compártala con la persona correspondiente mediante el canal acordado. Al ocultarla, este panel deja de mostrarla.</p>
+        <div class="admin-actions"><button id="copy-credential" type="button">Copiar contraseña</button><button id="hide-credential" class="secondary" type="button">Ocultar contraseña</button></div>
+      </section>
+      <div class="admin-layout">
+        <aside>
+          <h2>Estudiantes</h2>
+          <label for="student-search">Buscar por nombre o usuario</label><input id="student-search" class="admin-search" type="search" autocomplete="off">
+          <p id="student-count" class="aside"></p>
+          <button id="refresh-students" class="secondary" type="button">Actualizar registros</button>
+          <ul id="student-list" class="student-list"></ul>
+        </aside>
+        <div>
+          <p id="empty-report">Elija un estudiante para consultar el avance de ambos talleres.</p>
+          <section id="report-panel" class="admin-panel" hidden aria-label="Reporte del estudiante" tabindex="-1"></section>
+        </div>
+      </div>
+    </div>
+    <noscript>Active JavaScript para administrar el aula.</noscript>
+  </main>
+  <footer><p>IA Hub · Facultad de Ciencias de la Administración · Universidad del Valle.</p></footer>
+  <script type="module" src="administracion.js"></script>
+</body>
+</html>

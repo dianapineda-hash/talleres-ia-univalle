@@ -175,7 +175,7 @@ export const contenido = {
             "Lea los resultados. Considere quién tendría que corregir cada promesa y qué ocurriría si llegara a un cliente.",
             "Elija una decisión de uso. Consulte la explicación para valorar su alcance.",
             "Revise el resumen de Generative AI at Work pensando en la diferencia entre productividad y cumplimiento de condiciones.",
-            "Continúe al taller 2 cuando lo desee. No hay entrega ni registro de finalización."
+            "Continúe al taller 2 cuando lo desee. Puede marcar la actividad como realizada; esto no condiciona el acceso al siguiente taller."
           ],
           "question": "¿Qué uso permitiría con la información del caso?",
           "options": [
@@ -200,7 +200,7 @@ export const contenido = {
     },
     "2": {
       "title": "Cree su clon de investigación y sus primeros productos",
-      "intro": "Aquí «clon» nombra un asistente configurado para una tarea de investigación. No representa su criterio ni su identidad. Puede construir su encargo y probarlo con casos incluidos, sin cuentas ni envío de documentos.",
+      "intro": "Aquí «clon» nombra un asistente configurado para una tarea de investigación. No representa su criterio ni su identidad. Puede construir su encargo y probarlo con casos incluidos. Su cuenta conserva el avance; no necesita enviar documentos.",
       "outcome": "Al terminar podrá definir una tarea para un asistente y decidir qué pruebas necesita antes de utilizar sus respuestas.",
       "units": [
         {
@@ -373,7 +373,7 @@ export const contenido = {
             "Lea el caso. Identifique la tarea que aportó algo al equipo y la tarea que produjo afirmaciones sin respaldo.",
             "Elija la propuesta que mantenga el trabajo dentro de lo comprobado.",
             "Abra la explicación. Revise la herramienta de búsqueda que usaría para ampliar antecedentes.",
-            "Continúe a la sección de recursos cuando lo desee. No hay entrega ni registro de finalización."
+            "Continúe a la sección de recursos cuando lo desee. Puede marcar esta actividad como realizada sin que ello condicione la navegación."
           ],
           "question": "¿Qué propuesta presenta al equipo?",
           "options": [
@@ -385,7 +385,7 @@ export const contenido = {
             "El uso se limita a la tarea examinada. El equipo sigue evaluando qué preguntas tienen sentido y qué evidencia permitiría responderlas.",
             "La prueba identificó un problema en esa función. Aceptarla sin revisión trasladaría al informe afirmaciones que no están sustentadas."
           ],
-          "worked": "Propuesta: «Usaremos el asistente para explorar preguntas sobre reclamaciones. Las conclusiones se redactarán después de consultar las fuentes. Antes de ampliar su función, evaluaremos casos que incluyan ausencia de información». Puede adaptar esta propuesta mediante reflexión, sin escribir ni guardar datos en la plataforma.",
+          "worked": "Propuesta: «Usaremos el asistente para explorar preguntas sobre reclamaciones. Las conclusiones se redactarán después de consultar las fuentes. Antes de ampliar su función, evaluaremos casos que incluyan ausencia de información». Puede adaptar esta propuesta mediante reflexión. No necesita escribir esa reflexión en la plataforma.",
           "transfer": "¿Qué prueba le haría cambiar de opinión sobre el uso que acaba de proponer?",
           "reads": [
             "productivity",

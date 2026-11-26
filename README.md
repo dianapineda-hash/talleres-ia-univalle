@@ -1,51 +1,41 @@
-# Ruta de administración de empresas
+# Talleres de IA con acceso por usuario
 
-Revisión del 25 de noviembre de 2026. Las entradas index.html, taller-1.html y taller-2.html utilizan aula.js y aula-contenido.js. Conservan los nombres de los talleres. Cada recorrido comprende seis actividades y una pausa; suma 240 minutos.
+Los dos talleres conservan sus nombres y un programa de 240 minutos cada uno. Las actividades pueden abrirse en cualquier orden. El estudiante no necesita aportar archivos.
 
-Los casos se resuelven dentro de la página. No hay campos de escritura ni envío de archivos. La ruta no utiliza almacenamiento del navegador, cookies, analítica o peticiones para transmitir respuestas. Las elecciones cambian la explicación visible y se descartan al cambiar de actividad o recargar. El fragmento de URL identifica la actividad, no una respuesta.
+## Publicación
 
-Cada actividad incluye un video con reproducción por elección del participante y dos lecturas. Los videos y los servicios de consulta externos aplican sus políticas. El alojamiento puede conservar registros de acceso. La indexación individual de los artículos en WoS permanece pendiente de consulta institucional.
+El aula se sirve desde Node en el espacio Vicedecanatura de Render. El servidor comprueba la sesión antes de entregar las páginas y los módulos que contienen los casos. Las cuentas de IA Hub y del aula son independientes.
 
-Las fuentes del sitio y las herramientas de versiones previas se conservan para mantenimiento. La navegación de la ruta actual no depende de sus formularios ni de sus mecanismos de guardado.
+El sitio estático anterior distribuye páginas de acceso a la nueva dirección. Su construcción no incluye los módulos de contenido ni las aplicaciones antiguas. Los archivos anteriores permanecen en el repositorio para mantenimiento; no se sirven desde el aula.
 
-Comprobaciones: node --test core.test.js learning.test.js bench.test.js clone.test.js aula.test.js. Construcción: node build.mjs. Las pruebas de aula revisan duración, recursos por actividad y ausencia de persistencia en la ruta.
+Aula: https://aula-ia-univalle.onrender.com/aula/
+Administración: https://aula-ia-univalle.onrender.com/aula/administracion.html
+Rama desplegada del aula: codex/aula-con-acceso. El sitio estático conserva main y ejecuta build.mjs.
 
-## Documentación de la edición previa
+## Cuentas
 
-# Talleres de IA para investigadores
+La administradora crea participantes con nombre y usuario. El panel genera una contraseña temporal que debe cambiarse al ingresar. Permite restablecer contraseñas y desactivar cuentas. No hay registro abierto. Las contraseñas emplean scrypt con sal por cuenta. La cookie es HttpOnly, Secure en producción y SameSite=Strict. Las sesiones caducan y se invalidan al cambiar contraseña o desactivar la cuenta.
 
-Sitio: https://talleres-ia-univalle.onrender.com/
+## Seguimiento
 
-La edición principal ofrece dos recorridos de 240 minutos, cada uno con ocho unidades de trabajo y una pausa. El primero aborda posibilidades, herramientas y ética algorítmica. El segundo enseña a configurar y comprobar un clon de investigación con recursos gratuitos, sin experiencia previa en IA o programación.
+Se conserva por participante y apartado la consulta, última respuesta del ejercicio, apertura de la explicación y marca de realización. También se acumula una duración en segundos. Las tablas de cuentas y progreso no contienen fechas ni horarios.
 
-## Taller 1 desde cero
+No hay contador temporal visible al estudiante. Los pulsos requieren una pestaña visible, con foco e interacción durante los cinco minutos anteriores. El servidor calcula intervalos con reloj monotónico; el cliente no aporta segundos. Intervalos mayores de 45 segundos se descartan. Una persona no acumula tiempo simultáneo entre pestañas o talleres. Los relojes técnicos residen en memoria; no forman parte del historial de aprendizaje.
 
-`practica-herramientas.html` acompaña ocho actividades prácticas y una pausa. Comparte S1–S3 con el taller 2: primera consulta, búsquedas reales, lectura con citas, comparación A/B, prueba de sesgos, bitácora, mapa y protocolo. `practice-data.js` contiene instrucciones con fuentes completas y plantillas descargables. Los modelos didácticos están separados de las respuestas que el participante debe obtener y registrar.
+El registro no prueba atención o comprensión y no acredita lectura fuera de la página. El informe separa el tiempo en actividades del tiempo de pausa frente a los 225 y 15 minutos previstos. Las marcas de realización son declaraciones del estudiante. El informe permite revisar las respuestas y respaldar una solicitud de certificación; no emite certificados.
 
-`learning-core.js` conserva respuestas antiguas y valida solo presencia de registros, autoevaluación y declaración de ejecución. Cada actividad del taller 1 incorpora una decisión ética que se guarda y exporta. Las consultas pendientes no cuentan como ejecutadas; se puede avanzar por las unidades sin perder trabajo. Los registros antiguos no se borran, pero requieren los campos nuevos antes de volver a marcar la actividad. El taller 2 y la profundización mantienen sus requisitos anteriores. El Markdown exportado es legible, no un importador de progreso.
+El panel permite imprimir, guardar PDF o exportar CSV. Para excluir los metadatos que añade el navegador al imprimir, desactive Encabezados y pies de página. Los proveedores de alojamiento pueden conservar registros técnicos ajenos a las tablas del aula.
 
-## Taller 2 desde cero
+## Datos y operación
 
-`ejemplo-clon.html` presenta un caso completo sobre formación y adopción digital: tres fuentes sintéticas con párrafos identificados, perfil, carga en Gemini Notebook Standard, consultas para copiar, matriz resuelta, informe de referencia, seis pruebas y transferencia a la investigación propia. S4 se usa únicamente para una prueba de instrucciones incrustadas.
+Configure WORKSHOP_DATABASE_URL como secreto de Render, WORKSHOP_ORIGIN como origen autorizado y NODE_ENV=production. No se conservan avances en el disco del servidor ni en almacenamiento del navegador. La base pertenece al proyecto talleres-ia-univalle de Neon, con ramas separadas de producción y validación.
 
-`example-data.js` es la fuente común del caso y del perfil que carga el constructor. Las fuentes originales del caso autorizan su uso en el taller. Todos sus datos son ficticios; los productos resueltos son modelos didácticos, no resultados de una ejecución de IA. `example.js` muestra los materiales y permite copiarlos y descargarlos como TXT y CSV.
+La migración está en migrations/001-workshops.sql. workshop-provision.mjs recibe configuración por entrada protegida para preparar el esquema, validar persistencia en una rama de prueba o crear la primera administradora. No ejecute pruebas con personas ficticias en producción. El archivo de credenciales generado se excluye de Git.
 
-`clon.html` prepara instrucciones, registra pruebas y conserva los productos revisados. No ejecuta IA ni envía datos a Google. La configuración operativa se realiza en un cuaderno del proveedor. La ficha HTML es legible sin conexión; el JSON permite recuperar el expediente local, no la cuenta del proveedor ni sus documentos.
+El proceso utiliza una instancia. Reiniciar exige ingresar de nuevo, pero conserva cuentas y progreso. Una caída de la base muestra error; no simula guardado. Cada estudiante consulta su propio progreso; el panel exige administración.
 
-`clone-core.js` mantiene el formato de expediente v1 compatible con respaldos anteriores. Los productos son opcionales para importaciones antiguas. Las pruebas importadas vuelven a pendiente y modificar el perfil invalida estados previos. Cargar un ejemplo sobre trabajo existente requiere una acción explícita que descarga primero un respaldo. Los resultados y pruebas son registros humanos, no evaluaciones automáticas.
+## Comprobaciones
 
-## Contenido y almacenamiento
+npm test comprueba contenido y acceso. workshop-integration.mjs verifica el flujo HTTP con una base de prueba y reinicio del proceso. npm run build prepara la pasarela estática. npm start inicia el aula y requiere conexión. /healthz indica disponibilidad.
 
-`taller-1.html` y `taller-2.html` usan `learn.js` y `lessons.json`. El taller 2 enlaza cada unidad a su paso en el ejemplo; las lecturas complementarias están plegadas y no son necesarias para completar la práctica. Las guías de facilitación acompañan la edición principal.
-
-El cuaderno de actividades se guarda en `autogestion-v4-*`; el constructor usa `iahub-clon-v1`. Descargue ambos respaldos antes de cambiar de equipo. No hay backend de participantes ni analítica. El avance y las pruebas no certifican competencia profesional.
-
-`herramientas.html` presenta ocho herramientas y complementos con fuentes oficiales. La ruta principal no exige Acrobat, WoS, artículos de pago, suscripciones ni API. Las cuentas habilitadas y cuotas de los proveedores condicionan el acceso; el trabajo manual no se presenta como una consulta de IA ejecutada.
-
-`avanzado-1.html` y `avanzado-2.html` conservan `lessons-avanzadas.json` y los audiovisuales anteriores como profundización opcional. El laboratorio y el observatorio mantienen sus funciones de registro y evaluación; no ejecutan modelos de IA.
-
-## Desarrollo y publicación
-
-Node 18 o superior, sin dependencias de ejecución. `npm test` comprueba estructura, duración, recursos, importación, exportación segura, persistencia del esquema y coherencia del caso. `npm run build` prepara `dist`. Render compila desde `main`. La navegación, copia, descarga y persistencia se verifican también en el navegador.
-
-Se conserva la identidad visual existente. Material para investigadores de la Universidad del Valle; no implica aval institucional. Las condiciones del proveedor y las instrucciones de su interfaz están enlazadas a ayuda oficial, consultada el 21 de octubre de 2026.
+Las lecturas permanecen en las fuentes editoriales. Los DOI permiten buscarlas en Web of Science; el registro individual permanece pendiente de consulta institucional. Los vídeos se reproducen por elección del participante. Los casos de aprendizaje no representan hallazgos de las lecturas.

@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Ingreso a los talleres · IA Hub</title>
+  <link rel="stylesheet" href="aula.css">
+  <link rel="stylesheet" href="acceso.css">
+</head>
+<body data-page="access">
+  <header>
+    <img src="media/logo-univalle.jpg" alt="Universidad del Valle" width="424" height="51">
+    <nav aria-label="Navegación"><a href="https://ia-hub-univalle.onrender.com/#talleres">Volver a IA Hub</a></nav>
+  </header>
+  <main class="access-main">
+    <p class="eyebrow">Talleres de IA para la investigación</p>
+    <h1 id="access-title">Ingrese al aula</h1>
+    <p id="access-intro">Utilice el usuario y la contraseña que recibió de la administración del aula.</p>
+    <p id="access-status" class="status" role="status" aria-live="polite">Comprobando el acceso…</p>
+    <section class="access-panel" id="login-panel" hidden>
+      <form id="login-form">
+        <label for="username">Usuario</label>
+        <input id="username" name="username" autocomplete="username" required maxlength="120" autocapitalize="none" spellcheck="false">
+        <label for="password">Contraseña</label>
+        <input id="password" name="password" type="password" autocomplete="current-password" required>
+        <button type="submit">Ingresar</button>
+      </form>
+      <p class="aside">Si necesita una cuenta o recuperar el acceso, contacte a la persona que administra los talleres.</p>
+    </section>
+    <section class="access-panel" id="password-panel" hidden>
+      <form id="password-form">
+        <label for="current-password">Contraseña actual</label>
+        <input id="current-password" name="current" type="password" autocomplete="current-password" required>
+        <label for="new-password">Nueva contraseña</label>
+        <input id="new-password" name="password" type="password" autocomplete="new-password" minlength="12" maxlength="128" required aria-describedby="password-help">
+        <p class="aside" id="password-help">Use al menos 12 caracteres. Puede emplear una frase que recuerde.</p>
+        <label for="repeat-password">Repita la nueva contraseña</label>
+        <input id="repeat-password" type="password" autocomplete="new-password" minlength="12" maxlength="128" required>
+        <button type="submit">Guardar contraseña y continuar</button>
+      </form>
+      <button id="access-logout" class="secondary" type="button">Cerrar sesión</button>
+    </section>
+    <noscript>Active JavaScript en su navegador para ingresar a los talleres.</noscript>
+  </main>
+  <footer><p>IA Hub · Facultad de Ciencias de la Administración · Universidad del Valle.</p></footer>
+  <script type="module" src="acceso.js"></script>
+</body>
+</html>
